@@ -397,27 +397,30 @@ h3 {
 .profile-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin: 16px 0 18px;
+  gap: 12px;
+  margin: 20px 0 22px;
 }
 
 .profile-links a {
   display: inline-flex;
   align-items: center;
-  min-height: 34px;
-  padding: 5px 12px;
-  border: 1px solid var(--line);
+  justify-content: center;
+  min-height: 64px;
+  min-width: 138px;
+  padding: 12px 22px;
+  border: 1px solid var(--navy);
   border-radius: 8px;
-  color: var(--navy);
-  background: #fff;
-  font-size: 13px;
+  color: #fff;
+  background: var(--navy);
+  font-size: 16px;
   font-weight: 700;
-  box-shadow: 0 6px 16px rgba(23, 57, 92, 0.06);
+  box-shadow: 0 10px 24px rgba(23, 57, 92, 0.16);
 }
 
 .profile-links a:hover {
-  border-color: var(--cyan);
-  color: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+  background: var(--blue);
 }
 
 .bio-sections {
@@ -624,6 +627,49 @@ h3 {
   font-size: 14px;
 }
 
+.partner-section {
+  padding: 30px 0 40px;
+  background: #eef5f8;
+}
+
+.partner-links {
+  display: grid;
+  gap: 14px;
+}
+
+.partner-link {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(23, 57, 92, 0.08);
+}
+
+.partner-link img {
+  display: block;
+  width: min(620px, 100%);
+  height: auto;
+}
+
+.partner-link span {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--navy);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.partner-link:hover span {
+  background: var(--blue);
+}
+
 .site-footer {
   padding: 26px 0;
   color: #d8e8ef;
@@ -774,6 +820,18 @@ h3 {
   .instagram-qr img {
     width: 132px;
     height: 132px;
+  }
+
+  .partner-link {
+    display: grid;
+    gap: 16px;
+    justify-items: start;
+    padding: 18px;
+  }
+
+  .partner-link span {
+    width: 100%;
+    text-align: center;
   }
 
   .footer-inner {
