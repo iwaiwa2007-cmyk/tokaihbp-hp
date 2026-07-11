@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tokai-hbp.netlify.app/sitemap.xml
+Sitemap: https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/sitemap.xml
