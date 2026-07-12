@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PEP予防支援ツール</title>
+  <meta name="description" content="ERCP後膵炎（PEP）のリスク評価と予防策確認を学ぶための医療従事者向け教育支援ツールです。">
+  <link rel="icon" type="image/png" href="../../assets/tokai-gastro-logo.png">
+  <link rel="apple-touch-icon" href="../../assets/tokai-gastro-logo.png">
+  <link rel="stylesheet" href="../../style.css?v=20260710-1">
+  <style>
+    :root{--navy:#12304a;--blue:#176b87;--blue2:#e9f5f8;--bg:#f3f6f7;--card:#fff;--ink:#172b3a;--muted:#617684;--line:#d9e3e7;--red:#aa2e38;--redbg:#fff0f1;--amber:#93600a;--amberbg:#fff7e5;--green:#16715a;--greenbg:#eaf7f2;--graybg:#f5f7f8}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Sans",sans-serif;line-height:1.55}
+    .tool-header{background:linear-gradient(120deg,var(--navy),#17657b);color:#fff;padding:24px clamp(18px,4vw,48px)}
+    .head,.wrap{max-width:1360px;margin:auto}.head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.head h1{font-size:clamp(23px,3vw,34px);margin:0 0 3px}.head p{margin:0;color:#d8edf1;font-size:13px}.local{border:1px solid #ffffff55;border-radius:99px;padding:6px 11px;font-size:11px;white-space:nowrap}
+    .tool-main{padding:18px 18px 54px}.guideline-banner{background:linear-gradient(120deg,#e3f5f2,#edf7fb);border:2px solid #4b9f98;border-radius:15px;padding:18px 20px;margin-bottom:14px;display:flex;align-items:center;gap:16px;box-shadow:0 4px 14px #17394a0b}.guideline-year{background:#16715a;color:#fff;border-radius:11px;padding:10px 14px;font-size:20px;font-weight:900;line-height:1;white-space:nowrap}.guideline-banner strong{display:block;color:#104e45;font-size:clamp(18px,2.3vw,25px);line-height:1.25}.guideline-banner span{display:block;color:#456a6b;font-size:12px;margin-top:4px}.notice{background:#fff8e8;border:1px solid #ead39a;border-left:5px solid #c68a1d;border-radius:11px;padding:11px 15px;margin-bottom:16px;font-size:12px;color:#634d22}
+    .layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,.75fr);gap:18px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 14px #17394a0b;margin-bottom:16px;overflow:hidden}.card-head{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.card-head h2{font-size:17px;margin:0}.card-head span{font-size:11px;color:var(--muted)}.body{padding:16px 18px}
+    h3{font-size:13px;margin:0 0 8px;color:#405765}.group+h3{margin-top:16px}.group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.check{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;cursor:pointer;min-height:52px}.check:hover{border-color:#9cb7c1}.check input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--blue);flex:0 0 auto}.check span:first-of-type{font-size:13px}.check small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.tag{margin-left:auto;border-radius:99px;padding:2px 7px;font-size:10px;font-weight:700;white-space:nowrap}.tag.def{background:#fde7e8;color:#9d2831}.tag.pos{background:#fff0c8;color:#7f5909}
+    .fieldrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:13px}.field{display:flex;flex-direction:column;gap:4px}.field label{font-size:11px;font-weight:700;color:#405765}.field input,.field select{width:100%;min-height:40px;border:1px solid #cbd8dd;border-radius:8px;padding:7px 9px;font:inherit;font-size:13px;background:#fff}.field input:focus,.field select:focus{outline:3px solid #5bb0c633;border-color:var(--blue)}
+    .summary{position:sticky;top:12px}.risk{padding:15px;border-radius:12px;border:1px solid;margin-bottom:12px}.risk.pending{background:var(--graybg);border-color:var(--line)}.risk.low{background:var(--greenbg);border-color:#a8ddca}.risk.mid{background:var(--amberbg);border-color:#efd38c}.risk.high{background:var(--redbg);border-color:#efb2b7}.big{font-size:23px;font-weight:800}.detail{font-size:12px;margin-top:3px}.rec{border-left:5px solid var(--blue);background:#f4f9fb;border-radius:8px;padding:10px 11px;margin:8px 0;font-size:12px}.rec strong{display:block;font-size:13px}.rec.warn{border-color:#e09318;background:#fff9ed}.rec.stop{border-color:var(--red);background:#fff3f3}.rec.done{border-color:var(--green);background:#eff9f5}.rec.na{border-color:#94a4ac;background:#f6f8f9}.rec .state{font-size:10px;font-weight:800;letter-spacing:.03em;margin-bottom:2px;color:var(--muted)}
+    .fluid{margin-top:12px;border:1px dashed #b8c8ce;border-radius:10px;padding:11px;background:#fbfcfc}.fluid strong{color:var(--navy)}.micro{font-size:10px;color:var(--muted);margin:6px 0 0}.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}.actions button{border:0;border-radius:9px;padding:9px 13px;font-weight:700;cursor:pointer}.reset{background:#eaf0f2;color:#3c5360}.print{background:var(--blue);color:#fff}
+    .refs{font-size:11px;color:var(--muted)}.refs ul{margin:0;padding-left:20px}.refs li{margin:5px 0}.footer{text-align:center;color:var(--muted);font-size:10px;margin-top:18px}
+    @media(max-width:940px){.layout{grid-template-columns:1fr}.summary{position:static}}@media(max-width:620px){.group,.fieldrow{grid-template-columns:1fr}.local{display:none}.guideline-banner{align-items:flex-start;padding:15px}.guideline-year{font-size:16px;padding:9px 10px}}@media print{.site-header,.tool-header,.notice,.actions{display:none}body{background:#fff}.layout{grid-template-columns:1fr 1fr}.card{box-shadow:none;break-inside:avoid}.summary{position:static}.tool-main{padding:0}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html#home" aria-label="Home">
+    <img class="brand-logo" src="../../assets/tokai-gastro-logo.png" alt="Tokai University Gastroenterology">
+    <span>
+      <span class="brand-ja">東海大学医学部消化器内科胆膵班</span>
+      <span class="brand-en">Tokai University School of Medicine, Biliary-Pancreatic Clinical Group</span>
+    </span>
+  </a>
+
+  <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="../../index.html#home">Home</a>
+    <a href="../../weekly-highlights/weekly-highlight-2026-07-12.html">Highlights</a>
+    <a href="../../AIP_Diagnosis/index.html">AIP tool</a>
+    <a href="../../index.html#members">PI</a>
+    <a href="../../index.html#research">Research</a>
+    <a href="../../index.html#education">Education</a>
+    <a href="../../index.html#publications">Publications</a>
+    <a href="../../index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<header class="tool-header"><div class="head"><div><h1>ERCP後膵炎（PEP）予防支援</h1><p>リスク評価・禁忌確認・予防策の実施漏れ防止</p></div><div class="local">端末内で計算・データ送信なし</div></div></header>
+<main class="tool-main wrap">
+  <div class="guideline-banner"><div class="guideline-year">ESGE 2020</div><div><strong>ESGE 2020ガイドラインに沿ったPEP予防支援ツール</strong><span>ERCP-related adverse events: European Society of Gastrointestinal Endoscopy (ESGE) Guideline の内容に基づくルールベース支援です。</span></div></div>
+  <div class="notice"><strong>医療従事者向け診療支援：</strong>本ツールは診断・処方・術者判断を代替しません。薬剤の添付文書、患者固有の禁忌、最新の院内プロトコルを優先してください。入力内容は保存・送信されません。</div>
+  <div class="layout">
+    <section>
+      <article class="card"><div class="card-head"><h2>1　術前：患者関連リスク</h2><span>該当項目を選択</span></div><div class="body">
+        <h3>確実なリスク因子</h3><div class="group">
+          <label class="check"><input class="risk definite" type="checkbox"><span>Oddi括約筋機能障害疑い</span><b class="tag def">確実</b></label>
+          <label class="check"><input class="risk definite" type="checkbox"><span>女性</span><b class="tag def">確実</b></label>
+          <label class="check"><input class="risk definite" type="checkbox"><span>膵炎既往</span><b class="tag def">確実</b></label>
+          <label class="check"><input class="risk definite" type="checkbox"><span>PEP既往</span><b class="tag def">確実</b></label>
+        </div>
+        <h3>可能性のあるリスク因子</h3><div class="group">
+          <label class="check"><input class="risk likely" type="checkbox"><span>若年<small>年齢のみで機械的に判定しない</small></span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely" type="checkbox"><span>肝外胆管非拡張</span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely" type="checkbox"><span>慢性膵炎なし</span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely" type="checkbox"><span>血清ビリルビン正常</span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely" type="checkbox"><span>末期腎不全</span><b class="tag pos">可能性</b></label>
+        </div>
+      </div></article>
+
+      <article class="card"><div class="card-head"><h2>2　術中：手技関連リスク</h2><span>手技中に随時更新</span></div><div class="body">
+        <h3>確実なリスク因子</h3><div class="group">
+          <label class="check"><input class="risk definite" type="checkbox"><span>困難挿管<small>乳頭への接触 &gt;5回、乳頭視認後の挿管試行 &gt;5分、または意図しない膵管挿管／造影 &gt;1回のいずれか</small></span><b class="tag def">確実</b></label>
+          <label class="check"><input class="risk definite pd" type="checkbox"><span>膵管ガイドワイヤー通過 &gt;1回<small>意図しない主膵管へのガイドワイヤー挿入・通過が2回以上</small></span><b class="tag def">確実</b></label>
+          <label class="check"><input class="risk definite pd" type="checkbox"><span>膵管造影<small>意図しない膵管造影を含む。回数と造影範囲も術者間で共有</small></span><b class="tag def">確実</b></label>
+        </div>
+        <h3>可能性のあるリスク因子</h3><div class="group">
+          <label class="check"><input class="risk likely" type="checkbox"><span>プレカット<small>通常挿管を継続した後ではなく、困難挿管時の早期戦略変更も検討</small></span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely pd" type="checkbox"><span>膵管括約筋切開<small>経膵管的胆管括約筋切開を含む。膵管ステント適応を再評価</small></span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely" type="checkbox"><span>胆道バルーン拡張<small>内視鏡的乳頭バルーン拡張術（EPBD）を実施した場合</small></span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely" type="checkbox"><span>胆管結石除去不成功<small>当該ERCPで予定した結石除去を完遂できなかった場合</small></span><b class="tag pos">可能性</b></label>
+          <label class="check"><input class="risk likely" type="checkbox"><span>胆管内超音波検査<small>管腔内超音波プローブ（IDUS）を胆管内に挿入した場合</small></span><b class="tag pos">可能性</b></label>
+          <label class="check"><input id="amp" type="checkbox"><span>乳頭切除術<small>膵管ステント適応を個別評価</small></span></label>
+        </div>
+      </div></article>
+
+      <article class="card"><div class="card-head"><h2>3　予防策：安全性と実施確認</h2><span>未評価を残さない</span></div><div class="body">
+        <div class="fieldrow">
+          <div class="field"><label for="nsaid">直腸NSAIDs</label><select id="nsaid"><option value="unknown">未評価</option><option value="planned">投与済み／予定</option><option value="contra">禁忌・回避理由あり</option><option value="notdone">未実施</option></select></div>
+          <div class="field"><label for="stent">予防的膵管ステント</label><select id="stent"><option value="unknown">未評価</option><option value="planned">留置済み／予定</option><option value="failed">留置試行したが不成功</option><option value="notdone">未実施</option><option value="na">適応なしと判断</option></select></div>
+          <div class="field"><label for="fluid">乳酸リンゲル液輸液</label><select id="fluid"><option value="unknown">未評価</option><option value="planned">実施済み／予定</option><option value="contra">積極的輸液を避ける事情あり</option><option value="notdone">未実施</option></select></div>
+        </div>
+        <div class="group">
+          <label class="check"><input id="nsaidSafety" type="checkbox"><span>NSAIDsの安全性を確認済み<small>アレルギー、腎機能、活動性潰瘍・出血、妊娠等を個別評価</small></span></label>
+          <label class="check"><input id="fluidSafety" type="checkbox"><span>積極的輸液の安全性を確認済み<small>心不全、腎不全、体液過剰、肝疾患等を個別評価</small></span></label>
+        </div>
+        <div class="fluid"><div class="fieldrow" style="margin:0"><div class="field"><label for="weight">体重（参考計算）</label><select id="weight"><option value="">未選択</option><option value="40">40 kg</option><option value="45">45 kg</option><option value="50">50 kg</option><option value="55">55 kg</option><option value="60">60 kg</option><option value="65">65 kg</option><option value="70">70 kg</option><option value="75">75 kg</option><option value="80">80 kg</option><option value="85">85 kg</option><option value="90">90 kg</option><option value="95">95 kg</option><option value="100">100 kg</option></select></div><div class="field" style="grid-column:span 2"><label>参考値</label><div id="fluidCalc" class="detail">体重を選択してください。</div></div></div><p class="micro">例示プロトコル：乳酸リンゲル液20 mL/kgボーラス＋3 mL/kg/時×8時間（総量44 mL/kg）。自動指示ではありません。院内基準と循環・呼吸・尿量を優先してください。</p></div>
+      </div></article>
+    </section>
+
+    <aside class="card summary"><div class="card-head"><h2>判定・推奨</h2><span id="stamp">入力待ち</span></div><div class="body">
+      <div id="riskBox" class="risk pending"><div id="riskTitle" class="big">評価を開始してください</div><div id="riskDetail" class="detail">リスク因子と予防策を入力します。</div></div>
+      <div id="recommendations"></div>
+      <div class="actions"><button id="reset" class="reset" type="button">リセット</button><button id="print" class="print" type="button">印刷</button></div>
+    </div></aside>
+  </div>
+
+  <article class="card refs"><div class="card-head"><h2>判定ロジック・出典</h2><span>Version 1.1</span></div><div class="body"><ul>
+    <li>高リスク：確実なリスク因子1つ以上、または可能性のあるリスク因子2つ以上（ESGE 2020の分類に基づく）。リスク因子は相加的で、二分判定だけでは個別リスクを完全には表しません。</li>
+    <li>直腸NSAIDs：禁忌がないERCP患者で周術期投与を検討。薬剤・用量・時期は添付文書および院内プロトコルを確認してください。</li>
+    <li>膵管ステント：選択された高リスク状況、意図しない膵管ガイドワイヤー挿入／造影、ダブルガイドワイヤー法、乳頭切除等で検討。無理な追加膵管挿管は避けます。</li>
+    <li>積極的輸液：体液過剰リスクがない場合に個別検討。NSAIDs併用時の上乗せ効果、外来運用、患者背景を考慮します。</li>
+  </ul><p>Dumonceau JM, et al. Endoscopy. 2020;52:127–149. PMID: 31863440. ／ Buxbaum JL, et al. Gastrointest Endosc. 2023;97:153–162. PMID: 36517310.</p></div></article>
+  <div class="footer">2026-07-12　すべての計算はブラウザ内で実行されます。</div>
+</main>
+<script>
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  const rec=(kind,state,title,text)=>`<div class="rec ${kind}"><div class="state">${state}</div><strong>${title}</strong>${text}</div>`;
+  function updateFluid(){const w=Number($('#weight').value),out=$('#fluidCalc');if(!w){out.textContent='体重を選択してください。';return}out.innerHTML=`ボーラス <strong>${Math.round(20*w)} mL</strong> ／ 維持 <strong>${Math.round(3*w)} mL/時×8時間</strong> ／ 総量 <strong>${Math.round(44*w)} mL</strong>`}
+  function update(){
+    const d=$$('.definite:checked').length,l=$$('.likely:checked').length,any=d+l>0,high=d>=1||l>=2,mid=!high&&l===1;
+    const box=$('#riskBox');box.className='risk '+(high?'high':mid?'mid':any?'low':'pending');
+    $('#riskTitle').textContent=high?'PEP高リスク':mid?'リスク因子あり':any?'高リスク基準を満たさず':'評価を開始してください';
+    $('#riskDetail').textContent=any?`確実因子 ${d}個／可能性因子 ${l}個。${high?'ESGE分類上の高リスクです。':mid?'高リスク基準未満ですが注意が必要です。':'選択項目上は高リスク基準未満です。'}`:'リスク因子と予防策を入力します。該当なしの場合も予防策を確認してください。';
+    const n=$('#nsaid').value,s=$('#stent').value,f=$('#fluid').value,pd=$$('.pd:checked').length>0,amp=$('#amp').checked;
+    let rows=[];
+    if(n==='planned')rows.push(rec('done','実施確認','直腸NSAIDs','投与済み／予定として記録されています。薬剤・用量・時期を照合してください。'));
+    else if(n==='contra')rows.push(rec('stop','回避','直腸NSAIDs','禁忌・回避理由を記録し、ほかの予防策を優先してください。'));
+    else if(n==='notdone')rows.push(rec('warn','要確認','直腸NSAIDs','禁忌がなければ周術期投与を検討してください。'));
+    else rows.push(rec('warn','未評価','直腸NSAIDs','禁忌と投与予定を確認してください。'));
+    if(!$('#nsaidSafety').checked&&n!=='contra')rows.push(rec('warn','安全確認','NSAIDs禁忌確認','アレルギー、腎機能、活動性潰瘍・出血、妊娠等の確認が未完了です。'));
+    const stentInd=high||pd||amp;
+    if(s==='planned')rows.push(rec('done','実施確認','予防的膵管ステント','留置済み／予定として記録されています。脱落・抜去確認計画も確認してください。'));
+    else if(s==='failed')rows.push(rec('stop','重要','膵管ステント留置不成功','追加操作による損傷を避け、代替予防策と術後観察を強化してください。'));
+    else if(stentInd&&s!=='planned')rows.push(rec('warn','適応を再評価','予防的膵管ステント','高リスク、膵管アクセス、または乳頭切除があります。留置の適否を術者が確認してください。'));
+    else if(s==='unknown')rows.push(rec('na','未評価','予防的膵管ステント','手技中に膵管アクセスや高リスク因子が生じた場合は再評価してください。'));
+    else rows.push(rec('na','個別判断','予防的膵管ステント','現在の入力では強い注意喚起対象ではありません。手技経過を優先してください。'));
+    if(f==='planned')rows.push(rec('done','実施確認','乳酸リンゲル液輸液','実施済み／予定です。循環・呼吸・尿量を監視してください。'));
+    else if(f==='contra')rows.push(rec('stop','個別化','積極的輸液','体液過剰リスクのため積極的輸液を避け、輸液量を個別化してください。'));
+    else if(f==='notdone')rows.push(rec('warn','要確認','乳酸リンゲル液輸液','禁忌がなく運用可能なら周術期輸液を検討してください。'));
+    else rows.push(rec('warn','未評価','乳酸リンゲル液輸液','体液過剰リスクと実施方針を確認してください。'));
+    if(!$('#fluidSafety').checked&&f!=='contra')rows.push(rec('warn','安全確認','輸液禁忌確認','心不全、腎不全、体液過剰、肝疾患等の確認が未完了です。'));
+    rows.push(rec('','手技原則','カニュレーション戦略','ワイヤーガイド挿管、不要な膵管造影・反復挿管の回避、困難挿管時の早期戦略変更を徹底してください。'));
+    $('#recommendations').innerHTML=rows.join('');$('#stamp').textContent=new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})+' 更新';updateFluid();
+  }
+  $$('input,select').forEach(x=>x.addEventListener('change',update));$('#print').addEventListener('click',()=>window.print());$('#reset').addEventListener('click',()=>{$$('input[type=checkbox]').forEach(x=>x.checked=false);$$('select').forEach(x=>x.selectedIndex=0);update()});update();
+</script>
+<script src="../../script.js"></script>
+</body>
+</html>
