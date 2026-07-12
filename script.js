@@ -48,3 +48,38 @@ if (backToTop) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
+document.querySelectorAll("[data-lightbox-target]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const target = document.getElementById(button.dataset.lightboxTarget);
+
+    if (!target) return;
+
+    target.classList.add("open");
+    target.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-active");
+  });
+});
+
+document.querySelectorAll(".lightbox").forEach((lightbox) => {
+  const close = () => {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("lightbox-active");
+  };
+
+  lightbox.querySelector(".lightbox-close")?.addEventListener("click", close);
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) close();
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+
+  document.querySelectorAll(".lightbox.open").forEach((lightbox) => {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+  });
+  document.body.classList.remove("lightbox-active");
+});
