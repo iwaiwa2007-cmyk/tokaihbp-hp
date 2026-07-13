@@ -366,6 +366,60 @@ h3 {
   gap: 16px;
 }
 
+.simple-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.simple-card {
+  min-height: 180px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(23, 57, 92, 0.06);
+}
+
+.simple-card h3 {
+  margin: 10px 0 8px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.simple-card p {
+  color: #46586b;
+  font-size: 15px;
+}
+
+.tool-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.tool-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 16px;
+  border: 1px solid rgba(31, 111, 169, 0.18);
+  border-radius: 8px;
+  color: #fff;
+  background: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(31, 111, 169, 0.14);
+}
+
+.tool-button:hover {
+  background: var(--navy);
+}
+
 .card,
 .construction-box,
 .contact-card {
@@ -1126,6 +1180,7 @@ h3 {
 
   .split,
   .card-grid,
+  .simple-card-grid,
   .education-visuals,
   .education-focus-grid,
   .training-grid,
@@ -1144,6 +1199,14 @@ h3 {
 
   .tool-card {
     grid-template-columns: 1fr;
+  }
+
+  .tool-button-row {
+    align-items: stretch;
+  }
+
+  .tool-button {
+    flex: 1 1 220px;
   }
 
   .education-focus {

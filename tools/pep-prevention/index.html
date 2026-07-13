@@ -7,12 +7,12 @@
   <meta name="description" content="ERCP後膵炎（PEP）のリスク評価と予防策確認を学ぶための医療従事者向け教育支援ツールです。">
   <link rel="icon" type="image/png" href="../../assets/tokai-gastro-logo.png">
   <link rel="apple-touch-icon" href="../../assets/tokai-gastro-logo.png">
-  <link rel="stylesheet" href="../../style.css?v=20260710-1">
+  <link rel="stylesheet" href="../../style.css?v=20260713-2">
   <style>
     :root{--navy:#12304a;--blue:#176b87;--blue2:#e9f5f8;--bg:#f3f6f7;--card:#fff;--ink:#172b3a;--muted:#617684;--line:#d9e3e7;--red:#aa2e38;--redbg:#fff0f1;--amber:#93600a;--amberbg:#fff7e5;--green:#16715a;--greenbg:#eaf7f2;--graybg:#f5f7f8}
     *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Sans",sans-serif;line-height:1.55}
     .tool-header{background:linear-gradient(120deg,var(--navy),#17657b);color:#fff;padding:24px clamp(18px,4vw,48px)}
-    .head,.wrap{max-width:1360px;margin:auto}.head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.head h1{font-size:clamp(23px,3vw,34px);margin:0 0 3px}.head p{margin:0;color:#d8edf1;font-size:13px}.local{border:1px solid #ffffff55;border-radius:99px;padding:6px 11px;font-size:11px;white-space:nowrap}
+    .head,.wrap{max-width:1360px;margin:auto}.head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.head h1{font-size:clamp(23px,3vw,34px);margin:0 0 3px}.head p{margin:0;color:#d8edf1;font-size:13px}.head-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.local{border:1px solid #ffffff55;border-radius:99px;padding:6px 11px;font-size:11px;white-space:nowrap}.paper-link{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:7px 13px;border-radius:99px;background:#0b83b5;color:#fff;text-decoration:none;font-size:12px;font-weight:800;white-space:nowrap;box-shadow:0 6px 16px #06253633}.paper-link:hover{background:#0a719d}
     .tool-main{padding:18px 18px 54px}.guideline-banner{background:linear-gradient(120deg,#e3f5f2,#edf7fb);border:2px solid #4b9f98;border-radius:15px;padding:18px 20px;margin-bottom:14px;display:flex;align-items:center;gap:16px;box-shadow:0 4px 14px #17394a0b}.guideline-year{background:#16715a;color:#fff;border-radius:11px;padding:10px 14px;font-size:20px;font-weight:900;line-height:1;white-space:nowrap}.guideline-banner strong{display:block;color:#104e45;font-size:clamp(18px,2.3vw,25px);line-height:1.25}.guideline-banner span{display:block;color:#456a6b;font-size:12px;margin-top:4px}.notice{background:#fff8e8;border:1px solid #ead39a;border-left:5px solid #c68a1d;border-radius:11px;padding:11px 15px;margin-bottom:16px;font-size:12px;color:#634d22}
     .layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,.75fr);gap:18px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 14px #17394a0b;margin-bottom:16px;overflow:hidden}.card-head{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.card-head h2{font-size:17px;margin:0}.card-head span{font-size:11px;color:var(--muted)}.body{padding:16px 18px}
     h3{font-size:13px;margin:0 0 8px;color:#405765}.group+h3{margin-top:16px}.group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.check{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;cursor:pointer;min-height:52px}.check:hover{border-color:#9cb7c1}.check input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--blue);flex:0 0 auto}.check span:first-of-type{font-size:13px}.check small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.tag{margin-left:auto;border-radius:99px;padding:2px 7px;font-size:10px;font-weight:700;white-space:nowrap}.tag.def{background:#fde7e8;color:#9d2831}.tag.pos{background:#fff0c8;color:#7f5909}
@@ -20,7 +20,7 @@
     .summary{position:sticky;top:12px}.risk{padding:15px;border-radius:12px;border:1px solid;margin-bottom:12px}.risk.pending{background:var(--graybg);border-color:var(--line)}.risk.low{background:var(--greenbg);border-color:#a8ddca}.risk.mid{background:var(--amberbg);border-color:#efd38c}.risk.high{background:var(--redbg);border-color:#efb2b7}.big{font-size:23px;font-weight:800}.detail{font-size:12px;margin-top:3px}.rec{border-left:5px solid var(--blue);background:#f4f9fb;border-radius:8px;padding:10px 11px;margin:8px 0;font-size:12px}.rec strong{display:block;font-size:13px}.rec.warn{border-color:#e09318;background:#fff9ed}.rec.stop{border-color:var(--red);background:#fff3f3}.rec.done{border-color:var(--green);background:#eff9f5}.rec.na{border-color:#94a4ac;background:#f6f8f9}.rec .state{font-size:10px;font-weight:800;letter-spacing:.03em;margin-bottom:2px;color:var(--muted)}
     .fluid{margin-top:12px;border:1px dashed #b8c8ce;border-radius:10px;padding:11px;background:#fbfcfc}.fluid strong{color:var(--navy)}.micro{font-size:10px;color:var(--muted);margin:6px 0 0}.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}.actions button{border:0;border-radius:9px;padding:9px 13px;font-weight:700;cursor:pointer}.reset{background:#eaf0f2;color:#3c5360}.print{background:var(--blue);color:#fff}
     .refs{font-size:11px;color:var(--muted)}.refs ul{margin:0;padding-left:20px}.refs li{margin:5px 0}.footer{text-align:center;color:var(--muted);font-size:10px;margin-top:18px}
-    @media(max-width:940px){.layout{grid-template-columns:1fr}.summary{position:static}}@media(max-width:620px){.group,.fieldrow{grid-template-columns:1fr}.local{display:none}.guideline-banner{align-items:flex-start;padding:15px}.guideline-year{font-size:16px;padding:9px 10px}}@media print{.site-header,.tool-header,.notice,.actions{display:none}body{background:#fff}.layout{grid-template-columns:1fr 1fr}.card{box-shadow:none;break-inside:avoid}.summary{position:static}.tool-main{padding:0}}
+    @media(max-width:940px){.layout{grid-template-columns:1fr}.summary{position:static}}@media(max-width:620px){.head{flex-direction:column}.head-actions{justify-content:flex-start}.group,.fieldrow{grid-template-columns:1fr}.local{display:none}.guideline-banner{align-items:flex-start;padding:15px}.guideline-year{font-size:16px;padding:9px 10px}}@media print{.site-header,.tool-header,.notice,.actions{display:none}body{background:#fff}.layout{grid-template-columns:1fr 1fr}.card{box-shadow:none;break-inside:avoid}.summary{position:static}.tool-main{padding:0}}
   </style>
 </head>
 <body>
@@ -42,19 +42,17 @@
   <nav class="site-nav" aria-label="Primary navigation">
     <a href="../../index.html#home">Home</a>
     <a href="../../weekly-highlights/weekly-highlight-2026-07-12.html">Highlights</a>
-    <a href="../../AIP_Diagnosis/index.html">AIP tool</a>
     <a href="../../index.html#members">PI</a>
-    <a href="../../index.html#research">Research</a>
-    <a href="../../index.html#education">Education</a>
+    <a href="../../index.html#activity">Activity</a>
+    <a href="../../index.html#tools">Tools</a>
     <a href="../../index.html#publications">Publications</a>
     <a href="../../index.html#contact">Contact</a>
   </nav>
 </header>
 
-<header class="tool-header"><div class="head"><div><h1>ERCP後膵炎（PEP）予防支援</h1><p>リスク評価・禁忌確認・予防策の実施漏れ防止</p></div><div class="local">端末内で計算・データ送信なし</div></div></header>
+<header class="tool-header"><div class="head"><div><h1>ERCP後膵炎（PEP）予防支援</h1><p>リスク評価・禁忌確認・予防策の実施漏れ防止</p></div><div class="head-actions"><a class="paper-link" href="https://www.thieme-connect.com/products/ejournals/html/10.1055/a-1075-4080" target="_blank" rel="noopener">判定ロジックの根拠論文</a><div class="local">端末内で計算・データ送信なし</div></div></div></header>
 <main class="tool-main wrap">
   <div class="guideline-banner"><div class="guideline-year">ESGE 2020</div><div><strong>ESGE 2020ガイドラインに沿ったPEP予防支援ツール</strong><span>ERCP-related adverse events: European Society of Gastrointestinal Endoscopy (ESGE) Guideline の内容に基づくルールベース支援です。</span></div></div>
-  <div class="notice"><strong>医療従事者向け診療支援：</strong>本ツールは診断・処方・術者判断を代替しません。薬剤の添付文書、患者固有の禁忌、最新の院内プロトコルを優先してください。入力内容は保存・送信されません。</div>
   <div class="layout">
     <section>
       <article class="card"><div class="card-head"><h2>1　術前：患者関連リスク</h2><span>該当項目を選択</span></div><div class="body">
@@ -118,6 +116,9 @@
   </ul><p>Dumonceau JM, et al. Endoscopy. 2020;52:127–149. PMID: 31863440. ／ Buxbaum JL, et al. Gastrointest Endosc. 2023;97:153–162. PMID: 36517310.</p></div></article>
   <div class="footer">2026-07-12　すべての計算はブラウザ内で実行されます。</div>
 </main>
+<div class="wrap">
+  <div class="notice"><strong>医療従事者向け診療支援：</strong>本ツールは診断・処方・術者判断を代替しません。薬剤の添付文書、患者固有の禁忌、最新の院内プロトコルを優先してください。入力内容は保存・送信されません。</div>
+</div>
 <script>
   const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
   const rec=(kind,state,title,text)=>`<div class="rec ${kind}"><div class="state">${state}</div><strong>${title}</strong>${text}</div>`;

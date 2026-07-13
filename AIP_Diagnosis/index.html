@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>自己免疫性膵炎 診断基準計算ツール</title>
-  <meta name="description" content="自己免疫性膵炎診断基準2018、ICDC、病理組織学的4所見をクリック入力で判定する診断補助・教育用ツールです。">
-  <meta property="og:title" content="自己免疫性膵炎 診断基準計算ツール">
-  <meta property="og:description" content="自己免疫性膵炎診断基準2018、ICDC、病理組織学的4所見をクリック入力で判定します。">
+  <title>IgG4関連疾患診断ツール</title>
+  <meta name="description" content="自己免疫性膵炎、IgG4関連疾患包括診断基準2020、IgG4関連硬化性胆管炎2020、ICDC、病理組織学的所見をクリック入力で判定する診断補助・教育用ツールです。">
+  <meta property="og:title" content="IgG4関連疾患診断ツール">
+  <meta property="og:description" content="自己免疫性膵炎、IgG4関連疾患包括診断基準2020、IgG4関連硬化性胆管炎2020、ICDC、病理組織学的所見をクリック入力で判定します。">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="../style.css?v=20260710-1">
+  <link rel="stylesheet" href="../style.css?v=20260713-2">
   <style>
     :root {
       color-scheme: light;
@@ -86,7 +86,7 @@
 
     .tool-tabs {
       display: flex;
-      gap: 6px;
+      gap: 10px;
       padding: 0 0 16px;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
@@ -94,23 +94,24 @@
     }
 
     .tab {
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--ink);
-      border-radius: 999px;
-      min-height: 34px;
-      padding: 5px 10px;
-      font-weight: 700;
-      font-size: 13px;
+      border: 2px solid var(--accent);
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      min-height: 42px;
+      padding: 8px 16px;
+      font-weight: 900;
+      font-size: 15px;
       white-space: nowrap;
       cursor: pointer;
       touch-action: manipulation;
+      box-shadow: 0 6px 14px rgba(15, 118, 110, 0.16);
     }
 
     .tab.active {
       border-color: var(--accent);
-      background: var(--accent-soft);
-      color: #0a5f59;
+      background: #fff;
+      color: var(--accent);
     }
 
     main {
@@ -123,7 +124,7 @@
     }
 
     section.screen + section.screen {
-      margin-top: 18px;
+      margin-top: 34px;
     }
 
     .layout {
@@ -133,8 +134,13 @@
     }
 
     .section-title {
-      margin: 0 0 8px;
-      font-size: 20px;
+      margin: 0 0 16px;
+      padding: 16px 18px;
+      border-left: 8px solid var(--accent);
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--accent-soft), #fff);
+      font-size: 30px;
+      line-height: 1.25;
       letter-spacing: 0;
     }
 
@@ -221,6 +227,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      align-items: center;
       position: sticky;
       bottom: 0;
       background: linear-gradient(180deg, rgba(246,247,249,0), var(--bg) 20%);
@@ -244,6 +251,13 @@
       background: var(--accent);
       border-color: var(--accent);
       color: #fff;
+    }
+
+    .actions .back-top {
+      margin-left: auto;
+      background: #eef6f5;
+      border-color: #b9d9d5;
+      color: var(--accent);
     }
 
     .result {
@@ -280,6 +294,40 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
+    }
+
+    .criteria-results {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .criteria-results.single {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .criteria-figure {
+      margin: 0 0 18px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .criteria-figure img {
+      display: block;
+      width: 100%;
+      max-height: 360px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .criteria-figure figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
     }
 
     .badge {
@@ -362,7 +410,8 @@
     }
 
     @media (max-width: 900px) {
-      .summary-grid {
+      .summary-grid,
+      .criteria-results {
         grid-template-columns: 1fr;
       }
     }
@@ -393,9 +442,9 @@
       }
 
       .tab {
-        min-height: 32px;
-        padding: 4px 9px;
-        font-size: 12px;
+        min-height: 38px;
+        padding: 7px 12px;
+        font-size: 13px;
         scroll-snap-align: start;
       }
 
@@ -439,10 +488,20 @@
         padding: 12px 12px max(12px, env(safe-area-inset-bottom));
       }
 
+      .section-title {
+        padding: 12px 14px;
+        font-size: 24px;
+      }
+
       .actions button {
         width: 100%;
         min-height: 42px;
         font-size: 16px;
+      }
+
+      .actions .back-top {
+        margin-left: 0;
+        grid-column: 1 / -1;
       }
 
       .result {
@@ -483,10 +542,9 @@
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="../index.html#home">Home</a>
       <a href="../weekly-highlights/weekly-highlight-2026-07-12.html">Highlights</a>
-      <a href="index.html">AIP tool</a>
       <a href="../index.html#members">PI</a>
-      <a href="../index.html#research">Research</a>
-      <a href="../index.html#education">Education</a>
+      <a href="../index.html#activity">Activity</a>
+      <a href="../index.html#tools">Tools</a>
       <a href="../index.html#publications">Publications</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
@@ -494,13 +552,14 @@
 
   <header class="tool-header">
     <div class="wrap top">
-      <h1>自己免疫性膵炎 診断基準計算ツール</h1>
-      <p class="lead">各項目の有無をクリックし、ページ下部で判定をまとめて確認します。自己免疫性膵炎臨床診断基準2018、ICDC、病理組織学的4所見の確認に対応しています。</p>
-      <p class="notice">このツールは診断補助・教育用です。膵癌・胆管癌など悪性疾患の除外、ステロイド診断の適否、最終診断は専門医の臨床判断で行ってください。</p>
+      <h1>IgG4関連疾患診断ツール</h1>
+      <p class="lead">各項目の有無をクリックし、ページ下部で判定をまとめて確認します。自己免疫性膵炎臨床診断基準2018、2011診断基準の参考判定、ICDC、病理組織学的4所見、IgG4関連疾患包括診断基準2020、IgG4関連硬化性胆管炎2020の確認に対応しています。</p>
       <nav class="tool-tabs" aria-label="診断基準">
         <button class="tab active" data-target="screen-jps">2018</button>
         <button class="tab" data-target="screen-icdc">ICDC</button>
         <button class="tab" data-target="screen-histology">病理</button>
+        <button class="tab" data-target="screen-comprehensive">包括</button>
+        <button class="tab" data-target="screen-igg4sc">IgG4-SC</button>
         <button class="tab" data-target="summary">結果</button>
       </nav>
     </div>
@@ -508,7 +567,7 @@
 
   <main class="wrap">
     <section class="screen active" id="screen-jps">
-      <h2 class="section-title">2018診断基準</h2>
+      <h2 class="section-title">2018診断基準・2011参考判定</h2>
       <div class="layout">
         <div class="panel form">
           <fieldset>
@@ -552,10 +611,23 @@
           </fieldset>
 
           <div class="actions">
-            <button class="primary" id="calc-jps">2018基準を計算</button>
+            <button class="primary" id="calc-jps">2018/2011基準を計算</button>
             <button id="reset-jps">リセット</button>
+            <button class="back-top" type="button">上に戻る</button>
           </div>
         </div>
+      </div>
+      <div class="criteria-results">
+        <aside class="panel result" id="result-jps" aria-live="polite">
+          <span class="badge">未計算</span>
+          <h2>2018診断基準</h2>
+          <p>計算後、確診・準確診・疑診と根拠を表示します。</p>
+        </aside>
+        <aside class="panel result" id="result-jps2011" aria-live="polite">
+          <span class="badge">未計算</span>
+          <h2>2011診断基準（参考）</h2>
+          <p>同じ入力項目から、研究入力などで用いる2011基準の確診・準確診・疑診を参考表示します。</p>
+        </aside>
       </div>
     </section>
 
@@ -599,8 +671,16 @@
           <div class="actions">
             <button class="primary" id="calc-icdc">ICDCを計算</button>
             <button id="reset-icdc">リセット</button>
+            <button class="back-top" type="button">上に戻る</button>
           </div>
         </div>
+      </div>
+      <div class="criteria-results single">
+        <aside class="panel result" id="result-icdc" aria-live="polite">
+          <span class="badge">未計算</span>
+          <h2>ICDC</h2>
+          <p>計算後、1型/2型AIPの確診・準確診、またはAIP疑診を表示します。</p>
+        </aside>
       </div>
     </section>
 
@@ -622,8 +702,137 @@
           <div class="actions">
             <button class="primary" id="calc-histology">病理4所見を計算</button>
             <button id="reset-histology">リセット</button>
+            <button class="back-top" type="button">上に戻る</button>
           </div>
         </div>
+      </div>
+      <div class="criteria-results single">
+        <aside class="panel result" id="result-histology" aria-live="polite">
+          <span class="badge">未計算</span>
+          <h2>病理4所見</h2>
+          <p>3件以上なら「あり」と判定します。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-comprehensive">
+      <h2 class="section-title">IgG4関連疾患 包括診断基準2020</h2>
+      <div class="layout">
+        <div class="panel form">
+          <fieldset>
+            <legend>1. 臨床・画像診断</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" id="comp-clinical"><div><strong>特徴的な腫大・腫瘤・結節・肥厚性病変あり</strong><span>単一または複数臓器。リンパ節単独病変は除きます。</span></div></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. 血清学的診断</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" id="comp-igg4"><div><strong>高IgG4血症あり</strong><span>135 mg/dL以上</span></div></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. 病理学的診断</legend>
+            <p class="hint">以下3項目のうち2項目以上で病理学的診断を満たします。</p>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" class="comp-path"><div><strong>a. リンパ球・形質細胞浸潤と線維化</strong></div></label>
+              <label class="choice"><input type="checkbox" class="comp-path"><div><strong>b. IgG4陽性形質細胞浸潤</strong><span>IgG4/IgG陽性細胞比40%以上、かつIgG4陽性形質細胞10/HPF超</span></div></label>
+              <label class="choice"><input type="checkbox" class="comp-path"><div><strong>c. 特徴的な線維化</strong><span>花筵状線維化または閉塞性静脈炎</span></div></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>補助確認</legend>
+            <div class="choices grid2">
+              <label class="choice"><input type="checkbox" id="comp-organ-specific"><div><strong>臓器別診断基準で確定診断</strong><span>準確診群・疑診群の場合、包括基準でも確定診断群として扱います。</span></div></label>
+              <label class="choice"><input type="checkbox" id="comp-exclusion"><div><strong>悪性腫瘍・類似疾患の除外を確認</strong><span>感染症、炎症性疾患、悪性腫瘍などを臨床的に確認</span></div></label>
+            </div>
+          </fieldset>
+
+          <div class="actions">
+            <button class="primary" id="calc-comprehensive">包括基準を計算</button>
+            <button id="reset-comprehensive">リセット</button>
+            <button class="back-top" type="button">上に戻る</button>
+          </div>
+        </div>
+      </div>
+      <div class="criteria-results single">
+        <aside class="panel result" id="result-comprehensive" aria-live="polite">
+          <span class="badge">未計算</span>
+          <h2>IgG4-RD 包括診断基準2020</h2>
+          <p>計算後、確定診断群・準確診群・疑診群と根拠を表示します。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-igg4sc">
+      <h2 class="section-title">IgG4関連硬化性胆管炎 診断基準2020</h2>
+      <div class="layout">
+        <div class="panel form">
+          <figure class="criteria-figure">
+            <img src="../assets/igg4sc-cholangiogram-types.png" alt="IgG4関連硬化性胆管炎の胆管像分類 Type 1、Type 2a、Type 2b、Type 3、Type 4">
+            <figcaption>胆管像分類 Type 1、Type 2、Type 3、Type 4を選択して、2020診断基準の組み合わせを確認します。</figcaption>
+          </figure>
+
+          <fieldset>
+            <legend>胆管像分類</legend>
+            <p class="hint">Type 2a/2bは本ツールでは「Type 2」として扱います。</p>
+            <div class="choices grid2">
+              <label class="choice"><input type="radio" name="igsc-type" value="none" checked><div><strong>未選択</strong></div></label>
+              <label class="choice"><input type="radio" name="igsc-type" value="1"><div><strong>Type 1</strong><span>下部胆管狭窄を主体</span></div></label>
+              <label class="choice"><input type="radio" name="igsc-type" value="2"><div><strong>Type 2</strong><span>肝内胆管を含むびまん性狭窄</span></div></label>
+              <label class="choice"><input type="radio" name="igsc-type" value="3"><div><strong>Type 3</strong><span>肝門部＋下部胆管狭窄</span></div></label>
+              <label class="choice"><input type="radio" name="igsc-type" value="4"><div><strong>Type 4</strong><span>肝門部胆管狭窄を主体</span></div></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>I-II. 胆管画像・胆管壁肥厚</legend>
+            <div class="choices grid2">
+              <label class="choice"><input type="checkbox" id="igsc-erc"><div><strong>Ia ERCで胆管狭窄像</strong></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-mrcp"><div><strong>Ib MRCPで胆管狭窄像</strong></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-eus"><div><strong>IIa EUS/IDUSで胆管壁肥厚</strong></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-ct"><div><strong>IIb CT/MRI/USで胆管壁肥厚</strong></div></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>III・V・VI. 血清、胆管外病変、ステロイド反応性</legend>
+            <div class="choices grid2">
+              <label class="choice"><input type="checkbox" id="igsc-igg4"><div><strong>III 高IgG4血症</strong><span>135 mg/dL以上</span></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-va"><div><strong>Va 1型自己免疫性膵炎あり</strong></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-vb"><div><strong>Vb IgG4関連胆管外病変あり</strong><span>涙腺・唾液腺、後腹膜線維症、腎臓病など</span></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-steroid"><div><strong>VI ステロイド治療の効果あり</strong><span>悪性疾患除外後、専門施設で評価</span></div></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>IV. 病理所見</legend>
+            <p class="hint">IVa、IVb、IVcは選択された病理所見から自動判定します。</p>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" id="igsc-path-i"><div><strong>i 高度のリンパ球・形質細胞浸潤と線維化</strong></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-path-ii"><div><strong>ii IgG4陽性形質細胞浸潤</strong><span>強拡1視野あたり10個超</span></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-path-iii"><div><strong>iii 花筵状線維化</strong></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-path-iv"><div><strong>iv 閉塞性静脈炎</strong></div></label>
+              <label class="choice"><input type="checkbox" id="igsc-path-v"><div><strong>v 腫瘍細胞を認めない</strong></div></label>
+            </div>
+          </fieldset>
+
+          <div class="actions">
+            <button class="primary" id="calc-igg4sc">IgG4-SC基準を計算</button>
+            <button id="reset-igg4sc">リセット</button>
+            <button class="back-top" type="button">上に戻る</button>
+          </div>
+        </div>
+      </div>
+      <div class="criteria-results single">
+        <aside class="panel result" id="result-igg4sc" aria-live="polite">
+          <span class="badge">未計算</span>
+          <h2>IgG4-SC 2020</h2>
+          <p>計算後、確診・準確診・疑診と根拠を表示します。</p>
+        </aside>
       </div>
     </section>
 
@@ -633,27 +842,16 @@
         <div class="summary-actions">
           <button class="primary" id="calc-all">すべて計算</button>
           <button id="reset-all">すべてリセット</button>
+          <button class="back-top" type="button">上に戻る</button>
         </div>
       </div>
-      <div class="summary-grid">
-        <aside class="panel result" id="result-jps" aria-live="polite">
-          <span class="badge">未計算</span>
-          <h2>2018診断基準</h2>
-          <p>計算後、確診・準確診・疑診と根拠を表示します。</p>
-        </aside>
-        <aside class="panel result" id="result-icdc" aria-live="polite">
-          <span class="badge">未計算</span>
-          <h2>ICDC</h2>
-          <p>計算後、1型/2型AIPの確診・準確診、またはAIP疑診を表示します。</p>
-        </aside>
-        <aside class="panel result" id="result-histology" aria-live="polite">
-          <span class="badge">未計算</span>
-          <h2>病理4所見</h2>
-          <p>3件以上なら「あり」と判定します。</p>
-        </aside>
-      </div>
+      <p class="hint">各判定結果は、それぞれの診断基準の入力欄の直後に表示されます。</p>
     </section>
   </main>
+
+  <div class="wrap">
+    <p class="notice">このツールは診断補助・教育用です。膵癌・胆管癌など悪性疾患の除外、ステロイド診断の適否、最終診断は専門医の臨床判断で行ってください。</p>
+  </div>
 
   <script>
     const $ = (selector, root = document) => root.querySelector(selector);
@@ -671,7 +869,7 @@
       return $$(selector).filter(input => input.checked).length;
     }
 
-    function renderResult(target, level, title, note, facts) {
+    function renderResult(target, level, title, note, facts, sources = "参照: 自己免疫性膵炎臨床診断基準2018、ICDC for autoimmune pancreatitis、自己免疫性膵炎診療ガイドライン2020。") {
       const badgeText = {
         definite: "確診",
         probable: "準確診",
@@ -685,8 +883,80 @@
         <h2>${title}</h2>
         <p>${note}</p>
         <ul class="facts">${facts.map(item => `<li>${item}</li>`).join("")}</ul>
-        <div class="sources">参照: 自己免疫性膵炎臨床診断基準2018、ICDC for autoimmune pancreatitis、自己免疫性膵炎診療ガイドライン2020。</div>
+        <div class="sources">${sources}</div>
       `;
+    }
+
+    function calcJps2011() {
+      const pancreas = radioValue("jps-pancreas");
+      const ia = pancreas === "diffuse";
+      const ib = pancreas === "focal";
+      const ii = checked("jps-erp");
+      const mrcpOnly = checked("jps-mrcp") && !ii;
+      const iii = checked("jps-igg4");
+      const vClinical = checked("jps-ooi-clinical");
+      const vPath = checked("jps-ooi-path");
+      const v = vClinical || vPath;
+      const option = checked("jps-steroid");
+      const eusFna = checked("jps-eus");
+      const histCount = countChecked(".jps-histo");
+      const iva = histCount >= 3;
+      const ivb = histCount >= 2;
+      const supportCount = [iii, ivb, v].filter(Boolean).length;
+      const facts = [
+        `膵腫大: ${ia ? "Ia びまん性" : ib ? "Ib 限局性" : "なし・未評価"}`,
+        `II 主膵管の不整狭細像: ${ii ? "ERPで確認" : "なし・未評価"}${mrcpOnly ? "（MRCPのみは2011基準のIIとしては扱いません）" : ""}`,
+        `III/IVb/V: III=${iii ? "あり" : "なし"}、IVb=${ivb ? "あり" : "なし"}、V=${v ? "あり" : "なし"}（該当 ${supportCount} 項目）`,
+        `病理: IVa=${iva ? "あり" : "なし"}、IVb=${ivb ? "あり" : "なし"}、病理①-④は <span class="count">${histCount}</span> 件`,
+        `オプション: ステロイド治療効果=${option ? "あり" : "なし"}、EUS-FNA腫瘍細胞なし=${eusFna ? "あり" : "なし"}`
+      ];
+
+      let level = "none";
+      let title = "2011診断基準では該当なし";
+      let note = "入力された項目だけでは、2011基準の確診・準確診・疑診の組み合わせに達していません。";
+
+      if (iva) {
+        level = "definite";
+        title = "確診: 病理組織学的確診";
+        note = "IVa、すなわち病理①-④のうち3項目以上を満たします。";
+      } else if (ia && supportCount >= 1) {
+        level = "definite";
+        title = "確診: びまん型";
+        note = "Iaに加えて、III/IVb/Vのいずれかを満たします。";
+      } else if (ib && ii && supportCount >= 2) {
+        level = "definite";
+        title = "確診: 限局型";
+        note = "Ib + IIに加えて、III/IVb/Vのうち2項目以上を満たします。";
+      } else if (ib && ii && supportCount >= 1 && option) {
+        level = "definite";
+        title = "確診: 限局型";
+        note = "Ib + II + III/IVb/Vのいずれか + オプションを満たします。";
+      } else if (ib && !ii && eusFna && supportCount >= 1 && option) {
+        level = "probable";
+        title = "準確診: 限局型";
+        note = "ERP像が得られない限局型で、EUS-FNA等による膵癌除外、III/IVb/Vのいずれか、オプションを満たす組み合わせとして扱います。";
+      } else if (ib && ii && supportCount >= 1) {
+        level = "probable";
+        title = "準確診: 限局型";
+        note = "Ib + II + III/IVb/Vのいずれかを満たします。";
+      } else if (ia && ii && option) {
+        level = "possible";
+        title = "疑診: びまん型";
+        note = "Ia + II + オプションを満たします。";
+      } else if (ib && ii && option) {
+        level = "possible";
+        title = "疑診: 限局型";
+        note = "Ib + II + オプションを満たします。2011基準では2型AIPの可能性も含まれます。";
+      }
+
+      renderResult(
+        $("#result-jps2011"),
+        level,
+        title,
+        note,
+        facts,
+        "参照: 自己免疫性膵炎臨床診断基準2011。2018基準と同じ入力項目から研究入力用に参考表示しています。"
+      );
     }
 
     function calcJps() {
@@ -759,6 +1029,7 @@
       }
 
       renderResult($("#result-jps"), level, title, note, facts);
+      calcJps2011();
     }
 
     function calcIcdc() {
@@ -859,6 +1130,145 @@
       );
     }
 
+    function calcComprehensive() {
+      const clinical = checked("comp-clinical");
+      const serology = checked("comp-igg4");
+      const pathologyCount = countChecked(".comp-path");
+      const pathology = pathologyCount >= 2;
+      const organSpecific = checked("comp-organ-specific");
+      const exclusion = checked("comp-exclusion");
+      const facts = [
+        `1 臨床・画像診断: ${clinical ? "あり" : "なし・未評価"}`,
+        `2 血清学的診断: ${serology ? "高IgG4血症あり" : "なし・未評価"}`,
+        `3 病理学的診断: ${pathology ? "あり" : "なし"}（選択 <span class="count">${pathologyCount}</span> / 3）`,
+        `臓器別診断基準での確定診断: ${organSpecific ? "あり" : "なし・未評価"}`,
+        `除外診断の確認: ${exclusion ? "確認済み" : "未確認"}`
+      ];
+
+      let level = "none";
+      let title = "包括診断基準では該当なし";
+      let note = "入力された項目だけでは、確定診断群・準確診群・疑診群の組み合わせに達していません。";
+
+      if (clinical && serology && pathology) {
+        level = "definite";
+        title = "確定診断群";
+        note = "1 臨床・画像診断、2 血清学的診断、3 病理学的診断のすべてを満たします。";
+      } else if (clinical && pathology) {
+        level = "probable";
+        title = "準確診群";
+        note = "1 臨床・画像診断と3 病理学的診断を満たします。";
+      } else if (clinical && serology) {
+        level = "possible";
+        title = "疑診群";
+        note = "1 臨床・画像診断と2 血清学的診断を満たします。";
+      }
+
+      if (organSpecific && (level === "probable" || level === "possible")) {
+        level = "definite";
+        title = "確定診断群: 臓器別診断基準で確定";
+        note += " さらに臓器別診断基準で確定診断されているため、包括診断基準上もIgG4関連疾患確定診断群として扱います。";
+      }
+
+      if (!exclusion && level !== "none") {
+        note += " ただし、悪性腫瘍や類似疾患の除外確認が未チェックです。実臨床では除外診断が重要です。";
+      }
+
+      renderResult(
+        $("#result-comprehensive"),
+        level,
+        title,
+        note,
+        facts,
+        '参照: 2020改訂 IgG4関連疾患包括診断基準。参考: <a href="https://igg4.w3.kanazawa-u.ac.jp/reference/" target="_blank" rel="noopener">IgG4関連疾患診断基準</a>。'
+      );
+    }
+
+    function calcIgg4Sc() {
+      const bileType = radioValue("igsc-type");
+      const type12 = bileType === "1" || bileType === "2";
+      const type34 = bileType === "3" || bileType === "4";
+      const typeAny = type12 || type34;
+      const ia = checked("igsc-erc");
+      const ib = checked("igsc-mrcp");
+      const iAny = ia || ib;
+      const iia = checked("igsc-eus");
+      const iib = checked("igsc-ct");
+      const iiAny = iia || iib;
+      const iii = checked("igsc-igg4");
+      const va = checked("igsc-va");
+      const vb = checked("igsc-vb");
+      const vi = checked("igsc-steroid");
+      const pathI = checked("igsc-path-i");
+      const pathII = checked("igsc-path-ii");
+      const pathIII = checked("igsc-path-iii");
+      const pathIV = checked("igsc-path-iv");
+      const pathV = checked("igsc-path-v");
+      const iva = pathI && pathII && pathV;
+      const ivb = pathV;
+      const ivc = pathI && pathII && pathV && (pathIII || pathIV);
+
+      const facts = [
+        `胆管像分類: ${typeAny ? `Type ${bileType}` : "未選択"}`,
+        `I 胆管狭窄像: ${ia ? "Ia ERC" : ""}${ia && ib ? " + " : ""}${ib ? "Ib MRCP" : ""}${!iAny ? "なし・未評価" : ""}`,
+        `II 胆管壁肥厚像: ${iia ? "IIa EUS/IDUS" : ""}${iia && iib ? " + " : ""}${iib ? "IIb CT/MRI/US" : ""}${!iiAny ? "なし・未評価" : ""}`,
+        `III/V/VI: III=${iii ? "あり" : "なし"}、Va=${va ? "あり" : "なし"}、Vb=${vb ? "あり" : "なし"}、VI=${vi ? "あり" : "なし"}`,
+        `IV 病理: IVa=${iva ? "あり" : "なし"}、IVb=${ivb ? "あり" : "なし"}、IVc=${ivc ? "あり" : "なし"}`
+      ];
+
+      let level = "none";
+      let title = "IgG4-SC 2020では該当なし";
+      let note = "入力された項目だけでは、確診・準確診・疑診の組み合わせに達していません。胆管癌、膵癌、PSCなどの除外は別途必要です。";
+
+      if (ivc) {
+        level = "definite";
+        title = "確診: 病理組織学的確診";
+        note = "IVcを満たします。病理所見として i、ii、v に加えて iii または iv を認める組み合わせです。";
+      } else if (va && type12 && iAny && iiAny && (iii || vi)) {
+        level = "definite";
+        title = "確診: Vaあり、Type 1/2";
+        note = "胆管像分類 Type 1/2で、Ia/b + IIa/b + III/VIを満たします。";
+      } else if (va && type34 && ia && iia && ivb && (iii || vi)) {
+        level = "definite";
+        title = "確診: Vaあり、Type 3/4";
+        note = "胆管像分類 Type 3/4で、Ia + IIa + IVb + III/VIを満たします。";
+      } else if (!va && typeAny && ia && iia && iii && (iva || vi)) {
+        level = "definite";
+        title = "確診: Vaなし";
+        note = "胆管像分類 Type 1-4で、Ia + IIa + III + IVa/VIを満たします。";
+      } else if (va && type12 && iAny && iiAny) {
+        level = "probable";
+        title = "準確診: Vaあり、Type 1/2";
+        note = "胆管像分類 Type 1/2で、Ia/b + IIa/bを満たします。";
+      } else if (va && type34 && ((ia && iia && ivb) || (iAny && iib && vi))) {
+        level = "probable";
+        title = "準確診: Vaあり、Type 3/4";
+        note = "胆管像分類 Type 3/4で、Ia + IIa + IVb、またはIa/b + IIb + VIを満たします。";
+      } else if (!va && typeAny && ((ia && iia && iva) || (ia && iia && iii && ivb) || (ib && iia && iii && vi))) {
+        level = "probable";
+        title = "準確診: Vaなし";
+        note = "胆管像分類 Type 1-4で、Ia + IIa + IVa、Ia + IIa + III + IVb、またはIb + IIa + III + VIを満たします。";
+      } else if (va && type34 && ((iAny && iia) || (ib && iib && iii))) {
+        level = "possible";
+        title = "疑診: Vaあり、Type 3/4";
+        note = "胆管像分類 Type 3/4で、Ia/b + IIa、またはIb + IIb + IIIを満たします。";
+      } else if (!va && typeAny && ((ia && iia && (iii || vb || vi)) || (ib && iib && iii && vi))) {
+        level = "possible";
+        title = "疑診: Vaなし";
+        note = "胆管像分類 Type 1-4で、Ia + IIa + III/Vb/VI、またはIb + IIb + III + VIを満たします。";
+      } else if (!typeAny && (iAny || iiAny || iii || va || vb || vi || iva || ivb || ivc)) {
+        note = "IgG4-SC 2020の判定には胆管像分類 Type 1-4の選択が必要です。胆管像分類を選んで再計算してください。";
+      }
+
+      renderResult(
+        $("#result-igg4sc"),
+        level,
+        title,
+        note,
+        facts,
+        "参照: IgG4関連硬化性胆管炎臨床診断基準2020。悪性疾患および原発性硬化性胆管炎などの除外は専門的判断で行ってください。"
+      );
+    }
+
     function resetWithin(screenId) {
       const screen = document.getElementById(screenId);
       $$("input[type='checkbox']", screen).forEach(input => input.checked = false);
@@ -879,19 +1289,30 @@
       });
     });
 
+    $$(".back-top").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelector(".tool-header").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
     $("#calc-jps").addEventListener("click", calcJps);
     $("#calc-icdc").addEventListener("click", calcIcdc);
     $("#calc-histology").addEventListener("click", calcHistology);
+    $("#calc-comprehensive").addEventListener("click", calcComprehensive);
+    $("#calc-igg4sc").addEventListener("click", calcIgg4Sc);
     $("#calc-all").addEventListener("click", () => {
       calcJps();
       calcIcdc();
       calcHistology();
-      document.getElementById("summary").scrollIntoView({ behavior: "smooth", block: "start" });
+      calcComprehensive();
+      calcIgg4Sc();
+      document.getElementById("result-jps").scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
     $("#reset-jps").addEventListener("click", () => {
       resetWithin("screen-jps");
       resetResult($("#result-jps"), "2018診断基準", "計算後、確診・準確診・疑診と根拠を表示します。");
+      resetResult($("#result-jps2011"), "2011診断基準（参考）", "同じ入力項目から、研究入力などで用いる2011基準の確診・準確診・疑診を参考表示します。");
     });
     $("#reset-icdc").addEventListener("click", () => {
       resetWithin("screen-icdc");
@@ -901,13 +1322,26 @@
       resetWithin("screen-histology");
       resetResult($("#result-histology"), "病理4所見", "3件以上なら「あり」と判定します。");
     });
+    $("#reset-comprehensive").addEventListener("click", () => {
+      resetWithin("screen-comprehensive");
+      resetResult($("#result-comprehensive"), "IgG4-RD 包括診断基準2020", "計算後、確定診断群・準確診群・疑診群と根拠を表示します。");
+    });
+    $("#reset-igg4sc").addEventListener("click", () => {
+      resetWithin("screen-igg4sc");
+      resetResult($("#result-igg4sc"), "IgG4-SC 2020", "計算後、確診・準確診・疑診と根拠を表示します。");
+    });
     $("#reset-all").addEventListener("click", () => {
       resetWithin("screen-jps");
       resetWithin("screen-icdc");
       resetWithin("screen-histology");
+      resetWithin("screen-comprehensive");
+      resetWithin("screen-igg4sc");
       resetResult($("#result-jps"), "2018診断基準", "計算後、確診・準確診・疑診と根拠を表示します。");
+      resetResult($("#result-jps2011"), "2011診断基準（参考）", "同じ入力項目から、研究入力などで用いる2011基準の確診・準確診・疑診を参考表示します。");
       resetResult($("#result-icdc"), "ICDC", "計算後、1型/2型AIPの確診・準確診、またはAIP疑診を表示します。");
       resetResult($("#result-histology"), "病理4所見", "3件以上なら「あり」と判定します。");
+      resetResult($("#result-comprehensive"), "IgG4-RD 包括診断基準2020", "計算後、確定診断群・準確診群・疑診群と根拠を表示します。");
+      resetResult($("#result-igg4sc"), "IgG4-SC 2020", "計算後、確診・準確診・疑診と根拠を表示します。");
     });
   </script>
   <script src="../script.js"></script>
