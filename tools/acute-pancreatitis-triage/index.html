@@ -102,46 +102,42 @@
         </div></details>
 
         <div class="section-title">5）その他の重症度・予後スコア</div>
-        <details open><summary>基本情報・共通入力（BISAP・HAPS・qSOFA・SOFA・PASS）</summary><div class="fields">
+        <details open><summary>基本情報・バイタル・呼吸（BISAP・qSOFA・SOFA・PASS）</summary><div class="fields">
           <div class="field"><label for="sex">性別</label><select id="sex"><option value="">未選択</option><option value="male">男性</option><option value="female">女性</option></select></div>
           <div class="field"><label for="age">年齢区分</label><select id="age"><option value="">未選択</option><option value="30">16〜39歳</option><option value="42">40〜44歳</option><option value="47">45〜49歳</option><option value="52">50〜54歳</option><option value="57">55〜59歳</option><option value="60">60歳</option><option value="62">61〜64歳</option><option value="67">65〜69歳</option><option value="72">70〜74歳</option><option value="77">75〜79歳</option><option value="82">80〜84歳</option><option value="87">85〜89歳</option><option value="92">90〜94歳</option><option value="97">95〜99歳</option><option value="100">100歳以上</option></select></div>
-          <div class="field"><label>腹痛</label><select id="abdominalPain"><option value="">未選択</option><option value="yes">あり</option><option value="no">なし</option></select></div>
-          <div class="field"><label>腹痛 NRS</label><select id="pain"><option value="">未選択</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select><small>PASS：0〜10 ×5点</small></div>
-          <div class="field"><label>SIRS項目数</label><select id="sirs"><option value="">未選択</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select><small>BISAPは2項目以上、PASSは項目数×25点</small></div>
-          <div class="field"><label>BUN</label><div class="unit"><input id="bun" type="number" step="0.1"><b>mg/dL</b></div></div>
-          <div class="field"><label>Cr</label><div class="unit"><input id="cr" type="number" step="0.01"><b>mg/dL</b></div></div>
-          <div class="field"><label>血小板</label><div class="unit"><input id="plt" type="number" step="0.1" placeholder="例 18.5"><b>万/µL</b></div></div>
-          <div class="field"><label>PaO₂</label><select id="pao2"><option value="">未選択</option></select><small>10 mmHg刻み</small></div>
-          <div class="field"><label>GCS E：開眼</label><select id="gcsE"><option value="">未選択</option><option value="4">自発開眼（E4）</option><option value="3">呼びかけで開眼（E3）</option><option value="2">痛み刺激で開眼（E2）</option><option value="1">開眼なし（E1）</option></select></div>
-          <div class="field"><label>GCS V：言語反応</label><select id="gcsV"><option value="">未選択</option><option value="5">見当識あり（V5）</option><option value="4">混乱した会話（V4）</option><option value="3">不適切な言葉（V3）</option><option value="2">理解不能の音声（V2）</option><option value="1">発声なし（V1）</option></select></div>
-          <div class="field"><label>GCS M：運動反応</label><select id="gcsM"><option value="">未選択</option><option value="6">命令に従う（M6）</option><option value="5">疼痛部位を払いのける（M5）</option><option value="4">逃避反応（M4）</option><option value="3">異常屈曲（M3）</option><option value="2">伸展反応（M2）</option><option value="1">運動反応なし（M1）</option></select></div>
-          <div class="field"><label for="gcs">GCS合計</label><input id="gcs" type="number" readonly placeholder="E+V+Mで自動計算"><small>E（開眼）＋V（言語）＋M（運動）＝3〜15点</small></div>
-          <div class="field"><label>反跳痛／筋性防御</label><select id="guarding"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select></div>
-          <div class="field"><label>胸水</label><select id="effusion"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select></div>
-          <div class="field"><label>Ht</label><div class="unit"><input id="hct" type="number" step="0.1"><b>%</b></div></div>
-          <div class="field"><label>WBC</label><div class="unit"><input id="wbc" type="number" step="100" placeholder="例 12500"><b>/µL</b></div></div>
-        </div></details>
-
-        <details><summary>バイタル・呼吸</summary><div class="fields">
+          <div class="field"><label>収縮期血圧</label><div class="unit"><input id="sbp" type="number" step="1"><b>mmHg</b></div><small>qSOFA：100 mmHg以下で1点</small></div>
           <div class="field"><label>直腸温</label><div class="unit"><input id="temp" type="number" step="0.1"><b>°C</b></div></div>
           <div class="field"><label>平均血圧（MAP）</label><div class="unit"><input id="map" type="number" step="1"><b>mmHg</b></div></div>
           <div class="field"><label>心拍数</label><div class="unit"><input id="hr" type="number" step="1"><b>/min</b></div></div>
           <div class="field"><label>呼吸数</label><select id="rr"><option value="">未選択</option></select><small>10・12・14・16〜30回/分を選択</small></div>
+          <div class="field"><label>SIRS項目数</label><select id="sirs"><option value="">未選択</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select><small>BISAPは2項目以上、PASSは項目数×25点<br>体温 &gt;38℃または&lt;36℃、心拍数 &gt;90/分、呼吸数 &gt;20/分またはPaCO₂ &lt;32 mmHg、WBC &gt;12,000/µLまたは&lt;4,000/µLまたは幼若球 &gt;10%</small></div>
           <div class="field"><label>酸素投与方法</label><select id="o2device"><option value="">未選択</option><option value="room">室内気</option><option value="vent">挿管／人工呼吸器</option><option value="nasal">経鼻カヌラ</option><option value="mask">シンプル酸素マスク</option></select></div>
           <div class="field"><label id="o2settingLabel">酸素濃度／流量</label><select id="o2setting" disabled><option value="">投与方法を選択</option></select></div>
           <div class="field"><label>FiO₂（自動計算）</label><input id="fio2" type="number" min="0.21" max="1" step="0.01" readonly placeholder="酸素投与方法から計算"><small id="fio2note">—</small></div>
+          <div class="field"><label>PaO₂</label><select id="pao2"><option value="">未選択</option></select><small>10 mmHg刻み</small></div>
           <div class="field"><label>PaCO₂</label><select id="paco2"><option value="">未選択</option></select><small>10 mmHg刻み</small></div>
           <div class="field wide"><label>A–aDO₂（参考・自動計算）</label><div class="unit"><input id="aado2" type="number" step="1" readonly placeholder="FiO₂・PaO₂・PaCO₂を入力"><b>mmHg</b></div><small>PAO₂＝FiO₂×(760−47)−PaCO₂÷0.8、海面気圧・呼吸商0.8を仮定。</small></div>
+          <div class="field"><label>循環作動薬</label><select id="pressor"><option value="">未選択</option><option value="none">使用なし</option><option value="sofa2">ドパミン ≤5 またはドブタミン任意量</option><option value="sofa3">ドパミン &gt;5〜15 またはAd/NA ≤0.1 µg/kg/分</option><option value="sofa4">ドパミン &gt;15 またはAd/NA &gt;0.1 µg/kg/分</option></select></div>
+          <div class="field"><label>24時間モルヒネ換算量</label><div class="unit"><input id="med" type="number" min="0" step="0.1"><b>mg</b></div><small>PASS：経口モルヒネ換算量 ×5点<br>概算：ペチジン注射 mg ×0.3 ≒ 経口モルヒネ mg、フェンタニル静注 µg ×0.3 ≒ 経口モルヒネ mg。例：ペチジン100 mg、フェンタニル100 µgはいずれも経口モルヒネ約30 mg相当。院内基準を優先してください。</small></div>
+          <div class="field"><label>固形食の経口摂取</label><select id="oralIntolerance"><option value="">未選択</option><option value="no">摂取可能</option><option value="yes">摂取不能／不耐</option></select><small>PASS：不耐の場合40点</small></div>
+          <div class="field"><label>呼吸補助</label><select id="respSupport"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select><small>人工呼吸など。SOFA呼吸3〜4点の判定に使用</small></div>
         </div></details>
 
-        <details open><summary>SOFA・qSOFA・PASS 追加項目</summary><div class="fields">
-          <div class="field"><label>収縮期血圧</label><div class="unit"><input id="sbp" type="number" step="1"><b>mmHg</b></div><small>qSOFA：100 mmHg以下で1点</small></div>
-          <div class="field"><label>総ビリルビン</label><div class="unit"><input id="bilirubin" type="number" step="0.1"><b>mg/dL</b></div></div>
+        <details open><summary>腹痛・身体所見・意識・SOFA追加項目・採血</summary><div class="fields">
+          <div class="field"><label>腹痛 NRS</label><select id="pain"><option value="">未選択</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select><small>0は腹痛なしとして扱います。PASS：0〜10 ×5点</small></div>
+          <div class="field"><label>反跳痛／筋性防御</label><select id="guarding"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select></div>
+          <div class="field"><label>胸水</label><select id="effusion"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select></div>
+          <div class="field"><label>GCS E：開眼</label><select id="gcsE"><option value="">未選択</option><option value="4">自発開眼（E4）</option><option value="3">呼びかけで開眼（E3）</option><option value="2">痛み刺激で開眼（E2）</option><option value="1">開眼なし（E1）</option></select></div>
+          <div class="field"><label>GCS V：言語反応</label><select id="gcsV"><option value="">未選択</option><option value="5">見当識あり（V5）</option><option value="4">混乱した会話（V4）</option><option value="3">不適切な言葉（V3）</option><option value="2">理解不能の音声（V2）</option><option value="1">発声なし（V1）</option></select></div>
+          <div class="field"><label>GCS M：運動反応</label><select id="gcsM"><option value="">未選択</option><option value="6">命令に従う（M6）</option><option value="5">疼痛部位を払いのける（M5）</option><option value="4">逃避反応（M4）</option><option value="3">異常屈曲（M3）</option><option value="2">伸展反応（M2）</option><option value="1">運動反応なし（M1）</option></select></div>
+          <div class="field"><label for="gcs">GCS合計</label><input id="gcs" type="number" readonly placeholder="E+V+Mで自動計算"><small>E（開眼）＋V（言語）＋M（運動）＝3〜15点</small></div>
+          <div class="field"><label>総ビリルビン</label><div class="unit"><input id="bilirubin" type="number" step="0.1"><b>mg/dL</b></div><small>SOFA肝項目</small></div>
           <div class="field"><label>24時間尿量</label><div class="unit"><input id="urine" type="number" step="10"><b>mL/日</b></div><small>未入力時はCrでSOFA腎項目を評価</small></div>
-          <div class="field"><label>循環作動薬</label><select id="pressor"><option value="">未選択</option><option value="none">使用なし</option><option value="sofa2">ドパミン ≤5 またはドブタミン任意量</option><option value="sofa3">ドパミン &gt;5〜15 またはAd/NA ≤0.1 µg/kg/分</option><option value="sofa4">ドパミン &gt;15 またはAd/NA &gt;0.1 µg/kg/分</option></select></div>
-          <div class="field"><label>呼吸補助</label><select id="respSupport"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select><small>人工呼吸など。SOFA呼吸3〜4点の判定に使用</small></div>
-          <div class="field"><label>24時間モルヒネ換算量</label><div class="unit"><input id="med" type="number" min="0" step="0.1"><b>mg</b></div><small>PASS：経口モルヒネ換算量 ×5点</small></div>
-          <div class="field"><label>固形食の経口摂取</label><select id="oralIntolerance"><option value="">未選択</option><option value="no">摂取可能</option><option value="yes">摂取不能／不耐</option></select><small>PASS：不耐の場合40点</small></div>
+          <div class="field"><label>WBC</label><div class="unit"><input id="wbc" type="number" step="100" placeholder="例 12500"><b>/µL</b></div></div>
+          <div class="field"><label>Ht</label><div class="unit"><input id="hct" type="number" step="0.1"><b>%</b></div></div>
+          <div class="field"><label>血小板</label><div class="unit"><input id="plt" type="number" step="0.1" placeholder="例 18.5"><b>万/µL</b></div></div>
+          <div class="field"><label>BUN</label><div class="unit"><input id="bun" type="number" step="0.1"><b>mg/dL</b></div></div>
+          <div class="field"><label>Cr</label><div class="unit"><input id="cr" type="number" step="0.01"><b>mg/dL</b></div></div>
         </div></details>
         <div class="score-heading">BISAP・HAPS・qSOFA・SOFA・PASS</div>
         <div id="results" class="result-body"><div class="empty">5）の項目を入力すると各スコアが自動表示されます。</div></div>
@@ -305,7 +301,7 @@
       reportLine('血小板',val('plt')),
       reportLine('PaO₂',val('pao2')),
       reportLine('性別',checkedText('#sex option:checked')),
-      reportLine('腹痛',checkedText('#abdominalPain option:checked')),
+      reportLine('腹痛',val('pain')===''?'未入力':Number(val('pain'))===0?'なし（NRS 0）':'あり'),
       reportLine('腹痛NRS',val('pain')),
       reportLine('GCS E',checkedText('#gcsE option:checked')),
       reportLine('GCS V',checkedText('#gcsV option:checked')),
