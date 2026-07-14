@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>急性膵炎トリアージ</title>
+  <title>急性膵炎診断（研究用）</title>
   <meta name="description" content="急性膵炎の診断、重症度判定、各種予後スコアを学ぶための医療従事者向け教育支援ツールです。">
   <link rel="icon" type="image/png" href="../../assets/tokai-gastro-logo.png">
   <link rel="apple-touch-icon" href="../../assets/tokai-gastro-logo.png">
@@ -14,13 +14,13 @@
     .tool-header{background:linear-gradient(120deg,var(--navy),#164e63);color:#fff;padding:24px clamp(18px,4vw,52px)}
     .tool-header .bar{max-width:1440px;margin:auto;display:flex;align-items:flex-start;justify-content:space-between;gap:24px} h1{font-size:clamp(22px,3vw,34px);margin:0 0 4px;letter-spacing:.02em} .tool-header p{margin:0;color:#d9edf2;font-size:14px}.status{border:1px solid #ffffff55;border-radius:999px;padding:7px 12px;font-size:12px;white-space:nowrap}
     .notice{max-width:1440px;margin:18px auto 0;padding:0 18px}.notice div{background:#fff8e8;border:1px solid #ead39a;border-left:5px solid #c78a18;border-radius:10px;padding:12px 16px;font-size:13px;color:#654d1c}
-    .tool-main{max-width:1440px;margin:18px auto 54px;padding:0 18px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,.75fr);gap:20px;align-items:start}
+    .tool-main{max-width:1440px;margin:18px auto 54px;padding:0 18px;display:block}
     .panel{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 16px #1e40500b}.panel-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:center}.panel-head h2{font-size:17px;margin:0}.panel-head span{font-size:12px;color:var(--muted)}
     details{border-bottom:1px solid var(--line)} details:last-child{border-bottom:0} summary{cursor:pointer;list-style:none;padding:16px 20px;font-weight:700;display:flex;justify-content:space-between;align-items:center}summary::-webkit-details-marker{display:none}summary::after{content:"＋";color:var(--blue);font-size:20px;font-weight:400}details[open] summary::after{content:"−"}.hint{font-size:12px;font-weight:400;color:var(--muted);margin-left:auto;margin-right:14px}
     .fields{padding:0 20px 20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:5px}.field.wide{grid-column:span 2}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#405665}.field small{font-size:10px;color:var(--muted)}input,select{width:100%;min-height:42px;border:1px solid #cbd7de;border-radius:8px;background:#fff;padding:8px 10px;font:inherit;font-size:14px;color:var(--ink)}input:focus,select:focus{outline:3px solid #62b9cd33;border-color:var(--blue)}
     .switch{display:flex;align-items:center;gap:8px;min-height:42px}.switch input{width:18px;min-height:auto;height:18px}.switch label{font-size:13px;font-weight:500}.unit{position:relative}.unit input{padding-right:56px}.unit b{position:absolute;right:9px;bottom:11px;font-size:11px;color:var(--muted);font-weight:500}input[readonly]{background:#eef5f6;color:#214b59;font-weight:700}.checkcard{flex-direction:row;align-items:flex-start;border:1px solid var(--line);border-radius:9px;padding:10px;background:#fbfdfe}.checkcard input{width:18px;height:18px;min-height:auto;margin:2px 0 0}.checkcard label{font-size:13px;font-weight:600;cursor:pointer}.option-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.option-trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.choice-card{display:flex;gap:8px;align-items:flex-start;min-height:42px;padding:9px 10px;border:1px solid var(--line);border-radius:9px;background:#fbfdfe;font-size:12px;font-weight:600;cursor:pointer}.choice-card input{width:18px;height:18px;min-height:auto;margin:1px 0 0;accent-color:var(--blue);flex:0 0 auto}.choice-card:has(input:checked){border-color:var(--blue);background:#eaf4f6;color:#174c5c}.section-title{padding:14px 20px;background:#eaf4f6;border-bottom:1px solid #cbe0e5;color:#174c5c;font-weight:800}.inline-result{grid-column:1/-1;border-radius:10px;padding:11px 13px;background:#edf3f6;font-size:13px;font-weight:700;color:#405665}.inline-result.ok{background:#e3f4ee;color:var(--ok)}.inline-result.warn{background:#fff0d8;color:var(--warn)}.inline-result.danger{background:#fde8ea;color:var(--danger)}
     .actions{padding:16px 20px;display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);background:#fafcfd;border-radius:0 0 16px 16px}.actions button{border:0;border-radius:9px;padding:10px 16px;font-weight:700;cursor:pointer}.right-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.primary{background:var(--blue);color:#fff}.ghost{background:#eef3f5;color:#405665}
-    .results{position:sticky;top:14px}.result-body{padding:16px}.score{border:1px solid var(--line);border-radius:12px;padding:15px;margin-bottom:12px}.score:last-child{margin-bottom:0}.score-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.score h3{font-size:15px;margin:0}.value{font-size:24px;line-height:1;font-weight:800;color:var(--navy);white-space:nowrap}.tag{display:inline-block;margin-top:8px;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:700;background:#edf3f6;color:#526a78}.tag.ok{background:#e3f4ee;color:var(--ok)}.tag.warn{background:#fff0d8;color:var(--warn)}.tag.danger{background:#fde8ea;color:var(--danger)}.breakdown{margin:10px 0 0;padding:10px 0 0;border-top:1px dashed var(--line);font-size:11px;color:var(--muted)}.breakdown div{display:flex;justify-content:space-between;gap:8px}.missing{color:var(--warn);font-weight:700}.empty{padding:30px 18px;text-align:center;color:var(--muted);font-size:13px}.foot{font-size:11px;color:var(--muted);padding:0 18px 18px}.time{font-variant-numeric:tabular-nums}
+    .result-body{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:0 20px 20px}.score{border:1px solid var(--line);border-radius:12px;padding:15px;background:#fff}.score:last-child{margin-bottom:0}.score-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.score h3{font-size:15px;margin:0}.value{font-size:24px;line-height:1;font-weight:800;color:var(--navy);white-space:nowrap}.tag{display:inline-block;margin-top:8px;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:700;background:#edf3f6;color:#526a78}.tag.ok{background:#e3f4ee;color:var(--ok)}.tag.warn{background:#fff0d8;color:var(--warn)}.tag.danger{background:#fde8ea;color:var(--danger)}.breakdown{margin:10px 0 0;padding:10px 0 0;border-top:1px dashed var(--line);font-size:11px;color:var(--muted)}.breakdown div{display:flex;justify-content:space-between;gap:8px}.missing{color:var(--warn);font-weight:700}.empty{grid-column:1/-1;padding:24px 18px;text-align:center;color:var(--muted);font-size:13px}.foot{grid-column:1/-1;font-size:11px;color:var(--muted);padding:0 20px 18px}.time{font-variant-numeric:tabular-nums}.severity-result{font-size:18px;font-weight:900;padding:16px 18px;border-width:2px}.severity-result.danger{box-shadow:0 0 0 3px #fde8ea}.severity-result.ok{box-shadow:0 0 0 3px #e3f4ee}.score-heading{grid-column:1/-1;padding:14px 20px 8px;font-size:18px;font-weight:900;color:#174c5c}
     @media(max-width:980px){.tool-main{grid-template-columns:1fr}.results{position:static}}@media(max-width:680px){.fields{grid-template-columns:1fr 1fr}.field.wide{grid-column:span 2}.hint{display:none}}@media(max-width:470px){.fields{grid-template-columns:1fr}.field.wide{grid-column:span 1}.status{display:none}}
   </style>
 </head>
@@ -51,7 +51,7 @@
     </nav>
   </header>
 
-  <header class="tool-header"><div class="bar"><div><h1>急性膵炎 診断・重症度トリアージ</h1><p>改訂アトランタ分類・日本の重症度判定・各種予後スコア</p></div><div class="status">端末内で計算・データ送信なし</div></div></header>
+  <header class="tool-header"><div class="bar"><div><h1>急性膵炎診断（研究用）</h1><p>改訂アトランタ分類・日本の重症度判定・各種予後スコア</p></div><div class="status">端末内で計算・データ送信なし</div></div></header>
   <main class="tool-main">
     <section class="panel">
       <div class="panel-head"><h2>患者データ</h2><span>空欄は0点にせず「計算保留」</span></div>
@@ -75,15 +75,15 @@
 
         <div class="section-title">3）日本の重症度予後因子スコア（JSS 2008）</div>
         <details open><summary>予後因子9項目</summary><div class="fields">
-          <div class="field"><label>Base excess</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssBe" value="0">−3 mEq/Lより大きい</label><label class="choice-card"><input type="radio" name="jssBe" value="1">−3 mEq/L以下（＋1点）</label></div></div>
-          <div class="field"><label>PaO₂／呼吸不全</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssO2" value="0">PaO₂ &gt;60 mmHg</label><label class="choice-card"><input type="radio" name="jssO2" value="1">PaO₂ ≤60 mmHg／呼吸不全（＋1点）</label></div></div>
-          <div class="field"><label>BUN／Cr</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssRenal" value="0">BUN &lt;40 かつ Cr &lt;2</label><label class="choice-card"><input type="radio" name="jssRenal" value="1">BUN ≥40 または Cr ≥2（＋1点）</label></div></div>
-          <div class="field"><label>LDH</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssLdh" value="0">施設基準上限の2倍未満</label><label class="choice-card"><input type="radio" name="jssLdh" value="1">施設基準上限の2倍以上（＋1点）</label></div></div>
-          <div class="field"><label>血小板</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssPlt" value="0">10万/µLより多い</label><label class="choice-card"><input type="radio" name="jssPlt" value="1">10万/µL以下（＋1点）</label></div></div>
-          <div class="field"><label>補正Ca</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssCa" value="0">7.5 mg/dLより高い</label><label class="choice-card"><input type="radio" name="jssCa" value="1">7.5 mg/dL以下（＋1点）</label></div></div>
-          <div class="field"><label>CRP</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssCrp" value="0">15 mg/dL未満</label><label class="choice-card"><input type="radio" name="jssCrp" value="1">15 mg/dL以上（＋1点）</label></div></div>
-          <div class="field"><label>SIRS</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssSirs" value="0">該当0〜2項目</label><label class="choice-card"><input type="radio" name="jssSirs" value="1">該当3項目以上（＋1点）</label></div></div>
-          <div class="field"><label>年齢</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssAge" value="0">70歳未満</label><label class="choice-card"><input type="radio" name="jssAge" value="1">70歳以上（＋1点）</label></div></div>
+          <div class="field"><label>Base excess</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssBe" value="0" checked>−3 mEq/Lより大きい</label><label class="choice-card"><input type="radio" name="jssBe" value="1">−3 mEq/L以下（＋1点）</label></div></div>
+          <div class="field"><label>PaO₂／呼吸不全</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssO2" value="0" checked>PaO₂ &gt;60 mmHg</label><label class="choice-card"><input type="radio" name="jssO2" value="1">PaO₂ ≤60 mmHg／呼吸不全（＋1点）</label></div></div>
+          <div class="field"><label>BUN／Cr</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssRenal" value="0" checked>BUN &lt;40 かつ Cr &lt;2</label><label class="choice-card"><input type="radio" name="jssRenal" value="1">BUN ≥40 または Cr ≥2（＋1点）</label></div></div>
+          <div class="field"><label>LDH</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssLdh" value="0" checked>施設基準上限の2倍未満</label><label class="choice-card"><input type="radio" name="jssLdh" value="1">施設基準上限の2倍以上（＋1点）</label></div></div>
+          <div class="field"><label>血小板</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssPlt" value="0" checked>10万/µLより多い</label><label class="choice-card"><input type="radio" name="jssPlt" value="1">10万/µL以下（＋1点）</label></div></div>
+          <div class="field"><label>補正Ca</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssCa" value="0" checked>7.5 mg/dLより高い</label><label class="choice-card"><input type="radio" name="jssCa" value="1">7.5 mg/dL以下（＋1点）</label></div></div>
+          <div class="field"><label>CRP</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssCrp" value="0" checked>15 mg/dL未満</label><label class="choice-card"><input type="radio" name="jssCrp" value="1">15 mg/dL以上（＋1点）</label></div></div>
+          <div class="field"><label>SIRS</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssSirs" value="0" checked>該当0〜2項目</label><label class="choice-card"><input type="radio" name="jssSirs" value="1">該当3項目以上（＋1点）</label></div></div>
+          <div class="field"><label>年齢</label><div class="option-pair"><label class="choice-card"><input type="radio" name="jssAge" value="0" checked>70歳未満</label><label class="choice-card"><input type="radio" name="jssAge" value="1">70歳以上（＋1点）</label></div></div>
           <div class="inline-result">各項目で下段の「＋1点」を選んだ数が予後因子スコアです。</div>
         </div></details>
 
@@ -95,22 +95,27 @@
 
         <div class="section-title">4）CT Grade by contrast-enhanced CT</div>
         <details open><summary>造影CT Gradeと日本の重症急性膵炎判定</summary><div class="fields">
-          <div class="field full"><label>膵外炎症進展</label><div class="option-trio"><label class="choice-card"><input type="radio" name="ctInflammation" value="0">前腎傍腔まで（0点）</label><label class="choice-card"><input type="radio" name="ctInflammation" value="1">結腸間膜根部まで（1点）</label><label class="choice-card"><input type="radio" name="ctInflammation" value="2">腎下極以遠（2点）</label></div></div>
-          <div class="field full"><label>膵造影不良域</label><div class="option-trio"><label class="choice-card"><input type="radio" name="ctEnhancement" value="0">1区域内または膵周囲のみ（0点）</label><label class="choice-card"><input type="radio" name="ctEnhancement" value="1">2区域に及ぶ（1点）</label><label class="choice-card"><input type="radio" name="ctEnhancement" value="2">2区域を超える（2点）</label></div><small>膵を頭・体・尾に区分します。</small></div>
+          <div class="field full"><label>膵外炎症進展</label><div class="option-trio"><label class="choice-card"><input type="radio" name="ctInflammation" value="0" checked>前腎傍腔まで（0点）</label><label class="choice-card"><input type="radio" name="ctInflammation" value="1">結腸間膜根部まで（1点）</label><label class="choice-card"><input type="radio" name="ctInflammation" value="2">腎下極以遠（2点）</label></div></div>
+          <div class="field full"><label>膵造影不良域</label><div class="option-trio"><label class="choice-card"><input type="radio" name="ctEnhancement" value="0" checked>1区域内または膵周囲のみ（0点）</label><label class="choice-card"><input type="radio" name="ctEnhancement" value="1">2区域に及ぶ（1点）</label><label class="choice-card"><input type="radio" name="ctEnhancement" value="2">2区域を超える（2点）</label></div><small>膵を頭・体・尾に区分します。</small></div>
           <div id="ctResult" class="inline-result">膵外炎症進展と膵造影不良域を選択すると、CT Gradeを自動表示します。</div>
           <div id="jssCombinedResult" class="inline-result">予後因子スコア ≥3 または CT Grade ≥2 で重症</div>
         </div></details>
 
         <div class="section-title">5）その他の重症度・予後スコア</div>
-        <details open><summary>基本・診察（BISAP・HAPS・SOFA・qSOFA）</summary><div class="fields">
+        <details open><summary>基本情報・共通入力（BISAP・HAPS・qSOFA・SOFA・PASS）</summary><div class="fields">
+          <div class="field"><label for="sex">性別</label><select id="sex"><option value="">未選択</option><option value="male">男性</option><option value="female">女性</option></select></div>
           <div class="field"><label for="age">年齢区分</label><select id="age"><option value="">未選択</option><option value="30">16〜39歳</option><option value="42">40〜44歳</option><option value="47">45〜49歳</option><option value="52">50〜54歳</option><option value="57">55〜59歳</option><option value="60">60歳</option><option value="62">61〜64歳</option><option value="67">65〜69歳</option><option value="72">70〜74歳</option><option value="77">75〜79歳</option><option value="82">80〜84歳</option><option value="87">85〜89歳</option><option value="92">90〜94歳</option><option value="97">95〜99歳</option><option value="100">100歳以上</option></select></div>
+          <div class="field"><label>腹痛</label><select id="abdominalPain"><option value="">未選択</option><option value="yes">あり</option><option value="no">なし</option></select></div>
+          <div class="field"><label>腹痛 NRS</label><select id="pain"><option value="">未選択</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select><small>PASS：0〜10 ×5点</small></div>
           <div class="field"><label>SIRS項目数</label><select id="sirs"><option value="">未選択</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select><small>BISAPは2項目以上、PASSは項目数×25点</small></div>
           <div class="field"><label>BUN</label><div class="unit"><input id="bun" type="number" step="0.1"><b>mg/dL</b></div></div>
           <div class="field"><label>Cr</label><div class="unit"><input id="cr" type="number" step="0.01"><b>mg/dL</b></div></div>
           <div class="field"><label>血小板</label><div class="unit"><input id="plt" type="number" step="0.1" placeholder="例 18.5"><b>万/µL</b></div></div>
           <div class="field"><label>PaO₂</label><select id="pao2"><option value="">未選択</option></select><small>10 mmHg刻み</small></div>
-          <div class="field"><label for="sex">性別（HAPS用）</label><select id="sex"><option value="">未選択</option><option value="male">男性</option><option value="female">女性</option></select></div>
-          <div class="field"><label for="gcs">GCS</label><select id="gcs"><option value="">未選択</option><option>15</option><option>14</option><option>13</option><option>12</option><option>11</option><option>10</option><option>9</option><option>8</option><option>7</option><option>6</option><option>5</option><option>4</option><option>3</option></select><small>E4＋V5＋M6＝3〜15点。鎮静・挿管など評価阻害因子を併記。</small></div>
+          <div class="field"><label>GCS E：開眼</label><select id="gcsE"><option value="">未選択</option><option value="4">自発開眼（E4）</option><option value="3">呼びかけで開眼（E3）</option><option value="2">痛み刺激で開眼（E2）</option><option value="1">開眼なし（E1）</option></select></div>
+          <div class="field"><label>GCS V：言語反応</label><select id="gcsV"><option value="">未選択</option><option value="5">見当識あり（V5）</option><option value="4">混乱した会話（V4）</option><option value="3">不適切な言葉（V3）</option><option value="2">理解不能の音声（V2）</option><option value="1">発声なし（V1）</option></select></div>
+          <div class="field"><label>GCS M：運動反応</label><select id="gcsM"><option value="">未選択</option><option value="6">命令に従う（M6）</option><option value="5">疼痛部位を払いのける（M5）</option><option value="4">逃避反応（M4）</option><option value="3">異常屈曲（M3）</option><option value="2">伸展反応（M2）</option><option value="1">運動反応なし（M1）</option></select></div>
+          <div class="field"><label for="gcs">GCS合計</label><input id="gcs" type="number" readonly placeholder="E+V+Mで自動計算"><small>E（開眼）＋V（言語）＋M（運動）＝3〜15点</small></div>
           <div class="field"><label>反跳痛／筋性防御</label><select id="guarding"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select></div>
           <div class="field"><label>胸水</label><select id="effusion"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select></div>
           <div class="field"><label>Ht</label><div class="unit"><input id="hct" type="number" step="0.1"><b>%</b></div></div>
@@ -135,14 +140,15 @@
           <div class="field"><label>24時間尿量</label><div class="unit"><input id="urine" type="number" step="10"><b>mL/日</b></div><small>未入力時はCrでSOFA腎項目を評価</small></div>
           <div class="field"><label>循環作動薬</label><select id="pressor"><option value="">未選択</option><option value="none">使用なし</option><option value="sofa2">ドパミン ≤5 またはドブタミン任意量</option><option value="sofa3">ドパミン &gt;5〜15 またはAd/NA ≤0.1 µg/kg/分</option><option value="sofa4">ドパミン &gt;15 またはAd/NA &gt;0.1 µg/kg/分</option></select></div>
           <div class="field"><label>呼吸補助</label><select id="respSupport"><option value="">未選択</option><option value="no">なし</option><option value="yes">あり</option></select><small>人工呼吸など。SOFA呼吸3〜4点の判定に使用</small></div>
-          <div class="field"><label>腹痛 NRS</label><select id="pain"><option value="">未選択</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select><small>PASS：0〜10 ×5点</small></div>
           <div class="field"><label>24時間モルヒネ換算量</label><div class="unit"><input id="med" type="number" min="0" step="0.1"><b>mg</b></div><small>PASS：経口モルヒネ換算量 ×5点</small></div>
           <div class="field"><label>固形食の経口摂取</label><select id="oralIntolerance"><option value="">未選択</option><option value="no">摂取可能</option><option value="yes">摂取不能／不耐</option></select><small>PASS：不耐の場合40点</small></div>
         </div></details>
+        <div class="score-heading">BISAP・HAPS・qSOFA・SOFA・PASS</div>
+        <div id="results" class="result-body"><div class="empty">5）の項目を入力すると各スコアが自動表示されます。</div></div>
+        <div class="foot">SOFA・qSOFA・SIRS単独では感染症や敗血症を診断できません。各スコアは研究・教育用の整理として扱い、臨床判断は患者所見を優先してください。</div>
         <div class="actions"><button class="ghost" type="reset">すべてクリア</button><div class="right-actions"><button class="ghost" type="button" id="downloadText">入力内容をテキスト保存</button><button class="primary" type="button" id="calc">再計算</button></div></div>
       </form>
     </section>
-    <aside class="panel results"><div class="panel-head"><h2>評価結果</h2><span id="stamp" class="time">入力待ち</span></div><div id="results" class="empty">左側の項目を入力すると<br>診断・重症度・各スコアが自動表示されます。</div><div class="foot">JSSは診断時、24時間以内、24–48時間で反復評価してください。SOFA・qSOFA・SIRS単独では感染症や敗血症を診断できません。</div></aside>
   </main>
   <div class="notice"><div><strong>臨床支援用：</strong>本ツールは診断・治療判断を代替しません。最新の院内基準・ガイドラインと原資料を確認し、患者所見を優先してください。</div></div>
 <script>
@@ -186,14 +192,17 @@
     const measured=num('caMeasured'), albumin=num('albumin');
     $('ca').value=(measured===null||albumin===null)?'':(albumin<4?measured+(4-albumin):measured).toFixed(1);
   }
+  function updateGcs(){
+    const e=num('gcsE'), v=num('gcsV'), m=num('gcsM');
+    $('gcs').value=(e===null||v===null||m===null)?'':String(e+v+m);
+  }
   function card(title,value,label,kind,lines,missing=[]){return `<article class="score"><div class="score-top"><div><h3>${title}</h3>${tag(label,kind)}</div><div class="value">${value}</div></div><div class="breakdown">${lines.map(x=>`<div><span>${x[0]}</span><b>${x[1]}</b></div>`).join('')}${missing.length?`<div class="missing"><span>不足項目</span><b>${missing.join('、')}</b></div>`:''}</div></article>`}
   function calculate(){
-    updateAa(); updateCalcium();
+    updateAa(); updateCalcium(); updateGcs();
     const age=num('age'), bun=num('bun'), cr=num('cr'), hct=num('hct'), sirs=num('sirs'), gcs=num('gcs'); let html='';
     // Revised Atlanta diagnosis
     const dxItems=[['典型的腹痛',$('dxPain').checked],['膵酵素 ≥3×ULN',$('dxEnzyme').checked],['特徴的画像所見',$('dxImaging').checked]], dxCount=dxItems.filter(x=>x[1]).length, dxPositive=dxCount>=2;
     $('dxResult').className=`inline-result ${dxPositive?'ok':'warn'}`;$('dxResult').textContent=`${dxCount} / 3項目：${dxPositive?'急性膵炎の診断基準を満たす':'診断基準未達（2項目以上必要）'}`;
-    html+=card('1. 改訂アトランタ：診断',`${dxCount} / 3`,dxPositive?'診断基準を満たす':'2項目未満',dxPositive?'ok':'warn',dxItems.map(x=>[x[0],x[1]?'該当':'非該当']));
     // Revised Atlanta severity
     const organs=[['呼吸不全',$('ofResp').checked],['循環不全',$('ofCv').checked],['腎不全',$('ofRenal').checked]], anyOrgan=organs.some(x=>x[1]), duration=val('ofDuration'), hasComp=$('localComp').checked||$('systemicComp').checked;
     let atlanta='計算保留', atlantaKind='warn', atlantaNote='臓器不全の有無・持続時間を選択';
@@ -202,11 +211,9 @@
     else if(!anyOrgan&&duration==='none'&&!hasComp){atlanta='軽症',atlantaKind='ok',atlantaNote='臓器不全・局所／全身合併症なし'}
     else if(!anyOrgan&&(duration==='transient'||duration==='persistent')){atlantaNote='臓器不全の種類にもチェックが必要'}
     $('atlantaResult').className=`inline-result ${atlantaKind}`;$('atlantaResult').textContent=`${atlanta}：${atlantaNote}`;
-    html+=card('2. 改訂アトランタ：重症度',atlanta,atlantaNote,atlantaKind,[...organs.map(x=>[x[0],x[1]?'あり':'なし']),['持続時間',duration==='persistent'?'48時間超':duration==='transient'?'48時間未満':duration==='none'?'なし':'未選択'],['局所／全身合併症',hasComp?'あり':'なし']]);
     // Japanese prognostic factor score and contrast-enhanced CT grade
     const jdefs=[['Base excess ≤−3','jssBe'],['PaO₂ ≤60／呼吸不全','jssO2'],['BUN ≥40 または Cr ≥2','jssRenal'],['LDH ≥2×ULN','jssLdh'],['血小板 ≤10万','jssPlt'],['補正Ca ≤7.5','jssCa'],['CRP ≥15','jssCrp'],['SIRS ≥3','jssSirs'],['年齢 ≥70','jssAge']];
     let js=0,jm=[];const jl=jdefs.map(([n,id])=>{const v=val(id);if(v===''){jm.push(n);return[n,'未選択']}const on=v==='1';js+=on?1:0;return[n,on?'+1':'0']});
-    html+=card('3. 日本の予後因子スコア',jm.length?'—':`${js} / 9`,jm.length?'計算保留':js>=3?'3点以上':'3点未満',jm.length?'warn':js>=3?'danger':'ok',jl,jm);
     const ctInfo=getCtGrade(),ct=ctInfo.grade;
     if(ct){
       $('ctResult').className=`inline-result ${Number(ct)>=2?'danger':'ok'}`;
@@ -218,15 +225,12 @@
     const japaneseSevere=(!jm.length&&js>=3)||Number(ct)>=2;let jpLabel='計算保留',jpKind='warn',jpNote='予後因子とCT Gradeを入力';
     if(japaneseSevere){jpLabel='重症急性膵炎',jpKind='danger',jpNote=Number(ct)>=2?'CT Grade 2以上':'予後因子スコア3点以上'}
     else if(!jm.length&&ct){jpLabel='重症基準を満たさない',jpKind='ok',jpNote='予後因子3点未満かつCT Grade 1'}
-    $('jssCombinedResult').className=`inline-result ${jpKind}`;$('jssCombinedResult').textContent=`${jpLabel}：${jpNote}`;
-    html+=card('4. 造影CT Grade・日本の重症判定',ct?`Grade ${ct}`:'—',jpLabel,jpKind,[['予後因子スコア',jm.length?'未確定':`${js} / 9`],['膵外炎症進展',ctInfo.inflammation===''?'未選択':`${ctInfo.inflammation}点`],['膵造影不良域',ctInfo.enhn===''?'未選択':`${ctInfo.enhn}点`],['造影CT Grade',ct?`Grade ${ct}`:'未評価'],['重症判定式','予後因子 ≥3 または CT Grade ≥2']],jm);
-    // SIRS
-    html+=card('SIRS',sirs===null?'—':`${sirs} / 4`,sirs===null?'計算保留':sirs>=2?'SIRS陽性':'SIRS陰性',sirs===null?'warn':sirs>=2?'danger':'ok',[["該当項目数",sirs===null?'未入力':sirs],['判定基準','2項目以上']],sirs===null?['SIRS項目数']:[]);
+    $('jssCombinedResult').className=`inline-result severity-result ${jpKind}`;$('jssCombinedResult').textContent=`日本の重症度判定：${jpLabel}（予後因子スコアとCT Gradeを合わせて判定：${jpNote}）`;
     // qSOFA
     const qMissing=[];let q=0;const rr=num('rr'),sbp=num('sbp');
     const qItems=[['呼吸数 ≥22',rr,rr>=22],['収縮期血圧 ≤100',sbp,sbp<=100],['意識変容（GCS <15）',gcs,gcs<15]];
     qItems.forEach(x=>{if(x[1]===null)qMissing.push(x[0]);else if(x[2])q++});
-    html+=card('qSOFA',qMissing.length?'—':`${q} / 3`,qMissing.length?'計算保留':q>=2?'高リスク（2点以上）':'2点未満',qMissing.length?'warn':q>=2?'danger':'ok',qItems.map(x=>[x[0],x[1]===null?'未入力':x[2]?'+1':'0']),qMissing);
+    const qCard=card('qSOFA',qMissing.length?'—':`${q} / 3`,qMissing.length?'計算保留':q>=2?'高リスク（2点以上）':'2点未満',qMissing.length?'warn':q>=2?'danger':'ok',qItems.map(x=>[x[0],x[1]===null?'未入力':x[2]?'+1':'0']),qMissing);
     // SOFA
     const sfMissing=[],sfLines=[];let sofa=0;
     const fioS=num('fio2'),paoS=num('pao2'),support=val('respSupport');
@@ -236,7 +240,7 @@
     const press=val('pressor'),mapS=num('map');if(!press||(press==='none'&&mapS===null)){sfMissing.push('循環');sfLines.push(['循環','未入力'])}else{const p=press==='sofa4'?4:press==='sofa3'?3:press==='sofa2'?2:mapS<70?1:0;sofa+=p;sfLines.push(['循環',`+${p}`])}
     if(gcs===null){sfMissing.push('GCS');sfLines.push(['中枢神経','未入力'])}else{const p=gcs<6?4:gcs<=9?3:gcs<=12?2:gcs<=14?1:0;sofa+=p;sfLines.push(['中枢神経（GCS）',`+${p}`])}
     const urine=num('urine');if(cr===null&&urine===null){sfMissing.push('Cr/尿量');sfLines.push(['腎','未入力'])}else{const cp=cr===null?0:cr>=5?4:cr>=3.5?3:cr>=2?2:cr>=1.2?1:0,up=urine===null?0:urine<200?4:urine<500?3:0,p=Math.max(cp,up);sofa+=p;sfLines.push(['腎（Cr/尿量の高い点）',`+${p}`])}
-    html+=card('SOFA',sfMissing.length?'—':`${sofa} / 24`,sfMissing.length?'計算保留':'6臓器合計',sfMissing.length?'warn':sofa>=2?'danger':'ok',sfLines,sfMissing);
+    const sofaCard=card('SOFA',sfMissing.length?'—':`${sofa} / 24`,sfMissing.length?'計算保留':'6臓器合計',sfMissing.length?'warn':sofa>=2?'danger':'ok',sfLines,sfMissing);
     // PASS
     const passMissing=[];let pass=0;const organCount=organs.filter(x=>x[1]).length,pain=num('pain'),med=num('med'),oral=val('oralIntolerance');pass+=organCount*100;
     const passLines=[['臓器不全',`${organCount}臓器 ×100 = ${organCount*100}`]];
@@ -244,16 +248,17 @@
     if(pain===null){passMissing.push('腹痛NRS')}else{pass+=pain*5;passLines.push(['腹痛',`${pain} ×5 = ${pain*5}`])}
     if(med===null){passMissing.push('モルヒネ換算量')}else{pass+=med*5;passLines.push(['モルヒネ換算',`${med} mg ×5 = ${Math.round(med*5*10)/10}`])}
     if(!oral){passMissing.push('経口摂取')}else{const p=oral==='yes'?40:0;pass+=p;passLines.push(['固形食不耐',`+${p}`])}
-    html+=card('PASS',passMissing.length?'—':Math.round(pass*10)/10,passMissing.length?'計算保留':pass>140?'活動性高値の報告域（>140）':'経時評価に使用',passMissing.length?'warn':pass>140?'danger':'ok',passLines,passMissing);
+    const passCard=card('PASS',passMissing.length?'—':Math.round(pass*10)/10,passMissing.length?'計算保留':pass>140?'活動性高値の報告域（>140）':'経時評価に使用',passMissing.length?'warn':pass>140?'danger':'ok',passLines,passMissing);
     // BISAP
     const bm=[]; let bs=0; const bitems=[['BUN >25',bun,bun>25],['GCS <15',gcs,gcs<15],['SIRS ≥2',sirs,sirs>=2],['年齢 >60',age,age>60],['胸水',val('effusion')||null,val('effusion')==='yes']];
     bitems.forEach(([n,v,on])=>{if(v===null)bm.push(n);else {bs+=on?1:0}});
-    html+=card('BISAP',bm.length?'—':`${bs} / 5`,bm.length?'計算保留':bs>=3?'高リスク':'低リスク',bm.length?'warn':bs>=3?'danger':'ok',bitems.map(x=>[x[0],x[1]===null?'未入力':x[2]?'+1':'0']),bm);
+    const bisapCard=card('BISAP',bm.length?'—':`${bs} / 5`,bm.length?'計算保留':bs>=3?'高リスク':'低リスク',bm.length?'warn':bs>=3?'danger':'ok',bitems.map(x=>[x[0],x[1]===null?'未入力':x[2]?'+1':'0']),bm);
     // HAPS
     const hm=[]; if(!val('sex'))hm.push('性別'); if(!val('guarding'))hm.push('腹膜刺激徴候'); if(cr===null)hm.push('Cr'); if(hct===null)hm.push('Ht');
     const hctNormal=val('sex')==='male'?hct<=43:hct<=39.6, harmless=val('guarding')==='no'&&cr<=2&&hctNormal;
-    html+=card('HAPS',hm.length?'—':harmless?'HAPS陽性':'HAPS陰性',hm.length?'計算保留':harmless?'非重症経過を予測':'非重症を保証できない',hm.length?'warn':harmless?'ok':'danger',[["反跳痛／筋性防御",val('guarding')===''?'未入力':val('guarding')==='no'?'なし':'あり'],['Cr ≤2 mg/dL',cr===null?'未入力':cr<=2?'該当':'非該当'],['Ht 正常域',hct===null||!val('sex')?'未入力':hctNormal?'該当':'非該当']],hm);
-    $('results').className='result-body';$('results').innerHTML=html;$('stamp').textContent=new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})+' 更新';
+    const hapsCard=card('HAPS',hm.length?'—':harmless?'HAPS陽性':'HAPS陰性',hm.length?'計算保留':harmless?'非重症経過を予測':'非重症を保証できない',hm.length?'warn':harmless?'ok':'danger',[["反跳痛／筋性防御",val('guarding')===''?'未入力':val('guarding')==='no'?'なし':'あり'],['Cr ≤2 mg/dL',cr===null?'未入力':cr<=2?'該当':'非該当'],['Ht 正常域',hct===null||!val('sex')?'未入力':hctNormal?'該当':'非該当']],hm);
+    html=[bisapCard,hapsCard,qCard,sofaCard,passCard].join('');
+    $('results').className='result-body';$('results').innerHTML=html;
   }
   fillOptions('rr',[10,12,14,...Array.from({length:15},(_,i)=>i+16)],' /分');
   fillOptions('pao2',Array.from({length:60},(_,i)=>(i+1)*10),' mmHg');
@@ -300,10 +305,15 @@
       reportLine('血小板',val('plt')),
       reportLine('PaO₂',val('pao2')),
       reportLine('性別',checkedText('#sex option:checked')),
-      reportLine('GCS',val('gcs')),
+      reportLine('腹痛',checkedText('#abdominalPain option:checked')),
+      reportLine('腹痛NRS',val('pain')),
+      reportLine('GCS E',checkedText('#gcsE option:checked')),
+      reportLine('GCS V',checkedText('#gcsV option:checked')),
+      reportLine('GCS M',checkedText('#gcsM option:checked')),
+      reportLine('GCS合計',val('gcs')),
       reportLine('胸水',checkedText('#effusion option:checked')),
       '',
-      '評価結果',
+      'BISAP・HAPS・qSOFA・SOFA・PASS',
       $('results').innerText.replace(/\n{3,}/g,'\n\n')
     ];
     const blob=new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'});
@@ -316,7 +326,12 @@
     URL.revokeObjectURL(url);
   }
   $('form').addEventListener('input',e=>{if(e.target.id==='o2device'||e.target.id==='o2setting')updateOxygen();calculate()});
-  $('form').addEventListener('change',e=>{if(e.target.id==='o2device'||e.target.id==='o2setting')updateOxygen();calculate()});$('calc').addEventListener('click',calculate);$('downloadText').addEventListener('click',downloadTextReport);$('form').addEventListener('reset',()=>setTimeout(()=>{updateOxygen();updateCalcium();$('dxResult').className='inline-result';$('dxResult').textContent='3項目中2項目以上で急性膵炎と診断';$('atlantaResult').className='inline-result';$('atlantaResult').textContent='臓器不全・合併症を選択してください';$('ctResult').className='inline-result';$('ctResult').textContent='膵外炎症進展と膵造影不良域を選択すると、CT Gradeを自動表示します。';$('jssCombinedResult').className='inline-result';$('jssCombinedResult').textContent='予後因子スコア ≥3 または CT Grade ≥2 で重症';$('results').className='empty';$('results').innerHTML='左側の項目を入力すると<br>診断・重症度・各スコアが自動表示されます。';$('stamp').textContent='入力待ち'},0));
+  $('form').addEventListener('change',e=>{if(e.target.id==='o2device'||e.target.id==='o2setting')updateOxygen();calculate()});
+  $('calc').addEventListener('click',calculate);
+  $('downloadText').addEventListener('click',downloadTextReport);
+  $('form').addEventListener('reset',()=>setTimeout(()=>{updateOxygen();updateCalcium();updateGcs();calculate()},0));
+  updateOxygen();
+  calculate();
 </script>
 <script src="../../script.js"></script>
 </body>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IPMN診療方針支援ツール</title>
+  <title>IPMN診療方針（研究用）</title>
   <meta name="description" content="IPMNの危険所見、京都国際ガイドライン、AGA、欧州/EPCガイドライン、DART-1リンク、家族性膵癌スクリーニング対象を整理する医療従事者向け教育支援ツールです。">
   <link rel="icon" type="image/png" href="../../assets/tokai-gastro-logo.png">
   <link rel="apple-touch-icon" href="../../assets/tokai-gastro-logo.png">
@@ -12,10 +12,10 @@
     :root{--navy:#12304a;--blue:#176b87;--green:#0f766e;--green2:#e8f5f2;--bg:#f3f6f8;--card:#fff;--ink:#172b3a;--muted:#617684;--line:#d9e3e7;--red:#aa2e38;--redbg:#fff0f1;--amber:#93600a;--amberbg:#fff7e5;--ok:#16715a;--okbg:#eaf7f2}
     *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Sans",sans-serif;line-height:1.62}
     .tool-header{background:linear-gradient(120deg,var(--navy),#17657b);color:#fff;padding:24px clamp(18px,4vw,48px)}.head,.wrap{max-width:1360px;margin:auto}.head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.head h1{font-size:clamp(23px,3vw,34px);margin:0 0 3px}.head p{margin:0;color:#d8edf1;font-size:13px}.local{border:1px solid #ffffff55;border-radius:99px;padding:6px 11px;font-size:11px;white-space:nowrap}
-    .tool-main{padding:18px 18px 54px}.layout{display:grid;grid-template-columns:minmax(0,1.36fr) minmax(350px,.78fr);gap:18px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 14px #17394a0b;margin-bottom:16px;overflow:hidden}.card-head{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.card-head h2{font-size:18px;margin:0}.card-head span{font-size:11px;color:var(--muted)}.body{padding:16px 18px}
+    .tool-main{padding:18px 18px 54px}.layout{display:grid;gap:18px;align-items:start}.decision-columns{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.75fr);gap:18px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 14px #17394a0b;margin-bottom:16px;overflow:hidden}.card-head{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.card-head h2{font-size:18px;margin:0}.card-head span{font-size:11px;color:var(--muted)}.body{padding:16px 18px}
     .summary-paper{display:grid;gap:8px;margin:0;padding-left:20px}.summary-paper li{font-size:13px}.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.guide-card{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fbfdfe}.guide-card h3{margin:0 0 6px;font-size:15px;color:var(--navy)}.guide-card p{margin:0;color:var(--muted);font-size:12px}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}fieldset{border:0;margin:0 0 16px;padding:0}legend{font-size:14px;font-weight:900;color:#405765;margin-bottom:8px}.check{display:flex;gap:9px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;cursor:pointer;min-height:54px}.check:hover{border-color:#9cb7c1}.check input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--blue);flex:0 0 auto}.check span:first-of-type{font-size:13px;font-weight:700}.check small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-size:12px;font-weight:800;color:#405765}.field input,.field select{width:100%;min-height:40px;border:1px solid #cbd8dd;border-radius:8px;padding:7px 9px;font:inherit;font-size:13px;background:#fff}.inline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}.actions button{border:0;border-radius:9px;padding:9px 13px;font-weight:800;cursor:pointer}.reset{background:#eaf0f2;color:#3c5360}.primary,.external-link{background:var(--blue);color:#fff}.external-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:9px;padding:9px 13px;font-weight:800;font-size:13px}
-    .result-panel{position:sticky;top:12px}.result-box{padding:15px;border-radius:12px;border:1px solid var(--line);background:#f7fafb;margin-bottom:12px}.result-box h3{margin:0 0 8px;font-size:16px}.badge{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:900;margin:0 5px 8px 0}.badge.ok{background:var(--okbg);color:var(--ok)}.badge.warn{background:var(--amberbg);color:var(--amber)}.badge.danger{background:var(--redbg);color:var(--red)}.badge.info{background:#eaf3f7;color:#176b87}.recommend{margin:7px 0;padding:9px 11px;border-left:5px solid var(--blue);border-radius:8px;background:#f4f9fb;font-size:12px}.recommend.danger{border-color:var(--red);background:var(--redbg)}.recommend.warn{border-color:#e09318;background:var(--amberbg)}.recommend.ok{border-color:var(--ok);background:var(--okbg)}.muted{color:var(--muted);font-size:12px}.notice{background:#fff8e8;border:1px solid #ead39a;border-left:5px solid #c68a1d;border-radius:11px;padding:11px 15px;margin-top:16px;font-size:12px;color:#634d22}.refs{font-size:11px;color:var(--muted)}.refs ul{margin:0;padding-left:20px}.refs li{margin:5px 0}.family-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.formula{padding:12px;border-radius:10px;background:#eef7f6;color:#1f5f58;font-size:12px}
-    @media(max-width:980px){.layout{grid-template-columns:1fr}.result-panel{position:static}.guide-grid{grid-template-columns:1fr}}@media(max-width:680px){.field-grid,.inline,.family-grid{grid-template-columns:1fr}.local{display:none}}
+    .result-box,.section-result{padding:15px;border-radius:12px;border:1px solid var(--line);background:#f7fafb;margin:12px 0 18px}.result-box h3,.section-result h3{margin:0 0 8px;font-size:16px}.section-result{border-left:5px solid var(--blue)}.family-card{position:sticky;top:12px}.badge{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:900;margin:0 5px 8px 0}.badge.ok{background:var(--okbg);color:var(--ok)}.badge.warn{background:var(--amberbg);color:var(--amber)}.badge.danger{background:var(--redbg);color:var(--red)}.badge.info{background:#eaf3f7;color:#176b87}.recommend{margin:7px 0;padding:9px 11px;border-left:5px solid var(--blue);border-radius:8px;background:#f4f9fb;font-size:12px}.recommend.danger{border-color:var(--red);background:var(--redbg)}.recommend.warn{border-color:#e09318;background:var(--amberbg)}.recommend.ok{border-color:var(--ok);background:var(--okbg)}.muted{color:var(--muted);font-size:12px}.notice{background:#fff8e8;border:1px solid #ead39a;border-left:5px solid #c68a1d;border-radius:11px;padding:11px 15px;margin-top:16px;font-size:12px;color:#634d22}.refs{font-size:11px;color:var(--muted)}.refs ul{margin:0;padding-left:20px}.refs li{margin:5px 0}.family-grid{display:grid;grid-template-columns:1fr;gap:10px}.formula{padding:12px;border-radius:10px;background:#eef7f6;color:#1f5f58;font-size:12px}
+    @media(max-width:980px){.decision-columns{grid-template-columns:1fr}.family-card{position:static}.guide-grid{grid-template-columns:1fr}}@media(max-width:680px){.field-grid,.inline,.family-grid{grid-template-columns:1fr}.local{display:none}}
   </style>
 </head>
 <body>
@@ -36,7 +36,7 @@
     </nav>
   </header>
 
-  <header class="tool-header"><div class="head"><div><h1>IPMN診療方針支援ツール</h1><p>京都国際ガイドライン・AGA・欧州/EPC・DART-1・家族性膵癌スクリーニング対象の整理</p></div><div class="local">端末内で計算・データ送信なし</div></div></header>
+  <header class="tool-header"><div class="head"><div><h1>IPMN診療方針（研究用）</h1><p>京都国際ガイドライン・AGA・欧州/EPC・DART-1・家族性膵癌スクリーニング対象の整理</p></div><div class="local">端末内で計算・データ送信なし</div></div></header>
 
   <main class="tool-main wrap">
     <article class="card">
@@ -53,6 +53,7 @@
     </article>
 
     <div class="layout">
+      <div class="decision-columns">
       <section>
         <article class="card">
           <div class="card-head"><h2>入力項目</h2><span>危険所見と患者背景</span></div>
@@ -78,6 +79,7 @@
                 <label class="check"><input id="caliber" type="checkbox"><span>主膵管径変化＋尾側萎縮</span></label>
               </div>
             </fieldset>
+            <div class="section-result" id="kyotoResult"></div>
 
             <fieldset>
               <legend>AGA・EPCで重視する所見</legend>
@@ -88,16 +90,8 @@
                 <label class="check"><input id="fitSurgery" type="checkbox" checked><span>手術適応を検討できる全身状態</span></label>
               </div>
             </fieldset>
-
-            <fieldset>
-              <legend>家族性膵癌・遺伝性リスク（CAPS 2012目安）</legend>
-              <div class="family-grid">
-                <div class="field"><label for="fdrCount">膵癌の第一度近親者数</label><select id="fdrCount"><option value="0">0人</option><option value="1">1人</option><option value="2">2人以上</option></select></div>
-                <div class="field"><label for="kindred">家系内の膵癌集積</label><select id="kindred"><option value="none">なし・不明</option><option value="fpc">家族性膵癌家系</option></select></div>
-                <label class="check"><input id="pjs" type="checkbox"><span>Peutz-Jeghers症候群</span></label>
-                <label class="check"><input id="mutationWithFdr" type="checkbox"><span>p16 / BRCA2 / HNPCCなど＋膵癌FDRあり</span></label>
-              </div>
-            </fieldset>
+            <div class="section-result" id="agaResult"></div>
+            <div class="section-result" id="epcResult"></div>
 
             <div class="actions"><button class="reset" id="reset" type="button">リセット</button><button class="primary" id="calc" type="button">判定を更新</button></div>
           </div>
@@ -107,6 +101,7 @@
           <div class="card-head"><h2>外部計算ツール</h2><span>DART-1</span></div>
           <div class="body">
             <p class="muted">ランダ・アメリカリスク層別化ツール（DART-1）は、診断時に懸念すべき特徴や高リスク徴候のないIPMNが、3年または5年以内に1つ以上の懸念すべき特徴や高リスク徴候を発症する確率を計算します。</p>
+            <div class="section-result" id="dartResult"></div>
             <a class="external-link" href="https://rtools.mayo.edu/DART/" target="_blank" rel="noopener">DART-1計算式を開く</a>
           </div>
         </article>
@@ -123,10 +118,23 @@
         </article>
       </section>
 
-      <aside class="card result-panel">
-        <div class="card-head"><h2>判定結果</h2><span id="stamp">入力待ち</span></div>
-        <div class="body" id="results"></div>
+      <aside class="card family-card">
+        <div class="card-head"><h2>家族性膵癌・遺伝性リスク</h2><span>CAPS 2012目安</span></div>
+        <div class="body">
+          <fieldset>
+            <legend>スクリーニング対象の確認</legend>
+            <div class="family-grid">
+              <div class="field"><label for="fdrCount">膵癌の第一度近親者数</label><select id="fdrCount"><option value="0">0人</option><option value="1">1人</option><option value="2">2人以上</option></select></div>
+              <div class="field"><label for="kindred">家系内の膵癌集積</label><select id="kindred"><option value="none">なし・不明</option><option value="fpc">家族性膵癌家系</option></select></div>
+              <label class="check"><input id="pjs" type="checkbox"><span>Peutz-Jeghers症候群</span></label>
+              <label class="check"><input id="mutationWithFdr" type="checkbox"><span>p16 / BRCA2 / HNPCCなど＋膵癌FDRあり</span></label>
+            </div>
+          </fieldset>
+          <div class="section-result" id="familyResult"></div>
+          <div class="actions"><button class="primary" id="familyCalc" type="button">判定を更新</button></div>
+        </div>
       </aside>
+      </div>
     </div>
 
     <div class="notice"><strong>医療従事者向け教育支援：</strong>本ツールは診療判断を代替しません。IPMN以外の膵嚢胞性腫瘍、患者背景、画像の質、病理・細胞診、手術リスク、施設体制を含めて専門医が総合判断してください。</div>
@@ -188,15 +196,11 @@
     let dart=`${badge('DART-1', dartReady?'ok':'warn')}`;
     dart+=rec(dartReady?'HRS/WFがない初診時IPMNに近い条件です。DART-1外部計算式で3年・5年リスク推定を確認できます。':'HRS/WFがある場合、DART-1の対象条件から外れる可能性があります。まずガイドライン上のHRS/WF対応を優先してください。',dartReady?'ok':'warn');
 
-    $('results').innerHTML=[
-      `<div class="result-box"><h3>危険所見サマリー</h3>${badge(`HRS ${hrsCount}項目`,hrsCount?'danger':'ok')}${badge(`WF ${wfCount}項目`,wfCount?'warn':'ok')}<p class="muted">HRS/WFは京都国際ガイドラインの考え方に沿った簡易整理です。</p></div>`,
-      `<div class="result-box"><h3>京都国際ガイドライン</h3>${kyoto}</div>`,
-      `<div class="result-box"><h3>AGA</h3>${aga}</div>`,
-      `<div class="result-box"><h3>欧州/EPC</h3>${epc}</div>`,
-      `<div class="result-box"><h3>DART-1</h3>${dart}<a class="external-link" href="https://rtools.mayo.edu/DART/" target="_blank" rel="noopener">DART-1を開く</a></div>`,
-      `<div class="result-box"><h3>家族性膵癌家系</h3>${family}</div>`
-    ].join('');
-    $('stamp').textContent=new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})+' 更新';
+    $('kyotoResult').innerHTML=`<h3>京都国際ガイドライン判定</h3>${badge(`HRS ${hrsCount}項目`,hrsCount?'danger':'ok')}${badge(`WF ${wfCount}項目`,wfCount?'warn':'ok')}${kyoto}`;
+    $('agaResult').innerHTML=`<h3>AGA 2015判定</h3>${aga}`;
+    $('epcResult').innerHTML=`<h3>欧州/EPC 2018判定</h3>${epc}`;
+    $('dartResult').innerHTML=`<h3>DART-1適用の目安</h3>${dart}`;
+    $('familyResult').innerHTML=`<h3>家族性膵癌・遺伝性リスク判定</h3>${family}`;
   }
   function resetForm(){
     document.querySelectorAll('input[type=checkbox]').forEach(x=>x.checked=false);
@@ -206,6 +210,7 @@
   }
   document.querySelectorAll('input,select').forEach(x=>x.addEventListener('change',update));
   $('calc').addEventListener('click',update);
+  $('familyCalc').addEventListener('click',update);
   $('reset').addEventListener('click',resetForm);
   update();
 </script>
