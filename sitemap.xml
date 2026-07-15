@@ -2,9 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/AIP_Diagnosis/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/tools/acute-pancreatitis-triage/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/tools/pep-prevention/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/tools/ipmn-decision/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/weekly-highlights/weekly-highlight-2026-07-12.html</loc>
