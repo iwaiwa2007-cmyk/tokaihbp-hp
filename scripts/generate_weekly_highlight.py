@@ -449,15 +449,15 @@ def render_html(report_date: dt.date, start: dt.date, end: dt.date, papers_by_ca
   <meta name="description" content="PubMedとClinicalTrials.govをもとにした、胆膵内視鏡・ERCP・EUS、膵炎、PSC、IgG4関連疾患、肝移植領域の週次研究ハイライトです。">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{canonical}">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png?v=20260716">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=20260716">
   <link rel="stylesheet" href="../style.css?v=20260710-1">
   <style>{style}</style>
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="../index.html#home" aria-label="Home">
-      <img class="brand-logo" src="../assets/tokai-gastro-logo.png" alt="Tokai University Gastroenterology">
+      <img class="brand-logo" src="../assets/tokai-gastro-logo.png?v=20260716" alt="Tokai University Gastroenterology">
       <span><span class="brand-ja">東海大学医学部消化器内科胆膵班</span><span class="brand-en">Tokai University School of Medicine, Biliary-Pancreatic Clinical Group</span></span>
     </a>
     <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
