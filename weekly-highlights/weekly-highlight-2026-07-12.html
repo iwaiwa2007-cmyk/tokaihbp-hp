@@ -404,15 +404,159 @@
       text-decoration: none;
     }
 
+    body {
+      background: #f3f6f8;
+    }
+
+    .page {
+      max-width: 1120px;
+      padding-top: 92px;
+    }
+
+    .highlight-hero {
+      padding: 24px 28px;
+      border-radius: 0;
+      background: linear-gradient(120deg, #12304a, #17657b);
+      box-shadow: none;
+    }
+
+    .highlight-hero p {
+      color: #d8edf1;
+      font-size: 0.84rem;
+    }
+
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      opacity: 0.78;
+    }
+
+    h1 {
+      margin: 4px 0 6px;
+      font-size: clamp(1.5rem, 3vw, 2.15rem);
+      line-height: 1.3;
+    }
+
+    .hero-meta {
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      min-height: 25px;
+      padding: 3px 9px;
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.22);
+      font-size: 0.72rem;
+    }
+
+    .week-switcher {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .week-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 7px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 7px;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .week-link.next {
+      justify-self: end;
+    }
+
+    .week-link:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .week-link.disabled {
+      opacity: 0.42;
+      cursor: default;
+    }
+
+    .current-week {
+      color: #d8edf1;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .nav {
+      position: sticky;
+      top: 76px;
+      z-index: 8;
+      gap: 4px;
+      margin: 0 0 18px;
+      padding: 8px 12px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-top: 0;
+      box-shadow: 0 5px 14px rgba(24, 59, 76, 0.04);
+    }
+
+    .nav a {
+      padding: 7px 10px;
+      border: 0;
+      border-radius: 6px;
+      color: #38515f;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    .nav a:hover {
+      background: #e8f5f2;
+      color: #0f766e;
+    }
+
+    .card {
+      margin-top: 16px;
+      border-radius: 15px;
+      box-shadow: 0 4px 14px rgba(23, 57, 74, 0.04);
+    }
+
     @media (max-width: 720px) {
       .page {
-        padding: 92px 14px 40px;
+        padding: 82px 14px 40px;
       }
 
       .highlight-hero,
       .card {
         padding: 20px;
         border-radius: 14px;
+      }
+
+      .highlight-hero {
+        border-radius: 0;
+      }
+
+      .nav {
+        top: 70px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      .week-switcher {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .current-week {
+        grid-column: 1 / -1;
+        grid-row: 1;
       }
 
       .summary-grid {
@@ -483,12 +627,16 @@
     <section class="highlight-hero">
       <p class="eyebrow">Weekly Pancreatobiliary Research Highlight</p>
       <h1>今週の胆膵疾患研究ハイライト</h1>
-      <p>PubMedとClinicalTrials.govを中心に、胆膵内視鏡・ERCP・EUS、急性膵炎・慢性膵炎、肝移植・PSC・IgG4関連疾患の臨床的に重要そうな新着情報を整理した週次レポートです。</p>
-      <p>雑誌のQ分類はSCImago等で確認できる範囲の目安です。分野や年度により変動するため、正式な評価には原典をご確認ください。</p>
+      <p>2026年7月6日〜7月12日｜医師・医学生・研究者向け胆膵領域文献ダイジェスト</p>
       <div class="hero-meta">
         <span class="pill">対象期間: 2026年7月6日〜7月12日</span>
         <span class="pill">作成日: 2026年7月12日</span>
       </div>
+      <nav class="week-switcher" aria-label="週報の前後移動">
+        <span class="week-link disabled" aria-disabled="true"><span aria-hidden="true">←</span><span>前の週</span></span>
+        <span class="current-week">2026.7.6–7.12</span>
+        <a class="week-link next" href="weekly-highlight-2026-07-19.html"><span>次の週</span><span aria-hidden="true">→</span></a>
+      </nav>
     </section>
 
     <nav class="nav" aria-label="ページ内ナビゲーション">

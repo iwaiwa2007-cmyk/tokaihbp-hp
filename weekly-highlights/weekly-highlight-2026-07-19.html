@@ -96,6 +96,52 @@
       font-size: 0.72rem;
     }
 
+    .week-switcher {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .week-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 7px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 7px;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .week-link.next {
+      justify-self: end;
+    }
+
+    .week-link:hover {
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .week-link.disabled {
+      opacity: 0.42;
+      cursor: default;
+    }
+
+    .current-week {
+      color: #d8edf1;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-align: center;
+      white-space: nowrap;
+    }
+
     .nav {
       display: flex;
       flex-wrap: wrap;
@@ -470,6 +516,15 @@
         overflow-x: auto;
       }
 
+      .week-switcher {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .current-week {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+
       .summary-grid {
         grid-template-columns: 1fr;
       }
@@ -554,6 +609,11 @@
         <span class="pill">作成日: 2026年7月19日</span>
         <span class="pill">Bilingual digest</span>
       </div>
+      <nav class="week-switcher" aria-label="週報の前後移動">
+        <a class="week-link" href="weekly-highlight-2026-07-12.html"><span aria-hidden="true">←</span><span>前の週</span></a>
+        <span class="current-week">2026.7.13–7.19</span>
+        <span class="week-link next disabled" aria-disabled="true"><span>次の週</span><span aria-hidden="true">→</span></span>
+      </nav>
     </section>
 
     <nav class="nav" aria-label="ページ内ナビゲーション">
