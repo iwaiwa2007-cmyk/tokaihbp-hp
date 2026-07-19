@@ -440,13 +440,16 @@
     }
 
     @media (max-width: 900px) {
-      .summary-grid,
-      .criteria-results {
+      .summary-grid {
         grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 640px) {
+      .criteria-results {
+        grid-template-columns: 1fr;
+      }
+
       .tool-nav {
         top: 70px;
       }
@@ -611,7 +614,6 @@
         <button class="tab" data-target="screen-histology">病理</button>
         <button class="tab" data-target="screen-comprehensive">包括</button>
         <button class="tab" data-target="screen-igg4sc">IgG4-SC</button>
-        <button class="tab" data-target="summary">結果</button>
       </div>
     </div>
   </nav>
@@ -662,7 +664,6 @@
           </fieldset>
 
           <div class="actions">
-            <button class="primary" id="calc-jps">2018/2011基準を計算</button>
             <button id="reset-jps">リセット</button>
             <button class="back-top" type="button">上に戻る</button>
           </div>
@@ -720,7 +721,6 @@
           </fieldset>
 
           <div class="actions">
-            <button class="primary" id="calc-icdc">ICDCを計算</button>
             <button id="reset-icdc">リセット</button>
             <button class="back-top" type="button">上に戻る</button>
           </div>
@@ -751,7 +751,6 @@
           </fieldset>
 
           <div class="actions">
-            <button class="primary" id="calc-histology">病理4所見を計算</button>
             <button id="reset-histology">リセット</button>
             <button class="back-top" type="button">上に戻る</button>
           </div>
@@ -803,7 +802,6 @@
           </fieldset>
 
           <div class="actions">
-            <button class="primary" id="calc-comprehensive">包括基準を計算</button>
             <button id="reset-comprehensive">リセット</button>
             <button class="back-top" type="button">上に戻る</button>
           </div>
@@ -872,7 +870,6 @@
           </fieldset>
 
           <div class="actions">
-            <button class="primary" id="calc-igg4sc">IgG4-SC基準を計算</button>
             <button id="reset-igg4sc">リセット</button>
             <button class="back-top" type="button">上に戻る</button>
           </div>
@@ -891,7 +888,6 @@
       <div class="summary-head">
         <h2>判定まとめ</h2>
         <div class="summary-actions">
-          <button class="primary" id="calc-all">すべて計算</button>
           <button id="reset-all">すべてリセット</button>
           <button class="back-top" type="button">上に戻る</button>
         </div>
@@ -1346,40 +1342,39 @@
       });
     });
 
-    $("#calc-jps").addEventListener("click", calcJps);
-    $("#calc-icdc").addEventListener("click", calcIcdc);
-    $("#calc-histology").addEventListener("click", calcHistology);
-    $("#calc-comprehensive").addEventListener("click", calcComprehensive);
-    $("#calc-igg4sc").addEventListener("click", calcIgg4Sc);
-    $("#calc-all").addEventListener("click", () => {
-      calcJps();
-      calcIcdc();
-      calcHistology();
-      calcComprehensive();
-      calcIgg4Sc();
-      document.getElementById("result-jps").scrollIntoView({ behavior: "smooth", block: "start" });
+    const automaticCalculations = {
+      "screen-jps": calcJps,
+      "screen-icdc": calcIcdc,
+      "screen-histology": calcHistology,
+      "screen-comprehensive": calcComprehensive,
+      "screen-igg4sc": calcIgg4Sc
+    };
+
+    Object.entries(automaticCalculations).forEach(([screenId, calculate]) => {
+      $$(`input, select`, document.getElementById(screenId)).forEach(input => {
+        input.addEventListener("change", calculate);
+      });
     });
 
     $("#reset-jps").addEventListener("click", () => {
       resetWithin("screen-jps");
-      resetResult($("#result-jps"), "2018診断基準", "計算後、確診・準確診・疑診と根拠を表示します。");
-      resetResult($("#result-jps2011"), "2011診断基準（参考）", "同じ入力項目から、研究入力などで用いる2011基準の確診・準確診・疑診を参考表示します。");
+      calcJps();
     });
     $("#reset-icdc").addEventListener("click", () => {
       resetWithin("screen-icdc");
-      resetResult($("#result-icdc"), "ICDC", "計算後、1型/2型AIPの確診・準確診、またはAIP疑診を表示します。");
+      calcIcdc();
     });
     $("#reset-histology").addEventListener("click", () => {
       resetWithin("screen-histology");
-      resetResult($("#result-histology"), "病理4所見", "3件以上なら「あり」と判定します。");
+      calcHistology();
     });
     $("#reset-comprehensive").addEventListener("click", () => {
       resetWithin("screen-comprehensive");
-      resetResult($("#result-comprehensive"), "IgG4-RD 包括診断基準2020", "計算後、確定診断群・準確診群・疑診群と根拠を表示します。");
+      calcComprehensive();
     });
     $("#reset-igg4sc").addEventListener("click", () => {
       resetWithin("screen-igg4sc");
-      resetResult($("#result-igg4sc"), "IgG4-SC 2020", "計算後、確診・準確診・疑診と根拠を表示します。");
+      calcIgg4Sc();
     });
     $("#reset-all").addEventListener("click", () => {
       resetWithin("screen-jps");
@@ -1387,13 +1382,18 @@
       resetWithin("screen-histology");
       resetWithin("screen-comprehensive");
       resetWithin("screen-igg4sc");
-      resetResult($("#result-jps"), "2018診断基準", "計算後、確診・準確診・疑診と根拠を表示します。");
-      resetResult($("#result-jps2011"), "2011診断基準（参考）", "同じ入力項目から、研究入力などで用いる2011基準の確診・準確診・疑診を参考表示します。");
-      resetResult($("#result-icdc"), "ICDC", "計算後、1型/2型AIPの確診・準確診、またはAIP疑診を表示します。");
-      resetResult($("#result-histology"), "病理4所見", "3件以上なら「あり」と判定します。");
-      resetResult($("#result-comprehensive"), "IgG4-RD 包括診断基準2020", "計算後、確定診断群・準確診群・疑診群と根拠を表示します。");
-      resetResult($("#result-igg4sc"), "IgG4-SC 2020", "計算後、確診・準確診・疑診と根拠を表示します。");
+      calcJps();
+      calcIcdc();
+      calcHistology();
+      calcComprehensive();
+      calcIgg4Sc();
     });
+
+    calcJps();
+    calcIcdc();
+    calcHistology();
+    calcComprehensive();
+    calcIgg4Sc();
   </script>
   <script src="../script.js"></script>
 </body>
