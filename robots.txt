@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iwaiwa2007-cmyk.github.io/TOKAIHBP-HP/sitemap.xml
+Sitemap: https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/sitemap.xml
