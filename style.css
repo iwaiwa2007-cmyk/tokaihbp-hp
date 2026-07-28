@@ -295,7 +295,7 @@ h3 {
 .news-list {
   display: grid;
   gap: 8px;
-  max-height: 360px;
+  max-height: 230px;
   overflow-y: auto;
   padding: 10px;
   border: 1px solid var(--line);
@@ -760,7 +760,7 @@ h3 {
 .publication-list {
   display: grid;
   gap: 8px;
-  max-height: 560px;
+  max-height: 260px;
   padding: 12px;
   overflow-y: auto;
   border: 1px solid var(--line);
@@ -1099,6 +1099,11 @@ h3 {
   max-height: 92px;
   height: auto;
   object-fit: contain;
+}
+
+.partner-link-wide img {
+  width: min(760px, 100%);
+  max-height: 118px;
 }
 
 .partner-link span {

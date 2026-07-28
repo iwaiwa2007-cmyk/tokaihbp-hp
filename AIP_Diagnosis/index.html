@@ -95,6 +95,43 @@
       white-space: nowrap;
     }
 
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 14px;
+    }
+
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.62);
+      border-radius: 8px;
+      background: #ffffff;
+      color: #12304a;
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1.35;
+      text-decoration: none;
+      transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .hero-link::after {
+      content: "↗";
+      margin-left: 7px;
+      font-size: 12px;
+    }
+
+    .hero-link:hover,
+    .hero-link:focus-visible {
+      background: #e5f4f2;
+      color: #0f5f59;
+      transform: translateY(-1px);
+    }
+
     .notice {
       margin: 14px 0 0;
       padding: 12px 14px;
@@ -604,6 +641,10 @@
         <div>
           <h1>IgG4関連疾患診断（研究）</h1>
           <p class="lead">自己免疫性膵炎、ICDC、病理組織、IgG4関連疾患包括診断基準、IgG4関連硬化性胆管炎の判定を整理</p>
+          <div class="hero-links" aria-label="IgG4関連疾患の外部資料">
+            <a class="hero-link" href="https://igg4.jp/" target="_blank" rel="noopener noreferrer">厚生労働省 IgG4研究班</a>
+            <a class="hero-link" href="https://igg4.jp/guidance/" target="_blank" rel="noopener noreferrer">IgG4関連疾患診療ガイダンス</a>
+          </div>
         </div>
         <div class="local-status">端末内で計算・データ送信なし</div>
       </div>

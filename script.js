@@ -36,7 +36,10 @@ const updateActiveNav = () => {
   });
 
   navLinks.forEach((link) => {
-    link.classList.toggle("active", current && link.getAttribute("href") === `#${current.id}`);
+    const href = link.getAttribute("href");
+    if (href?.startsWith("#")) {
+      link.classList.toggle("active", current && href === `#${current.id}`);
+    }
   });
 };
 

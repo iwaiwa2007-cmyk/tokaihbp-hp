@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究会・学会予定 | 東海大学医学部消化器内科 胆膵班</title>
+  <meta name="description" content="胆膵・消化器内視鏡領域を中心とした研究会、学会、セミナーの開催予定と公式サイトへのリンクをまとめています。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/events/">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png?v=20260716">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png?v=20260716">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/events/">
+  <meta property="og:site_name" content="東海大学医学部消化器内科 胆膵班">
+  <meta property="og:title" content="研究会・学会予定 | Event Calendar">
+  <meta property="og:description" content="胆膵・消化器内視鏡領域を中心とした研究会、学会、セミナーの開催予定をまとめています。">
+  <link rel="stylesheet" href="../style.css?v=20260713-2">
+  <style>
+    :root {
+      --event-navy: #12304a;
+      --event-blue: #176b87;
+      --event-teal: #0f766e;
+      --event-bg: #f3f6f8;
+      --event-card: #fff;
+      --event-ink: #172b3a;
+      --event-muted: #617684;
+      --event-line: #d9e3e7;
+    }
+
+    body { color: var(--event-ink); background: var(--event-bg); }
+    .site-header {
+      min-height: 64px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+    .brand-logo { width: 40px; height: 40px; }
+    .event-hero {
+      padding: 20px 18px 22px;
+      color: #fff;
+      background: linear-gradient(120deg, var(--event-navy), #17657b);
+    }
+    .event-hero-inner,
+    .event-main { width: min(1120px, 100%); margin: 0 auto; }
+    .event-kicker {
+      margin: 0 0 5px;
+      color: #bfe7ee;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .event-hero h1 {
+      margin: 0;
+      color: #fff;
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.25;
+    }
+    .event-hero .intro {
+      max-width: 760px;
+      margin-top: 5px;
+      color: #e0f0f3;
+      font-size: 12px;
+    }
+    .event-main { padding: 16px 18px 42px; }
+    .event-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .filter-button {
+      min-height: 31px;
+      padding: 3px 12px;
+      border: 1px solid #b8cbd3;
+      border-radius: 999px;
+      color: #405765;
+      background: #fff;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .filter-button:hover,
+    .filter-button[aria-pressed="true"] {
+      border-color: var(--event-blue);
+      color: #fff;
+      background: var(--event-blue);
+    }
+    .event-guide {
+      display: grid;
+      grid-template-columns: 168px minmax(260px, 1fr) minmax(260px, .8fr);
+      gap: 12px;
+      padding: 0 12px 5px;
+      color: var(--event-muted);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    .year-group + .year-group { margin-top: 16px; }
+    .past-heading {
+      margin: 30px 0 9px;
+      padding-top: 18px;
+      border-top: 2px solid var(--event-line);
+      color: var(--event-navy);
+      font-size: clamp(21px, 2.5vw, 26px);
+    }
+    .past-intro {
+      margin: -6px 0 9px;
+      color: var(--event-muted);
+      font-size: 12px;
+    }
+    .past-events .event-row { background: #f9fbfc; }
+    .year-heading {
+      margin: 0 0 4px;
+      color: var(--event-navy);
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .event-list {
+      overflow: hidden;
+      border: 1px solid var(--event-line);
+      border-radius: 9px;
+      background: var(--event-card);
+      box-shadow: 0 4px 14px rgba(23, 57, 74, .04);
+    }
+    .event-row {
+      display: grid;
+      grid-template-columns: 168px minmax(260px, 1fr) minmax(260px, .8fr);
+      gap: 12px;
+      align-items: center;
+      min-height: 43px;
+      padding: 6px 12px;
+      border-bottom: 1px solid var(--event-line);
+    }
+    .event-row:last-child { border-bottom: 0; }
+    .event-row:hover { background: #f7fbfc; }
+    .event-date {
+      color: var(--event-navy);
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .event-title {
+      color: var(--event-blue);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.3;
+      text-decoration: underline;
+      text-decoration-color: rgba(23, 107, 135, .35);
+      text-underline-offset: 3px;
+    }
+    .event-title:hover { color: var(--event-teal); text-decoration-color: currentColor; }
+    .featured .event-title { color: var(--event-teal); }
+    .event-location {
+      color: var(--event-muted);
+      font-size: 11px;
+      line-height: 1.35;
+    }
+    .event-row[hidden],
+    .year-group[hidden] { display: none; }
+    .event-empty {
+      margin: 18px 0 0;
+      padding: 18px;
+      border: 1px dashed #b8cbd3;
+      border-radius: 12px;
+      color: var(--event-muted);
+      background: rgba(255, 255, 255, .7);
+      text-align: center;
+    }
+    .event-footnote {
+      margin-top: 24px;
+      color: var(--event-muted);
+      font-size: 11px;
+    }
+    @media (max-width: 760px) {
+      .site-nav { top: 64px; }
+      .event-guide { display: none; }
+      .event-row {
+        grid-template-columns: 116px minmax(0, 1fr);
+        gap: 5px 12px;
+        align-items: start;
+        padding: 11px 13px;
+      }
+      .event-location { grid-column: 2; }
+    }
+    @media (max-width: 480px) {
+      .brand-en { display: none; }
+      .event-main { padding-right: 12px; padding-left: 12px; }
+      .event-row { grid-template-columns: 1fr; }
+      .event-location { grid-column: 1; }
+      .event-date { color: var(--event-teal); font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html#home" aria-label="Home">
+      <img class="brand-logo" src="../assets/tokai-gastro-logo.png?v=20260716" alt="Tokai University Gastroenterology">
+      <span>
+        <span class="brand-ja">東海大学医学部消化器内科胆膵班</span>
+        <span class="brand-en">Tokai University School of Medicine, Biliary-Pancreatic Clinical Group</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html#home">Home</a>
+      <a href="../weekly-highlights/weekly-highlight-2026-07-26.html">Highlight</a>
+      <a href="./" class="active" aria-current="page">Event</a>
+      <a href="../index.html#members">PI</a>
+      <a href="../index.html#activity">Activity</a>
+      <a href="../index.html#tools">Tools</a>
+      <a href="../index.html#publications">Publications</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <header class="event-hero">
+      <div class="event-hero-inner">
+        <p class="event-kicker">Event Calendar</p>
+        <h1>研究会・学会予定</h1>
+        <p class="intro">胆膵・消化器内視鏡領域を中心に、国内外の学会、研究会、セミナーの予定をまとめています。学会名から公式サイトを開けます。</p>
+      </div>
+    </header>
+
+    <div class="event-main">
+      <div class="event-toolbar" role="group" aria-label="イベント種別で絞り込む">
+        <button class="filter-button" type="button" data-filter="all" aria-pressed="true">すべて</button>
+        <button class="filter-button" type="button" data-filter="international" aria-pressed="false">海外・国際</button>
+        <button class="filter-button" type="button" data-filter="domestic" aria-pressed="false">国内学会</button>
+        <button class="filter-button" type="button" data-filter="seminar" aria-pressed="false">研究会・セミナー</button>
+      </div>
+
+      <div class="event-guide" aria-hidden="true">
+        <span>日付</span><span>学会・研究会</span><span>開催地</span>
+      </div>
+
+      <section class="year-group" data-year-group aria-labelledby="year-2026">
+        <h2 class="year-heading" id="year-2026">2026</h2>
+        <div class="event-list">
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-08-20">2026年8月20日〜22日</time>
+            <a class="event-title" href="https://www.orlandohealth.com/services/digestive-health-institute/events/florida-live-endoscopy-2026" target="_blank" rel="noopener">Florida Live Endoscopy 2026</a>
+            <p class="event-location">Orlando, Florida, USA — The Ritz-Carlton Orlando, Grande Lakes</p>
+          </article>
+          <article class="event-row" data-category="seminar">
+            <time class="event-date" datetime="2026-08-22">2026年8月22日</time>
+            <a class="event-title" href="https://fnacj.com/meeting/" target="_blank" rel="noopener">第24回 FNA-club Meeting</a>
+            <p class="event-location">東京 — 東京医科大学病院 臨床講堂</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-09-04">2026年9月4日〜5日</time>
+            <a class="event-title" href="https://www.esge.com/ksge-days-2026" target="_blank" rel="noopener">KSGE Days 2026</a>
+            <p class="event-location">Seoul, South Korea — Lotte Hotel Seoul</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-09-11">2026年9月11日〜12日</time>
+            <a class="event-title" href="https://www.jges.net/event/2024-78926" target="_blank" rel="noopener">The 2nd JGES International 2026</a>
+            <p class="event-location">Tokyo, Japan — Toshi Center Hotel Tokyo</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-09-17">2026年9月17日〜19日</time>
+            <a class="event-title" href="https://www.esge.com/eus-endo-international-live-course-2026" target="_blank" rel="noopener">EUS-ENDO International Live Course 2026</a>
+            <p class="event-location">Strasbourg, France — IRCAD</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2026-09-19">2026年9月19日</time>
+            <a class="event-title" href="https://www.jsge.or.jp/conference/shibu/kanto/" target="_blank" rel="noopener">第391回 日本消化器病学会関東支部例会</a>
+            <p class="event-location">東京 — 海運クラブ</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-09-24">2026年9月24日〜26日</time>
+            <a class="event-title" href="https://www.esge.com/world-endo-2026" target="_blank" rel="noopener">ENDO 2026</a>
+            <p class="event-location">Cape Town, South Africa — Cape Town International Convention Centre</p>
+          </article>
+          <article class="event-row" data-category="seminar">
+            <time class="event-date" datetime="2026-09-25">2026年9月25日〜26日</time>
+            <a class="event-title" href="https://gazou80.com/" target="_blank" rel="noopener">第80回 日本消化器画像診断研究会</a>
+            <p class="event-location">鹿児島 — カクイックス交流センター</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2026-10-16">2026年10月16日〜17日</time>
+            <a class="event-title" href="https://site2.convention.co.jp/62jba/" target="_blank" rel="noopener">第62回 日本胆道学会学術集会</a>
+            <p class="event-location">宇都宮 — ライトキューブ宇都宮</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-10-17">2026年10月17日〜20日</time>
+            <a class="event-title" href="https://www.esge.com/ueg-week-2026" target="_blank" rel="noopener">UEG Week 2026</a>
+            <p class="event-location">Barcelona, Spain — Fira Gran Via</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-10-24">2026年10月24日〜25日</time>
+            <a class="event-title" href="https://www.eussummit.org/" target="_blank" rel="noopener">EUS Summit 2026</a>
+            <p class="event-location">Seoul, South Korea — Grand Walkerhill Seoul</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-10-30">2026年10月30日〜31日</time>
+            <a class="event-title" href="https://2026.sgiw.org/" target="_blank" rel="noopener">SGI 2026</a>
+            <p class="event-location">Seoul, South Korea — OSSTEM IMPLANT Central Research Institute</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-10-30">2026年10月30日〜11月1日</time>
+            <a class="event-title" href="https://mm.sciconf.cn/cn/web/index/37001" target="_blank" rel="noopener">中華医学会消化器内視鏡学分会2026学術年会（CCDR 2026）</a>
+            <p class="event-location">重慶市、中国</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2026-11-05">2026年11月5日〜7日</time>
+            <a class="event-title" href="https://www.jddw.jp/jddw2026/" target="_blank" rel="noopener">第112回 日本消化器内視鏡学会総会（JDDW 2026）</a>
+            <p class="event-location">神戸 — 神戸コンベンションセンター</p>
+          </article>
+          <article class="event-row" data-category="seminar">
+            <time class="event-date" datetime="2026-11-08">2026年11月8日 9:00〜12:00</time>
+            <a class="event-title" href="https://naishikyokensa.jp/" target="_blank" rel="noopener">第17回 内視鏡検査・周術期管理の標準化に向けた研究会</a>
+            <p class="event-location">神戸 — 三宮研修センター（予定）</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-11-19">2026年11月19日〜21日</time>
+            <a class="event-title" href="https://www.kddw.org/" target="_blank" rel="noopener">KDDW 2026</a>
+            <p class="event-location">Seoul, South Korea — Grand Walkerhill Seoul</p>
+          </article>
+          <article class="event-row" data-category="seminar">
+            <time class="event-date" datetime="2026-11-22">2026年11月22日〜23日</time>
+            <a class="event-title" href="https://www.convention-plus.jp/metro-endolive/" target="_blank" rel="noopener">東京メトロポリタンライブセミナー2026／第6回東京メトロポリタン国際内視鏡ライブ</a>
+            <p class="event-location">東京 — 東京医科大学病院 9F 臨床講堂</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-11-24">2026年11月24日〜28日</time>
+            <a class="event-title" href="https://apdw2026manila.com/" target="_blank" rel="noopener">APDW 2026</a>
+            <p class="event-location">Manila, Philippines — Philippine International Convention Center</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-12-08">2026年12月8日〜10日（予定）</time>
+            <a class="event-title" href="https://www.hklivendoscopy.com/" target="_blank" rel="noopener">40th International Workshop on Therapeutic Endoscopy（HK Live Endoscopy）</a>
+            <p class="event-location">Hong Kong — Prince of Wales Hospital（公式ページ更新待ち）</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-12-09">2026年12月9日〜12日</time>
+            <a class="event-title" href="https://www.american-pancreatic-association.org/annual-meeting-2/2026-annual-meeting-registration/?v=1d20b5ff1ee9" target="_blank" rel="noopener">57th American Pancreatic Association Annual Meeting（APA 2026）</a>
+            <p class="event-location">Huntington Beach, California, USA — Hyatt Regency Huntington Beach</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2026-12-12">2026年12月12日</time>
+            <a class="event-title" href="https://www.jsge.or.jp/conference/shibu/kanto/" target="_blank" rel="noopener">第392回 日本消化器病学会関東支部例会</a>
+            <p class="event-location">東京 — 海運クラブ</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2026-12-12">2026年12月12日〜13日</time>
+            <a class="event-title" href="http://www.jges-k.umin.jp/123shibureikai/outline.html" target="_blank" rel="noopener">第123回 日本消化器内視鏡学会関東支部例会</a>
+            <p class="event-location">東京 — シェーンバッハ・サボー</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="year-group" data-year-group aria-labelledby="year-2027">
+        <h2 class="year-heading" id="year-2027">2027</h2>
+        <div class="event-list">
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-02-20">2027年2月20日</time>
+            <a class="event-title" href="https://www.jsge.or.jp/conference/shibu/kanto/" target="_blank" rel="noopener">第393回 日本消化器病学会関東支部例会</a>
+            <p class="event-location">東京 — 都市センターホテル</p>
+          </article>
+          <article class="event-row" data-category="seminar">
+            <time class="event-date" datetime="2027-02-21">2027年2月21日</time>
+            <a class="event-title" href="https://www.jges.net/eventlist" target="_blank" rel="noopener">第8回 和歌山消化器内視鏡ライブデモンストレーションセミナー「きのくにライブ」</a>
+            <p class="event-location">和歌山 — 和歌山県立医科大学</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-02-25">2027年2月25日〜26日</time>
+            <a class="event-title" href="https://sies.org.au/" target="_blank" rel="noopener">SIES 2027 — 18th Annual Meeting</a>
+            <p class="event-location">Sydney, Australia — International Convention Centre Sydney, Darling Harbour</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-03-19">2027年3月19日〜21日</time>
+            <a class="event-title" href="https://igg4-18.com/greeting.html" target="_blank" rel="noopener">第18回 日本IgG4関連疾患学会学術集会</a>
+            <p class="event-location">高知</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-04-23">2027年4月23日〜25日</time>
+            <a class="event-title" href="https://isoukai2027.jp/index.html" target="_blank" rel="noopener">第32回 日本医学会総会</a>
+            <p class="event-location">大阪市北区</p>
+          </article>
+          <article class="event-row featured" data-category="international">
+            <time class="event-date" datetime="2027-04-29">2027年4月29日〜5月1日</time>
+            <a class="event-title" href="https://esgedays.org/" target="_blank" rel="noopener">★ ESGE Days 2027 ★</a>
+            <p class="event-location">Lisbon, Portugal — Lisbon Congress Centre (CCL)</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-05-06">2027年5月6日〜8日</time>
+            <a class="event-title" href="https://site2.convention.co.jp/113jsge/" target="_blank" rel="noopener">第113回 日本消化器病学会総会</a>
+            <p class="event-location">札幌 — 京王プラザホテル札幌、グランドメルキュール札幌大通公園</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-05-15">2027年5月15日〜18日</time>
+            <a class="event-title" href="https://ddw.org/" target="_blank" rel="noopener">DDW 2027</a>
+            <p class="event-location">Washington, D.C., USA</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-05-27">2027年5月27日〜29日</time>
+            <a class="event-title" href="https://site2.convention.co.jp/113jges/" target="_blank" rel="noopener">第113回 日本消化器内視鏡学会総会</a>
+            <p class="event-location">富山 — 富山国際会議場ほか</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-06-10">2027年6月10日〜12日</time>
+            <a class="event-title" href="https://www.esge.com/iden-2027" target="_blank" rel="noopener">IDEN 2027</a>
+            <p class="event-location">Seoul, South Korea — Venue TBD</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-06-12">2027年6月12日〜13日</time>
+            <a class="event-title" href="https://www.jges.net/eventlist/category/branch-meeting/bm-03-kanto" target="_blank" rel="noopener">第124回 日本消化器内視鏡学会関東支部例会</a>
+            <p class="event-location">東京 — シェーンバッハ・サボー</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-06-30">2027年6月30日〜7月3日</time>
+            <a class="event-title" href="https://epc2027.eu/" target="_blank" rel="noopener">59th European Pancreatic Club Meeting（EPC 2027）</a>
+            <p class="event-location">Stockholm, Sweden</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-07-30">2027年7月30日〜31日</time>
+            <a class="event-title" href="https://www.suizou.org/gaiyo/gakkai.htm" target="_blank" rel="noopener">第58回 日本膵臓学会大会</a>
+            <p class="event-location">和歌山 — 和歌山城ホールほか</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-08-19">2027年8月19日〜21日</time>
+            <a class="event-title" href="https://www.orlandohealth.com/services/digestive-health-institute/events" target="_blank" rel="noopener">Florida Live EUS 2027</a>
+            <p class="event-location">Orlando, Florida, USA — Venue details TBD</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-09-02">2027年9月2日〜5日</time>
+            <a class="event-title" href="https://www.apdwcongress.org/" target="_blank" rel="noopener">APDW 2027</a>
+            <p class="event-location">Hong Kong — Venue TBD</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-09-10">2027年9月10日〜11日</time>
+            <a class="event-title" href="https://www.esge.com/ksge-days-2027" target="_blank" rel="noopener">KSGE Days 2027</a>
+            <p class="event-location">Seoul, South Korea — Venue TBD</p>
+          </article>
+          <article class="event-row" data-category="seminar">
+            <time class="event-date" datetime="2027-09-17">2027年9月17日〜18日</time>
+            <a class="event-title" href="https://www.shoukaki-gazou.com/event/" target="_blank" rel="noopener">第81回 日本消化器画像診断研究会</a>
+            <p class="event-location">宇都宮 — ライトキューブ宇都宮</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-09-24">2027年9月24日〜25日</time>
+            <a class="event-title" href="https://www.jges.net/event/2025-101208" target="_blank" rel="noopener">The 3rd JGES International 2027</a>
+            <p class="event-location">Tokyo, Japan — Toshi Center Hotel Tokyo</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-10-07">2027年10月7日〜8日</time>
+            <a class="event-title" href="https://www.tando.gr.jp/meeting/jba/" target="_blank" rel="noopener">第63回 日本胆道学会学術集会</a>
+            <p class="event-location">千葉 — 幕張メッセ</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-10-16">2027年10月16日〜19日</time>
+            <a class="event-title" href="https://ueg.eu/week" target="_blank" rel="noopener">UEG Week 2027</a>
+            <p class="event-location">Location TBD</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-10-28">2027年10月28日〜30日</time>
+            <a class="event-title" href="https://www.jddw.jp/jddw2027/index.html" target="_blank" rel="noopener">第114回 日本消化器内視鏡学会総会（JDDW 2027）</a>
+            <p class="event-location">神戸</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2027-12-11">2027年12月11日〜12日</time>
+            <a class="event-title" href="https://www.jges.net/eventlist/category/branch-meeting/bm-03-kanto" target="_blank" rel="noopener">第125回 日本消化器内視鏡学会関東支部例会</a>
+            <p class="event-location">東京 — シェーンバッハ・サボー</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="year-group" data-year-group aria-labelledby="year-2028">
+        <h2 class="year-heading" id="year-2028">2028</h2>
+        <div class="event-list">
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2028-04-27">2028年4月27日〜29日</time>
+            <a class="event-title" href="https://www.jsge.or.jp/conference/honbu/soukai/" target="_blank" rel="noopener">第114回 日本消化器病学会総会</a>
+            <p class="event-location">仙台 — 仙台国際センター</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2028-05-11">2028年5月11日〜13日</time>
+            <a class="event-title" href="https://www.jges.net/event/2025-102753" target="_blank" rel="noopener">第115回 日本消化器内視鏡学会総会</a>
+            <p class="event-location">千葉 — 幕張メッセ</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2028-05-20">2028年5月20日〜23日</time>
+            <a class="event-title" href="https://ddw.org/" target="_blank" rel="noopener">DDW 2028</a>
+            <p class="event-location">San Diego, California, USA</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2028-06">2028年6〜7月（予定）</time>
+            <a class="event-title" href="https://www.jges.net/eventlist/category/branch-meeting/bm-03-kanto" target="_blank" rel="noopener">第126回 日本消化器内視鏡学会関東支部例会</a>
+            <p class="event-location">会場未定 — 会長：郷田 憲一</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2028-07-27">2028年7月27日〜29日</time>
+            <a class="event-title" href="https://www.suizou.org/gaiyo/gakkai.htm" target="_blank" rel="noopener">第59回 日本膵臓学会大会・国際膵臓学会</a>
+            <p class="event-location">奈良 — 会場詳細未定</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2028-09-08">2028年9月8日〜9日</time>
+            <a class="event-title" href="https://www.jges.net/event/2026-111504" target="_blank" rel="noopener">The 4th JGES International 2028</a>
+            <p class="event-location">Venue TBD</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2028-09-29">2028年9月29日〜30日</time>
+            <a class="event-title" href="https://www.tando.gr.jp/meeting/jba/" target="_blank" rel="noopener">第64回 日本胆道学会学術集会</a>
+            <p class="event-location">札幌 — グランドメルキュール札幌大通公園</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2028-11-02">2028年11月2日〜4日</time>
+            <a class="event-title" href="https://www.jddw.jp/meeting/index.html" target="_blank" rel="noopener">JDDW 2028／第116回 日本消化器内視鏡学会総会</a>
+            <p class="event-location">神戸</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2028-11-07">2028年11月7日〜11日</time>
+            <a class="event-title" href="https://www.apdwcongress.org/" target="_blank" rel="noopener">APDW 2028</a>
+            <p class="event-location">Hanoi, Vietnam — Venue TBD</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2028-11">2028年11〜12月（予定）</time>
+            <a class="event-title" href="https://www.jges.net/eventlist/category/branch-meeting/bm-03-kanto" target="_blank" rel="noopener">第127回 日本消化器内視鏡学会関東支部例会</a>
+            <p class="event-location">会場未定 — 会長：藤城 光弘</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="year-group" data-year-group aria-labelledby="year-2029">
+        <h2 class="year-heading" id="year-2029">2029</h2>
+        <div class="event-list">
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2029-04-19">2029年4月19日〜21日</time>
+            <a class="event-title" href="https://www.jsge.or.jp/conference/honbu/soukai/" target="_blank" rel="noopener">第115回 日本消化器病学会総会</a>
+            <p class="event-location">松山 — 愛媛県県民文化会館、ANAクラウンプラザホテル松山</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2029-11-01">2029年11月1日〜3日</time>
+            <a class="event-title" href="https://www.jddw.jp/meeting/index.html" target="_blank" rel="noopener">第37回 日本消化器関連学会週間（JDDW 2029）</a>
+            <p class="event-location">神戸</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="year-group" data-year-group aria-labelledby="year-2030">
+        <h2 class="year-heading" id="year-2030">2030</h2>
+        <div class="event-list">
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2030-10-31">2030年10月31日〜11月2日</time>
+            <a class="event-title" href="https://www.jddw.jp/meeting/index.html" target="_blank" rel="noopener">第38回 日本消化器関連学会週間（JDDW 2030）</a>
+            <p class="event-location">神戸</p>
+          </article>
+        </div>
+      </section>
+
+      <h2 class="past-heading" id="past-heading">Past Events</h2>
+      <p class="past-intro" id="past-intro">終了した学会・研究会</p>
+      <section class="year-group past-events" data-year-group aria-labelledby="past-2026">
+        <h3 class="year-heading" id="past-2026">2026</h3>
+        <div class="event-list">
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-06-11">2026年6月11日〜13日</time>
+            <a class="event-title" href="https://www.idenworld.org/event/291/" target="_blank" rel="noopener">IDEN 2026</a>
+            <p class="event-location">Seoul, South Korea — Grand Walkerhill Seoul</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2026-06-13">2026年6月13日〜14日</time>
+            <a class="event-title" href="http://www.jges-k.umin.jp/122shibureikai/index.html" target="_blank" rel="noopener">第122回 日本消化器内視鏡学会関東支部例会</a>
+            <p class="event-location">会場は公式サイト参照</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-06-24">2026年6月24日〜27日</time>
+            <a class="event-title" href="https://epc2026.com/" target="_blank" rel="noopener">58th EPC/IAP Joint Meeting 2026</a>
+            <p class="event-location">Istanbul, Türkiye</p>
+          </article>
+          <article class="event-row" data-category="domestic">
+            <time class="event-date" datetime="2026-07-24">2026年7月24日〜25日</time>
+            <a class="event-title" href="https://www.jps57.org/" target="_blank" rel="noopener">第57回 日本膵臓学会大会</a>
+            <p class="event-location">福岡 — 福岡国際会議場</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-07-25">2026年7月25日〜26日</time>
+            <a class="event-title" href="http://www.destmeeting.org.tw/" target="_blank" rel="noopener">DEST 2026</a>
+            <p class="event-location">Kaohsiung, Taiwan — Kaohsiung Marriott Hotel</p>
+          </article>
+        </div>
+      </section>
+
+      <p class="event-empty" id="event-empty" hidden>該当するイベントはありません。</p>
+      <p class="event-footnote">開催日・会場・プログラムは変更される場合があります。最新情報は学会名のリンクから公式サイトでご確認ください。「TBD」「未定」は詳細発表後に更新します。</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Tokai University School of Medicine, Department of Internal Medicine, Biliary-Pancreatic Clinical Group.</p>
+      <button class="back-to-top" type="button">Back to top</button>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    const filterButtons = document.querySelectorAll("[data-filter]");
+    const eventRows = document.querySelectorAll(".event-row");
+    const yearGroups = document.querySelectorAll("[data-year-group]");
+    const emptyMessage = document.querySelector("#event-empty");
+    const pastHeading = document.querySelector("#past-heading");
+    const pastIntro = document.querySelector("#past-intro");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selected = button.dataset.filter;
+        filterButtons.forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        eventRows.forEach((row) => {
+          row.hidden = selected !== "all" && row.dataset.category !== selected;
+        });
+        yearGroups.forEach((group) => {
+          group.hidden = !group.querySelector(".event-row:not([hidden])");
+        });
+        const hasVisiblePast = Boolean(document.querySelector(".past-events .event-row:not([hidden])"));
+        pastHeading.hidden = !hasVisiblePast;
+        pastIntro.hidden = !hasVisiblePast;
+        emptyMessage.hidden = Boolean(document.querySelector(".event-row:not([hidden])"));
+      });
+    });
+  </script>
+</body>
+</html>
