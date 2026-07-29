@@ -172,6 +172,11 @@
       text-underline-offset: 3px;
     }
     .event-title:hover { color: var(--event-teal); text-decoration-color: currentColor; }
+    .event-title:not([href]) {
+      color: var(--event-ink);
+      text-decoration: none;
+      cursor: default;
+    }
     .featured .event-title { color: var(--event-teal); }
     .event-location {
       color: var(--event-muted);
@@ -314,17 +319,17 @@
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2026-09-04">2026年9月4日〜5日</time>
-            <a class="event-title" href="https://www.esge.com/ksge-days-2026" target="_blank" rel="noopener">KSGE Days 2026</a>
+            <a class="event-title" href="https://ksgedays.or.kr/2026/" target="_blank" rel="noopener">KSGE Days 2026</a>
             <p class="event-location">Seoul, South Korea — Lotte Hotel Seoul</p>
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2026-09-11">2026年9月11日〜12日</time>
-            <a class="event-title" href="https://www.jges.net/event/2024-78926" target="_blank" rel="noopener">The 2nd JGES International 2026</a>
+            <a class="event-title" href="https://jges-intl.net/" target="_blank" rel="noopener">The 2nd JGES International 2026</a>
             <p class="event-location">Tokyo, Japan — Toshi Center Hotel Tokyo</p>
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2026-09-17">2026年9月17日〜19日</time>
-            <a class="event-title" href="https://www.esge.com/eus-endo-international-live-course-2026" target="_blank" rel="noopener">EUS-ENDO International Live Course 2026</a>
+            <a class="event-title" href="https://eus-endo.org/" target="_blank" rel="noopener">EUS-ENDO International Live Course 2026</a>
             <p class="event-location">Strasbourg, France — IRCAD</p>
           </article>
           <article class="event-row" data-category="domestic">
@@ -334,7 +339,7 @@
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2026-09-24">2026年9月24日〜26日</time>
-            <a class="event-title" href="https://www.esge.com/world-endo-2026" target="_blank" rel="noopener">ENDO 2026</a>
+            <a class="event-title" href="https://easternsun.eventsair.com/2026-endo-congress/" target="_blank" rel="noopener">ENDO 2026</a>
             <p class="event-location">Cape Town, South Africa — Cape Town International Convention Centre</p>
           </article>
           <article class="event-row" data-category="seminar">
@@ -349,7 +354,7 @@
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2026-10-17">2026年10月17日〜20日</time>
-            <a class="event-title" href="https://www.esge.com/ueg-week-2026" target="_blank" rel="noopener">UEG Week 2026</a>
+            <a class="event-title" href="https://ueg.eu/week" target="_blank" rel="noopener">UEG Week 2026</a>
             <p class="event-location">Barcelona, Spain — Fira Gran Via</p>
           </article>
           <article class="event-row" data-category="international">
@@ -369,7 +374,7 @@
           </article>
           <article class="event-row" data-category="domestic">
             <time class="event-date" datetime="2026-11-05">2026年11月5日〜7日</time>
-            <a class="event-title" href="https://www.jddw.jp/jddw2026/" target="_blank" rel="noopener">第112回 日本消化器内視鏡学会総会（JDDW 2026）</a>
+            <a class="event-title" href="https://www.jddw.jp/jddw2026/" target="_blank" rel="noopener">第34回 日本消化器関連学会週間（JDDW 2026）</a>
             <p class="event-location">神戸 — 神戸コンベンションセンター</p>
           </article>
           <article class="event-row" data-category="seminar">
@@ -425,7 +430,7 @@
           </article>
           <article class="event-row" data-category="seminar">
             <time class="event-date" datetime="2027-02-21">2027年2月21日</time>
-            <a class="event-title" href="https://www.jges.net/eventlist" target="_blank" rel="noopener">第8回 和歌山消化器内視鏡ライブデモンストレーションセミナー「きのくにライブ」</a>
+            <span class="event-title" title="公式サイトへのリンクは一時停止中です">第8回 和歌山消化器内視鏡ライブデモンストレーションセミナー「きのくにライブ」</span>
             <p class="event-location">和歌山 — 和歌山県立医科大学</p>
           </article>
           <article class="event-row" data-category="international">
@@ -435,7 +440,7 @@
           </article>
           <article class="event-row" data-category="domestic">
             <time class="event-date" datetime="2027-03-19">2027年3月19日〜21日</time>
-            <a class="event-title" href="https://igg4-18.com/greeting.html" target="_blank" rel="noopener">第18回 日本IgG4関連疾患学会学術集会</a>
+            <a class="event-title" href="https://igg4.w3.kanazawa-u.ac.jp/" target="_blank" rel="noopener">第18回 日本IgG4関連疾患学会学術集会</a>
             <p class="event-location">高知</p>
           </article>
           <article class="event-row" data-category="domestic">
@@ -455,7 +460,7 @@
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2027-05-15">2027年5月15日〜18日</time>
-            <a class="event-title" href="https://ddw.org/" target="_blank" rel="noopener">DDW 2027</a>
+            <a class="event-title" href="https://ddw.org/" target="_blank" rel="noopener">米国消化器病学会週間（DDW）2027</a>
             <p class="event-location">Washington, D.C., USA</p>
           </article>
           <article class="event-row" data-category="domestic">
@@ -465,7 +470,7 @@
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2027-06-10">2027年6月10日〜12日</time>
-            <a class="event-title" href="https://www.esge.com/iden-2027" target="_blank" rel="noopener">IDEN 2027</a>
+            <a class="event-title" href="https://www.idenworld.org/event/291/" target="_blank" rel="noopener">IDEN 2027</a>
             <p class="event-location">Seoul, South Korea — Venue TBD</p>
           </article>
           <article class="event-row" data-category="domestic">
@@ -743,9 +748,12 @@
           action: "TEMPLATE",
           text: titleLink.textContent.trim(),
           dates: `${formatCalendarDateTime(dateRange.start, 9)}/${formatCalendarDateTime(dateRange.start, 17)}`,
-          details: `公式サイト: ${titleLink.href}`,
           location
         });
+        const officialUrl = titleLink.getAttribute("href");
+        if (officialUrl) {
+          params.set("details", `公式サイト: ${officialUrl}`);
+        }
         const eventDays = countEventDays(dateRange);
         if (eventDays > 1) {
           params.set("recur", `RRULE:FREQ=DAILY;COUNT=${eventDays}`);
