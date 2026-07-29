@@ -285,7 +285,7 @@
     <div class="event-main">
       <p class="calendar-note">
         <span class="calendar-note-mark" aria-hidden="true">G</span>
-        Googleカレンダーに登録するときは、各イベント右端のGボタンを押してください。
+        Googleカレンダーに登録するときは、各イベント右端のGボタンを押してください。開催地の現地時間で各日9:00〜17:00に設定されます。
       </p>
 
       <div class="event-toolbar" role="group" aria-label="イベント種別で絞り込む">
@@ -704,6 +704,31 @@
       return Math.round((endTime - startTime) / 86400000) + 1;
     };
 
+    const getEventTimeZone = (location, category) => {
+      const timeZoneRules = [
+        [/Orlando|Washington, D\.C\./i, "America/New_York"],
+        [/Huntington Beach|San Diego/i, "America/Los_Angeles"],
+        [/Seoul|South Korea/i, "Asia/Seoul"],
+        [/Tokyo|Japan|東京|鹿児島|宇都宮|神戸|和歌山|高知|大阪|札幌|富山|千葉|仙台|奈良|松山|福岡/i, "Asia/Tokyo"],
+        [/Strasbourg|France/i, "Europe/Paris"],
+        [/Cape Town|South Africa/i, "Africa/Johannesburg"],
+        [/Barcelona|Spain/i, "Europe/Madrid"],
+        [/重慶|中国/i, "Asia/Shanghai"],
+        [/Manila|Philippines/i, "Asia/Manila"],
+        [/Hong Kong/i, "Asia/Hong_Kong"],
+        [/Sydney|Australia/i, "Australia/Sydney"],
+        [/Lisbon|Portugal/i, "Europe/Lisbon"],
+        [/Stockholm|Sweden/i, "Europe/Stockholm"],
+        [/Hanoi|Vietnam/i, "Asia/Ho_Chi_Minh"],
+        [/Istanbul|Türkiye|Turkey/i, "Europe/Istanbul"],
+        [/Kaohsiung|Taiwan/i, "Asia/Taipei"]
+      ];
+      const matchedRule = timeZoneRules.find(([pattern]) => pattern.test(location));
+      if (matchedRule) return matchedRule[1];
+      if (category === "domestic" || category === "seminar") return "Asia/Tokyo";
+      return "";
+    };
+
     eventRows.forEach((row) => {
       const dateLabel = row.querySelector(".event-date")?.textContent.trim() || "";
       const titleLink = row.querySelector(".event-title");
@@ -725,11 +750,15 @@
         if (eventDays > 1) {
           params.set("recur", `RRULE:FREQ=DAILY;COUNT=${eventDays}`);
         }
+        const eventTimeZone = getEventTimeZone(location, row.dataset.category);
+        if (eventTimeZone) {
+          params.set("ctz", eventTimeZone);
+        }
         calendarButton.href = `https://calendar.google.com/calendar/render?${params.toString()}`;
         calendarButton.target = "_blank";
         calendarButton.rel = "noopener";
         calendarButton.setAttribute("aria-label", `${titleLink.textContent.trim()}をGoogleカレンダーに追加`);
-        calendarButton.title = "Googleカレンダーに追加（各日9:00〜17:00）";
+        calendarButton.title = "Googleカレンダーに追加（開催地の現地時間で各日9:00〜17:00）";
       } else {
         calendarButton.setAttribute("aria-label", `${titleLink.textContent.trim()}は開催日未確定のため追加できません`);
         calendarButton.title = "開催日が確定後に追加できます";
