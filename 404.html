@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>ページを移動しています</title>
+  <script>
+    (function () {
+      var oldPrefix = "/TOKAIHBP-HP";
+      var newPrefix = "/tokaihbp-hp";
+      var path = window.location.pathname;
+      var target = "https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/";
+
+      if (path === oldPrefix || path === oldPrefix + "/") {
+        target = newPrefix + "/" + window.location.search + window.location.hash;
+      } else if (path.indexOf(oldPrefix + "/") === 0) {
+        target = newPrefix + path.slice(oldPrefix.length) +
+          window.location.search + window.location.hash;
+      }
+
+      window.location.replace(target);
+    }());
+  </script>
+  <meta http-equiv="refresh" content="0;url=https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/">
+</head>
+<body>
+  <p>新しいサイトへ移動します。移動しない場合は
+    <a href="https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/">こちら</a>を開いてください。
+  </p>
+</body>
+</html>
