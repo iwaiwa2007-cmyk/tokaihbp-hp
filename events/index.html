@@ -62,6 +62,28 @@
       font-size: 12px;
     }
     .event-main { padding: 16px 18px 42px; }
+    .calendar-note {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 10px;
+      color: var(--event-muted);
+      font-size: 12px;
+    }
+    .calendar-note-mark {
+      display: inline-grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 25px;
+      place-items: center;
+      border: 1px solid #c8d6dc;
+      border-radius: 6px;
+      color: #1769aa;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1;
+    }
     .event-toolbar {
       display: flex;
       flex-wrap: wrap;
@@ -88,7 +110,7 @@
     }
     .event-guide {
       display: grid;
-      grid-template-columns: 168px minmax(260px, 1fr) minmax(260px, .8fr);
+      grid-template-columns: 168px minmax(260px, 1fr) minmax(240px, .8fr) 32px;
       gap: 12px;
       padding: 0 12px 5px;
       color: var(--event-muted);
@@ -125,7 +147,7 @@
     }
     .event-row {
       display: grid;
-      grid-template-columns: 168px minmax(260px, 1fr) minmax(260px, .8fr);
+      grid-template-columns: 168px minmax(260px, 1fr) minmax(240px, .8fr) 32px;
       gap: 12px;
       align-items: center;
       min-height: 43px;
@@ -156,6 +178,35 @@
       font-size: 11px;
       line-height: 1.35;
     }
+    .google-calendar-button {
+      display: inline-grid;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      justify-self: end;
+      border: 1px solid #c8d6dc;
+      border-radius: 7px;
+      color: #1769aa;
+      background: #fff;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+      text-decoration: none;
+      box-shadow: 0 1px 3px rgba(23, 57, 74, .08);
+    }
+    .google-calendar-button:hover,
+    .google-calendar-button:focus-visible {
+      border-color: #1769aa;
+      color: #fff;
+      background: #1769aa;
+      outline: none;
+    }
+    .google-calendar-button.is-disabled {
+      color: #9aaab2;
+      background: #edf1f3;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
     .event-row[hidden],
     .year-group[hidden] { display: none; }
     .event-empty {
@@ -176,19 +227,27 @@
       .site-nav { top: 64px; }
       .event-guide { display: none; }
       .event-row {
-        grid-template-columns: 116px minmax(0, 1fr);
+        grid-template-columns: 116px minmax(0, 1fr) 32px;
         gap: 5px 12px;
         align-items: start;
         padding: 11px 13px;
       }
       .event-location { grid-column: 2; }
+      .google-calendar-button {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+      }
     }
     @media (max-width: 480px) {
       .brand-en { display: none; }
       .event-main { padding-right: 12px; padding-left: 12px; }
-      .event-row { grid-template-columns: 1fr; }
+      .event-row { grid-template-columns: minmax(0, 1fr) 32px; }
       .event-location { grid-column: 1; }
       .event-date { color: var(--event-teal); font-size: 12px; }
+      .google-calendar-button {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+      }
     }
   </style>
 </head>
@@ -224,6 +283,11 @@
     </header>
 
     <div class="event-main">
+      <p class="calendar-note">
+        <span class="calendar-note-mark" aria-hidden="true">G</span>
+        Googleカレンダーに登録するときは、各イベント右端のGボタンを押してください。
+      </p>
+
       <div class="event-toolbar" role="group" aria-label="イベント種別で絞り込む">
         <button class="filter-button" type="button" data-filter="all" aria-pressed="true">すべて</button>
         <button class="filter-button" type="button" data-filter="international" aria-pressed="false">海外・国際</button>
@@ -232,7 +296,7 @@
       </div>
 
       <div class="event-guide" aria-hidden="true">
-        <span>日付</span><span>学会・研究会</span><span>開催地</span>
+        <span>日付</span><span>学会・研究会</span><span>開催地</span><span>予定</span>
       </div>
 
       <section class="year-group" data-year-group aria-labelledby="year-2026">
@@ -603,6 +667,76 @@
     const emptyMessage = document.querySelector("#event-empty");
     const pastHeading = document.querySelector("#past-heading");
     const pastIntro = document.querySelector("#past-intro");
+
+    const padCalendarNumber = (value) => String(value).padStart(2, "0");
+
+    const parseEventDateRange = (label) => {
+      const startMatch = label.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日/);
+      if (!startMatch) return null;
+
+      const start = {
+        year: Number(startMatch[1]),
+        month: Number(startMatch[2]),
+        day: Number(startMatch[3])
+      };
+      const end = { ...start };
+      const rangeLabel = label.split("〜")[1] || "";
+      const monthAndDayMatch = rangeLabel.match(/^(\d{1,2})月(\d{1,2})日/);
+      const dayOnlyMatch = rangeLabel.match(/^(\d{1,2})日/);
+
+      if (monthAndDayMatch) {
+        end.month = Number(monthAndDayMatch[1]);
+        end.day = Number(monthAndDayMatch[2]);
+        if (end.month < start.month) end.year += 1;
+      } else if (dayOnlyMatch) {
+        end.day = Number(dayOnlyMatch[1]);
+      }
+
+      return { start, end };
+    };
+
+    const formatCalendarDateTime = (date, hour) =>
+      `${date.year}${padCalendarNumber(date.month)}${padCalendarNumber(date.day)}T${padCalendarNumber(hour)}0000`;
+
+    const countEventDays = ({ start, end }) => {
+      const startTime = Date.UTC(start.year, start.month - 1, start.day);
+      const endTime = Date.UTC(end.year, end.month - 1, end.day);
+      return Math.round((endTime - startTime) / 86400000) + 1;
+    };
+
+    eventRows.forEach((row) => {
+      const dateLabel = row.querySelector(".event-date")?.textContent.trim() || "";
+      const titleLink = row.querySelector(".event-title");
+      const location = row.querySelector(".event-location")?.textContent.trim() || "";
+      const dateRange = parseEventDateRange(dateLabel);
+      const calendarButton = document.createElement(dateRange ? "a" : "span");
+      calendarButton.className = `google-calendar-button${dateRange ? "" : " is-disabled"}`;
+      calendarButton.textContent = "G";
+
+      if (dateRange) {
+        const params = new URLSearchParams({
+          action: "TEMPLATE",
+          text: titleLink.textContent.trim(),
+          dates: `${formatCalendarDateTime(dateRange.start, 9)}/${formatCalendarDateTime(dateRange.start, 17)}`,
+          details: `公式サイト: ${titleLink.href}`,
+          location
+        });
+        const eventDays = countEventDays(dateRange);
+        if (eventDays > 1) {
+          params.set("recur", `RRULE:FREQ=DAILY;COUNT=${eventDays}`);
+        }
+        calendarButton.href = `https://calendar.google.com/calendar/render?${params.toString()}`;
+        calendarButton.target = "_blank";
+        calendarButton.rel = "noopener";
+        calendarButton.setAttribute("aria-label", `${titleLink.textContent.trim()}をGoogleカレンダーに追加`);
+        calendarButton.title = "Googleカレンダーに追加（各日9:00〜17:00）";
+      } else {
+        calendarButton.setAttribute("aria-label", `${titleLink.textContent.trim()}は開催日未確定のため追加できません`);
+        calendarButton.title = "開催日が確定後に追加できます";
+      }
+
+      row.append(calendarButton);
+    });
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
