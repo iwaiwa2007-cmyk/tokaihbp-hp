@@ -331,6 +331,11 @@ h3 {
   white-space: nowrap;
 }
 
+.news-new {
+  color: #d7263d;
+  font-weight: 800;
+}
+
 .news-body {
   display: grid;
   gap: 6px;
@@ -355,6 +360,25 @@ h3 {
   color: var(--blue);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.news-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 36px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  color: #fff !important;
+  background: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.news-button:hover {
+  background: var(--navy);
 }
 
 .news-signature {
