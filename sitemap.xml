@@ -25,6 +25,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/tools/neuro-gcs/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/tools/neuro-nihss/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://iwaiwa2007-cmyk.github.io/tokaihbp-hp/tools/pep-prevention/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GCS判定ツール（医療従事者向け）</title>
+  <meta name="description" content="救急外来でGlasgow Coma Scale（GCS）のE・V・Mを素早く評価・記録するための医療従事者向け教育支援ツールです。">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="../../assets/tokai-gastro-logo.png?v=20260716">
+  <link rel="apple-touch-icon" href="../../assets/tokai-gastro-logo.png?v=20260716">
+  <link rel="stylesheet" href="../../style.css?v=20260713-2">
+  <style>
+    :root{--navy:#102a43;--blue:#176b87;--blue2:#0e7490;--mint:#e8f5f2;--bg:#f4f7f9;--line:#d9e2e8;--ink:#172b3a;--muted:#607482;--warn:#a45b00;--danger:#b9363e;--ok:#18755c;--white:#fff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;line-height:1.55}
+    .tool-header{background:linear-gradient(120deg,var(--navy),#164e63);color:#fff;padding:24px clamp(18px,4vw,52px)}
+    .tool-header .bar{max-width:1180px;margin:auto;display:flex;align-items:flex-start;justify-content:space-between;gap:24px}.tool-header h1{font-size:clamp(22px,3vw,34px);margin:0 0 4px;letter-spacing:.02em}.tool-header p{margin:0;color:#d9edf2;font-size:14px}.status{border:1px solid #ffffff55;border-radius:999px;padding:7px 12px;font-size:12px;white-space:nowrap}
+    .tool-main{max-width:920px;margin:18px auto 54px;padding:0 18px;display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 16px #1e40500b;overflow:hidden}.panel-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:center}.panel-head h2{font-size:17px;margin:0}.panel-head span{font-size:12px;color:var(--muted)}
+    .scale-section{padding:18px 20px;border-bottom:1px solid var(--line)}.scale-intro{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:stretch;margin-bottom:12px}.domain-visual{min-height:92px;border:1px solid #cfe0e6;border-radius:11px;background-image:url("../../assets/gcs-evm-assessment.png");background-repeat:no-repeat;background-size:300% auto;box-shadow:inset 0 0 0 1px #ffffff55}.domain-visual.eye{background-position:left center}.domain-visual.verbal{background-position:center center}.domain-visual.motor{background-position:right center}.scale-copy{display:flex;flex-direction:column;justify-content:center}.scale-title{display:flex;align-items:baseline;gap:8px;margin-bottom:5px}.scale-title b{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--navy);color:#fff;font-size:18px}.scale-title h3{font-size:16px;margin:0}.scale-title span{color:var(--muted);font-size:12px}.visual-caption{margin:0;color:#526a78;font-size:11px}
+    .choices{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.choice{position:relative}.choice input{position:absolute;opacity:0;pointer-events:none}.choice label{display:flex;min-height:76px;height:100%;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:3px;padding:9px 7px;border:1px solid var(--line);border-radius:10px;background:#fbfdfe;cursor:pointer;font-size:12px;font-weight:700;transition:.15s ease}.choice strong{font-size:20px;line-height:1;color:var(--navy)}.choice small{font-size:10px;color:var(--muted);font-weight:500}.choice input:focus-visible+label{outline:3px solid #62b9cd55;outline-offset:2px}.choice input:checked+label{border-color:var(--blue);background:#eaf4f6;box-shadow:inset 0 0 0 1px var(--blue);color:#174c5c}.choice input:checked+label strong{color:var(--blue2)}
+    .modifier{display:flex;align-items:center;gap:9px;margin:12px 0 0;padding:10px 12px;border:1px dashed #c6d4db;border-radius:9px;background:#fafcfd;font-size:12px}.modifier input{width:18px;height:18px;margin:0;accent-color:var(--blue)}
+    .actions{padding:16px 20px;display:flex;justify-content:flex-end;background:#fafcfd}.actions button{border:0;border-radius:9px;padding:11px 16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}.ghost{background:#e9eff2;color:#405665}
+    .result-main{padding:24px 20px;text-align:center;background:linear-gradient(145deg,#f5fbfc,#e9f4f6)}.result-label{font-size:12px;font-weight:800;color:#46606e;letter-spacing:.08em}.total{margin:6px 0 2px;color:var(--navy);font-size:58px;line-height:1;font-weight:900;font-variant-numeric:tabular-nums}.total small{font-size:18px}.notation{font-size:20px;font-weight:900;color:var(--blue2);letter-spacing:.04em}.result-status{max-width:280px;margin:14px auto 0;border-radius:999px;padding:6px 10px;background:#dfe9ed;color:#405665;font-size:12px;font-weight:800}.result-status.ok{background:#e3f4ee;color:var(--ok)}.result-status.warn{background:#fff0d8;color:var(--warn)}.result-status.danger{background:#fde8ea;color:var(--danger)}
+    .result-detail{padding:17px 20px}.result-detail h3{font-size:13px;margin:0 0 9px}.key{max-width:420px;margin:0 auto;padding:0;list-style:none;font-size:11px;color:var(--muted)}.key li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line)}.key li:last-child{border:0}.footnote{padding:0 20px 18px;color:var(--muted);font-size:10px;text-align:center}
+    @media(max-width:680px){.choices{grid-template-columns:repeat(2,minmax(0,1fr))}.choice label{min-height:68px}.panel-head span{display:none}.scale-intro{grid-template-columns:118px 1fr}.domain-visual{min-height:84px}}
+    @media(max-width:470px){.status{display:none}.tool-main{padding:0 10px}.scale-section{padding:16px 14px}.actions{padding:14px}.actions button{width:100%}.total{font-size:48px}.site-header .brand-en{display:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../index.html#home" aria-label="ホームへ戻る">
+      <img class="brand-logo" src="../../assets/tokai-gastro-logo.png?v=20260716" alt="Tokai University Gastroenterology">
+      <span><span class="brand-ja">東海大学医学部消化器内科胆膵班</span><span class="brand-en">Tokai University School of Medicine, Biliary-Pancreatic Clinical Group</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation"><a href="../../index.html#home">Home</a><a href="../../index.html#tools">Tools</a><a href="../../index.html#contact">Contact</a></nav>
+  </header>
+
+  <header class="tool-header"><div class="bar"><div><h1>GCS 判定ツール</h1><p>Glasgow Coma Scale — 開眼・言語・運動反応をすばやく記録</p></div><div class="status">端末内で計算・データ送信なし</div></div></header>
+  <main class="tool-main">
+    <form id="gcsForm" class="panel" autocomplete="off">
+      <div class="panel-head"><h2>最良反応を選択</h2><span>選択すると自動計算</span></div>
+      <section class="scale-section" aria-labelledby="eyeTitle">
+        <div class="scale-intro"><div class="domain-visual eye" role="img" aria-label="患者の開眼反応を観察する医療者のイラスト"></div><div class="scale-copy"><div class="scale-title"><b>E</b><h3 id="eyeTitle">開眼反応</h3><span>Eye opening</span></div><p class="visual-caption">自発的な開眼から、呼びかけ・圧刺激への最良反応を評価</p></div></div>
+        <div class="choices">
+          <div class="choice"><input type="radio" name="eye" id="e4" value="4" data-label="自発的" checked><label for="e4"><strong>4</strong>自発的<small>Spontaneous</small></label></div>
+          <div class="choice"><input type="radio" name="eye" id="e3" value="3" data-label="呼びかけで"><label for="e3"><strong>3</strong>呼びかけで<small>To sound</small></label></div>
+          <div class="choice"><input type="radio" name="eye" id="e2" value="2" data-label="圧刺激で"><label for="e2"><strong>2</strong>圧刺激で<small>To pressure</small></label></div>
+          <div class="choice"><input type="radio" name="eye" id="e1" value="1" data-label="なし"><label for="e1"><strong>1</strong>なし<small>None</small></label></div>
+          <div class="choice"><input type="radio" name="eye" id="ent" value="NT" data-label="評価不能"><label for="ent"><strong>NT</strong>評価不能<small>Not testable</small></label></div>
+        </div>
+      </section>
+      <section class="scale-section" aria-labelledby="verbalTitle">
+        <div class="scale-intro"><div class="domain-visual verbal" role="img" aria-label="患者の言語反応を確認する医療者のイラスト"></div><div class="scale-copy"><div class="scale-title"><b>V</b><h3 id="verbalTitle">言語反応</h3><span>Verbal response</span></div><p class="visual-caption">氏名・場所・時間などを問い、会話と発語の最良反応を評価</p></div></div>
+        <div class="choices">
+          <div class="choice"><input type="radio" name="verbal" id="v5" value="5" data-label="見当識あり" checked><label for="v5"><strong>5</strong>見当識あり<small>Oriented</small></label></div>
+          <div class="choice"><input type="radio" name="verbal" id="v4" value="4" data-label="混乱した会話"><label for="v4"><strong>4</strong>混乱した会話<small>Confused</small></label></div>
+          <div class="choice"><input type="radio" name="verbal" id="v3" value="3" data-label="不適切な言葉"><label for="v3"><strong>3</strong>不適切な言葉<small>Words</small></label></div>
+          <div class="choice"><input type="radio" name="verbal" id="v2" value="2" data-label="理解不能な音声"><label for="v2"><strong>2</strong>理解不能な音声<small>Sounds</small></label></div>
+          <div class="choice"><input type="radio" name="verbal" id="v1" value="1" data-label="なし"><label for="v1"><strong>1</strong>なし<small>None</small></label></div>
+          <div class="choice"><input type="radio" name="verbal" id="vnt" value="NT" data-label="評価不能"><label for="vnt"><strong>NT</strong>評価不能<small>例：挿管</small></label></div>
+        </div>
+        <label class="modifier"><input id="intubated" type="checkbox">挿管・気管切開などによる評価不能（記録に「T」を付記）</label>
+      </section>
+      <section class="scale-section" aria-labelledby="motorTitle">
+        <div class="scale-intro"><div class="domain-visual motor" role="img" aria-label="患者が手を握る命令に従う様子のイラスト"></div><div class="scale-copy"><div class="scale-title"><b>M</b><h3 id="motorTitle">運動反応</h3><span>Motor response</span></div><p class="visual-caption">簡単な命令への反応、または圧刺激に対する最良運動反応を評価</p></div></div>
+        <div class="choices">
+          <div class="choice"><input type="radio" name="motor" id="m6" value="6" data-label="命令に従う" checked><label for="m6"><strong>6</strong>命令に従う<small>Obeys commands</small></label></div>
+          <div class="choice"><input type="radio" name="motor" id="m5" value="5" data-label="疼痛部位を認識"><label for="m5"><strong>5</strong>疼痛部位を認識<small>Localizing</small></label></div>
+          <div class="choice"><input type="radio" name="motor" id="m4" value="4" data-label="正常屈曲・逃避"><label for="m4"><strong>4</strong>正常屈曲・逃避<small>Normal flexion</small></label></div>
+          <div class="choice"><input type="radio" name="motor" id="m3" value="3" data-label="異常屈曲"><label for="m3"><strong>3</strong>異常屈曲<small>Abnormal flexion</small></label></div>
+          <div class="choice"><input type="radio" name="motor" id="m2" value="2" data-label="伸展"><label for="m2"><strong>2</strong>伸展<small>Extension</small></label></div>
+          <div class="choice"><input type="radio" name="motor" id="m1" value="1" data-label="なし"><label for="m1"><strong>1</strong>なし<small>None</small></label></div>
+          <div class="choice"><input type="radio" name="motor" id="mnt" value="NT" data-label="評価不能"><label for="mnt"><strong>NT</strong>評価不能<small>Not testable</small></label></div>
+        </div>
+      </section>
+      <div class="actions"><button class="ghost" type="reset">リセット</button></div>
+    </form>
+
+    <aside class="panel result-panel" aria-live="polite">
+      <div class="result-main"><div class="result-label">GCS TOTAL</div><div id="total" class="total">15<small> / 15</small></div><div id="notation" class="notation">E4 V5 M6</div><div id="resultStatus" class="result-status ok">全項目を評価済み</div></div>
+      <div class="result-detail"><h3>スコア範囲の目安</h3><ul class="key"><li><span>13–15</span><b>軽度域</b></li><li><span>9–12</span><b>中等度域</b></li><li><span>3–8</span><b>重度域</b></li></ul></div>
+      <p class="footnote">重症度区分は一般的な便宜上の目安です。気道管理などの判断はGCS単独では行わず、呼吸・循環、瞳孔、局在徴候、原因、経時変化を含めて評価してください。</p>
+    </aside>
+  </main>
+  <script>
+    const form=document.getElementById('gcsForm');
+    const selected=name=>form.querySelector(`input[name="${name}"]:checked`);
+    function update(){
+      const e=selected('eye'),v=selected('verbal'),m=selected('motor');
+      const vals=[e.value,v.value,m.value],testable=vals.every(x=>x!=='NT');
+      const intubated=document.getElementById('intubated').checked;
+      if(intubated&&v.value!=='NT'){document.getElementById('vnt').checked=true;return update()}
+      const vCode=v.value==='NT'&&intubated?'T':v.value;
+      const notation=`E${e.value} V${vCode} M${m.value}`;
+      document.getElementById('notation').textContent=notation;
+      const total=document.getElementById('total'),status=document.getElementById('resultStatus');
+      if(testable){
+        const sum=vals.reduce((a,b)=>a+Number(b),0);total.innerHTML=`${sum}<small> / 15</small>`;
+        status.textContent=sum<=8?'GCS 8以下':sum<=12?'中等度域':'全項目を評価済み';status.className=`result-status ${sum<=8?'danger':sum<=12?'warn':'ok'}`;
+      }else{total.innerHTML='NT';status.textContent='合計点は算出しません';status.className='result-status warn'}
+    }
+    form.addEventListener('change',update);
+    form.addEventListener('reset',()=>setTimeout(update,0));
+    update();
+  </script>
+  <script src="../../script.js"></script>
+</body>
+</html>

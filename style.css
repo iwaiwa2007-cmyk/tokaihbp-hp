@@ -436,6 +436,16 @@ h3 {
   align-items: center;
 }
 
+.neuro-tool-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
 .tool-button {
   display: inline-flex;
   align-items: center;
@@ -455,6 +465,19 @@ h3 {
 
 .tool-button:hover {
   background: var(--navy);
+}
+
+.tool-button.neuro-tool-button {
+  min-height: 34px;
+  padding: 6px 12px;
+  border-color: rgba(76, 139, 117, 0.24);
+  background: var(--green);
+  font-size: 12px;
+  box-shadow: 0 6px 14px rgba(76, 139, 117, 0.16);
+}
+
+.tool-button.neuro-tool-button:hover {
+  background: #336f5b;
 }
 
 .card,
@@ -1249,6 +1272,14 @@ h3 {
 
   .tool-button {
     flex: 1 1 220px;
+  }
+
+  .tool-button.neuro-tool-button {
+    flex: 0 1 150px;
+  }
+
+  .neuro-tool-button-row {
+    align-items: stretch;
   }
 
   .education-focus {

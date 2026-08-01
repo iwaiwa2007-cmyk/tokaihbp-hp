@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NIHSS判定ツール（研究用）</title>
+  <meta name="description" content="救急外来でNIH Stroke Scale（NIHSS）の15項目を順番に評価し、0〜42点を計算する研究用ツールです。">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="../../assets/tokai-gastro-logo.png?v=20260716">
+  <link rel="apple-touch-icon" href="../../assets/tokai-gastro-logo.png?v=20260716">
+  <link rel="stylesheet" href="../../style.css?v=20260713-2">
+  <style>
+    :root{--navy:#102a43;--blue:#176b87;--blue2:#0e7490;--bg:#f4f7f9;--line:#d9e2e8;--ink:#172b3a;--muted:#607482;--warn:#a45b00;--danger:#b9363e;--ok:#18755c;--white:#fff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;line-height:1.55}
+    .tool-header{background:linear-gradient(120deg,var(--navy),#164e63);color:#fff;padding:24px clamp(18px,4vw,52px)}.tool-header .bar{max-width:1320px;margin:auto;display:flex;align-items:flex-start;justify-content:space-between;gap:24px}.tool-header h1{font-size:clamp(22px,3vw,34px);margin:0 0 4px;letter-spacing:.02em}.tool-header p{margin:0;color:#d9edf2;font-size:14px}.status{border:1px solid #ffffff55;border-radius:999px;padding:7px 12px;font-size:12px;white-space:nowrap}
+    .tool-main{max-width:980px;margin:18px auto 54px;padding:0 18px;display:grid;grid-template-columns:1fr;gap:18px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 16px #1e40500b;overflow:hidden}.panel-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:center}.panel-head h2{font-size:17px;margin:0}.panel-head span{font-size:12px;color:var(--muted)}
+    .group-head{padding:11px 20px;background:#eaf4f6;border-top:1px solid #cbe0e5;border-bottom:1px solid #cbe0e5;color:#174c5c;font-size:13px;font-weight:900;letter-spacing:.03em}.group-head:first-child{border-top:0}.item{padding:17px 20px;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.item-top{display:grid;grid-template-columns:42px minmax(0,1fr);gap:11px;align-items:start;margin-bottom:11px}.item-code{display:grid;place-items:center;min-height:36px;border-radius:9px;background:var(--navy);color:#fff;font-size:14px;font-weight:900}.item h3{margin:0;font-size:15px}.instruction{margin:3px 0 0;color:var(--muted);font-size:11px}.options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.option{position:relative}.option input{position:absolute;opacity:0;pointer-events:none}.option label{display:flex;height:100%;min-height:58px;align-items:center;gap:9px;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:#fbfdfe;cursor:pointer;font-size:11px;font-weight:650;line-height:1.35}.option strong{display:grid;place-items:center;flex:0 0 auto;width:27px;height:27px;border-radius:7px;background:#e7eef1;color:var(--navy);font-size:14px}.option input:focus-visible+label{outline:3px solid #62b9cd55;outline-offset:2px}.option input:checked+label{border-color:var(--blue);background:#eaf4f6;box-shadow:inset 0 0 0 1px var(--blue);color:#174c5c}.option input:checked+label strong{background:var(--blue);color:#fff}.option.un input:checked+label{border-color:#c78a18;background:#fff7e5;color:#6b4d11}.option.un input:checked+label strong{background:#c78a18}.side-tag{display:inline-block;margin-left:5px;border-radius:999px;padding:2px 7px;background:#edf3f6;color:#526a78;font-size:10px}
+    .actions{padding:16px 20px;display:flex;justify-content:flex-end;border-top:1px solid var(--line);background:#fafcfd}.actions button{border:0;border-radius:9px;padding:11px 16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}.ghost{background:#e9eff2;color:#405665}
+    .result-main{padding:24px 20px;text-align:center;background:linear-gradient(145deg,#f5fbfc,#e9f4f6)}.result-label{font-size:12px;font-weight:800;color:#46606e;letter-spacing:.08em}.total{margin:6px 0 2px;color:var(--navy);font-size:58px;line-height:1;font-weight:900;font-variant-numeric:tabular-nums}.total small{font-size:18px}.result-status{max-width:280px;margin:14px auto 0;border-radius:999px;padding:6px 10px;background:#dfe9ed;color:#405665;font-size:12px;font-weight:800}.result-status.ok{background:#e3f4ee;color:var(--ok)}.result-status.warn{background:#fff0d8;color:var(--warn)}.result-status.danger{background:#fde8ea;color:var(--danger)}.progress{max-width:420px;margin:12px auto 0;height:6px;border-radius:999px;background:#dce7eb;overflow:hidden}.progress span{display:block;width:100%;height:100%;background:var(--blue);transition:width .2s}.result-detail{padding:17px 20px;border-top:1px solid var(--line)}.result-detail h3{font-size:13px;margin:0 0 9px}.key{max-width:420px;margin:0 auto;padding:0;list-style:none;font-size:11px;color:var(--muted)}.key li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line)}.key li:last-child{border:0}.source{padding:0 20px 18px;color:var(--muted);font-size:10px;text-align:center}.source a{color:var(--blue);text-decoration:underline}
+    @media(max-width:700px){.options{grid-template-columns:repeat(2,minmax(0,1fr))}.panel-head span{display:none}}
+    @media(max-width:480px){.status{display:none}.tool-main{padding-left:10px;padding-right:10px}.item{padding:15px 13px}.options{grid-template-columns:1fr}.option label{min-height:48px}.actions{padding:14px}.actions button{width:100%}.total{font-size:48px}.site-header .brand-en{display:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../../index.html#home" aria-label="ホームへ戻る"><img class="brand-logo" src="../../assets/tokai-gastro-logo.png?v=20260716" alt="Tokai University Gastroenterology"><span><span class="brand-ja">東海大学医学部消化器内科胆膵班</span><span class="brand-en">Tokai University School of Medicine, Biliary-Pancreatic Clinical Group</span></span></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation"><a href="../../index.html#home">Home</a><a href="../../index.html#tools">Tools</a><a href="../neuro-gcs/index.html">GCS</a></nav>
+  </header>
+  <header class="tool-header"><div class="bar"><div><h1>NIHSS 判定ツール（研究用）</h1><p>National Institutes of Health Stroke Scale — 15入力・0〜42点</p></div><div class="status">端末内で計算・データ送信なし</div></div></header>
+  <main class="tool-main">
+    <form id="nihssForm" class="panel" autocomplete="off">
+      <div class="panel-head"><h2>評価項目</h2><span>各項目で最も合う反応を選択</span></div>
+      <div id="items"></div>
+      <div class="actions"><button id="resetButton" class="ghost" type="button">すべて0点</button></div>
+    </form>
+    <aside class="panel result-panel" aria-live="polite">
+      <div class="result-main"><div class="result-label">NIHSS TOTAL</div><div id="total" class="total">0<small> / 42</small></div><div id="resultStatus" class="result-status ok">評価完了</div><div class="progress" aria-hidden="true"><span id="progress"></span></div></div>
+      <div class="result-detail"><h3>総点の便宜的な目安</h3><ul class="key"><li><span>0</span><b>明らかな障害なし</b></li><li><span>1–4</span><b>軽度</b></li><li><span>5–15</span><b>中等度</b></li><li><span>16–20</span><b>中等度〜重度</b></li><li><span>21–42</span><b>重度</b></li></ul></div>
+      <p class="source">UNは0点として補完せず、測定可能項目の合計から除外します。UNがある数値は完全なNIHSS総点ではありません。採点基準：<a href="https://www.ninds.nih.gov/sites/default/files/migrate-documents/nih_stroke_scale_booklet_508c.pdf" target="_blank" rel="noopener">NINDS公式 NIH Stroke Scale booklet</a>。重症度区分は便宜的な目安で、治療適応を示す閾値ではありません。</p>
+    </aside>
+  </main>
+  <script>
+    const GROUPS=[
+      ['意識',[
+        {c:'1a',t:'意識水準',i:'覚醒度と刺激への反応を評価。挿管などがあっても最も近い反応を選ぶ。',o:[[0,'清明・十分に反応'],[1,'清明ではないが、軽い刺激で反応'],[2,'反応維持に反復刺激、または非定型でない運動に強い刺激が必要'],[3,'反射的運動・自律反応のみ、または完全無反応']]},
+        {c:'1b',t:'意識障害―質問',i:'「今月」と「年齢」を質問。近似回答は不可。最初の回答のみ採点。',o:[[0,'2問とも正答'],[1,'1問のみ正答'],[2,'2問とも誤答・答えられない']]},
+        {c:'1c',t:'意識障害―従命',i:'開閉眼と、非麻痺側の手を握って離す指示。実行不能なら別の一段階命令でもよい。',o:[[0,'2つとも実行'],[1,'1つのみ実行'],[2,'どちらも実行できない']]}
+      ]],
+      ['眼球運動・視野・顔面',[
+        {c:'2',t:'最良注視',i:'水平眼球運動を評価。眼球頭反射は可、冷水刺激は行わない。',o:[[0,'正常'],[1,'部分的注視麻痺・片眼または両眼の異常'],[2,'共同偏視・完全注視麻痺（眼球頭反射でも改善しない）']]},
+        {c:'3',t:'視野',i:'各眼を対座法で評価し、必要に応じて視覚性威嚇を用いる。',o:[[0,'視野欠損なし'],[1,'部分的半盲'],[2,'完全半盲'],[3,'両側半盲・皮質盲を含む']]},
+        {c:'4',t:'顔面麻痺',i:'歯を見せる、眉を上げる、閉眼を指示または動作で促す。',o:[[0,'正常・左右対称'],[1,'軽度（鼻唇溝平坦化、笑顔の非対称）'],[2,'部分麻痺（下顔面の完全またはほぼ完全麻痺）'],[3,'片側または両側の完全麻痺（上・下顔面）']]}
+      ]],
+      ['運動',[
+        {c:'5a',t:'上肢運動',s:'左',i:'座位90°／仰臥位45°で10秒保持。検者が肢位をとらせて手掌を下にする。',o:[[0,'10秒間下垂なし'],[1,'下垂するが支持面に落ちない'],[2,'重力に抗する努力あり；保持できず支持面に落ちる'],[3,'重力に抗する努力なし；落下'],[4,'全く動かない'],['UN','切断・関節固定などで測定不能']]},
+        {c:'5b',t:'上肢運動',s:'右',i:'座位90°／仰臥位45°で10秒保持。検者が肢位をとらせて手掌を下にする。',o:[[0,'10秒間下垂なし'],[1,'下垂するが支持面に落ちない'],[2,'重力に抗する努力あり；保持できず支持面に落ちる'],[3,'重力に抗する努力なし；落下'],[4,'全く動かない'],['UN','切断・関節固定などで測定不能']]},
+        {c:'6a',t:'下肢運動',s:'左',i:'仰臥位30°で5秒保持する。',o:[[0,'5秒間下垂なし'],[1,'下垂するが5秒以内に支持面へ落ちない'],[2,'重力に抗する努力あり；5秒以内に支持面へ落ちる'],[3,'重力に抗する努力なし；すぐ落下'],[4,'全く動かない'],['UN','切断・関節固定などで測定不能']]},
+        {c:'6b',t:'下肢運動',s:'右',i:'仰臥位30°で5秒保持する。',o:[[0,'5秒間下垂なし'],[1,'下垂するが5秒以内に支持面へ落ちない'],[2,'重力に抗する努力あり；5秒以内に支持面へ落ちる'],[3,'重力に抗する努力なし；すぐ落下'],[4,'全く動かない'],['UN','切断・関節固定などで測定不能']]},
+        {c:'7',t:'四肢失調',i:'開眼で指鼻指試験・踵膝試験。筋力低下から予想される範囲を超える失調のみ採点。',o:[[0,'なし、または麻痺・理解不能'],[1,'1肢にあり'],[2,'2肢にあり'],['UN','切断・関節固定などで測定不能']]}
+      ]],
+      ['感覚・言語・注意',[
+        {c:'8',t:'感覚',i:'顔・上肢・下肢への刺激で左右を比較。脳卒中による感覚低下を採点。',o:[[0,'正常・感覚低下なし'],[1,'軽度〜中等度低下（触れられていることは分かる）'],[2,'重度〜完全消失（顔・上肢・下肢で触覚を認識しない）']]},
+        {c:'9',t:'最良言語',i:'絵の説明、物品呼称、文章の音読などで理解と表出を評価。',o:[[0,'失語なし・正常'],[1,'軽度〜中等度失語（意思伝達は可能）'],[2,'重度失語（断片的で、聞き手の推測が必要）'],[3,'無言・全失語（有用な会話・聴覚理解なし）']]},
+        {c:'10',t:'構音障害',i:'単語の音読または復唱で発音の明瞭さを評価。',o:[[0,'正常'],[1,'軽度〜中等度（不明瞭だが理解可能）'],[2,'重度（理解不能）または無言・発語不能'],['UN','挿管・その他の物理的障壁で測定不能']]},
+        {c:'11',t:'消去現象と注意障害',i:'両側同時刺激（視覚・触覚など）と空間・身体への注意を評価。',o:[[0,'異常なし'],[1,'1感覚様式の消去・不注意、または片側への注意低下'],[2,'複数感覚様式の著明な半側不注意、または自己身体を認識しない']]}
+      ]]
+    ];
+    const itemsEl=document.getElementById('items');
+    const flat=GROUPS.flatMap(g=>g[1]);
+    function safe(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+    itemsEl.innerHTML=GROUPS.map(([group,items])=>`<section><div class="group-head">${safe(group)}</div>${items.map(item=>`<article class="item"><div class="item-top"><div class="item-code">${item.c}</div><div><h3>${safe(item.t)}${item.s?`<span class="side-tag">${item.s}</span>`:''}</h3><p class="instruction">${safe(item.i)}</p></div></div><div class="options">${item.o.map(([score,label],n)=>`<div class="option ${score==='UN'?'un':''}"><input type="radio" name="item-${item.c}" id="item-${item.c}-${n}" value="${score}" data-label="${safe(label)}" ${n===0?'checked':''}><label for="item-${item.c}-${n}"><strong>${score}</strong><span>${safe(label)}</span></label></div>`).join('')}</div></article>`).join('')}</section>`).join('');
+    const chosen=item=>document.querySelector(`input[name="item-${item.c}"]:checked`);
+    function update(){
+      const selected=flat.map(chosen),un=selected.filter(x=>x&&x.value==='UN'),complete=selected.filter(Boolean).length;
+      const sum=selected.reduce((a,x)=>a+(x&&x.value!=='UN'?Number(x.value):0),0);
+      const total=document.getElementById('total'),status=document.getElementById('resultStatus');
+      total.innerHTML=un.length?`${sum}<small>（UN除外）</small>`:`${sum}<small> / 42</small>`;
+      if(un.length){status.textContent=`測定可能項目の合計：UN ${un.length}項目あり`;status.className='result-status warn'}
+      else{const label=sum===0?'明らかな障害なし':sum<=4?'軽度':sum<=15?'中等度':sum<=20?'中等度〜重度':'重度';status.textContent=label;status.className=`result-status ${sum>=16?'danger':sum>=5?'warn':'ok'}`}
+      document.getElementById('progress').style.width=`${complete/flat.length*100}%`;
+    }
+    document.getElementById('nihssForm').addEventListener('change',update);
+    document.getElementById('resetButton').addEventListener('click',()=>{flat.forEach(item=>document.querySelector(`input[name="item-${item.c}"]`).checked=true);update()});
+    update();
+  </script>
+  <script src="../../script.js"></script>
+</body>
+</html>
