@@ -295,7 +295,7 @@ h3 {
 .news-list {
   display: grid;
   gap: 8px;
-  max-height: 170px;
+  max-height: 340px;
   overflow-y: auto;
   padding: 10px;
   border: 1px solid var(--line);
@@ -1356,7 +1356,7 @@ h3 {
   }
 
   .news-list {
-    max-height: 220px;
+    max-height: 440px;
     padding: 10px;
   }
 
