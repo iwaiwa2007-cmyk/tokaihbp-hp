@@ -19,10 +19,31 @@
     .top-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.top-card{padding:16px;border:1px solid var(--line);border-radius:8px;background:#fbfdfe}.top-card h3{margin:0 0 8px;font-size:1rem;line-height:1.55}.top-card p{margin:6px 0;font-size:.86rem}.badge{display:inline-flex;padding:2px 8px;border:1px solid #cbdbe4;border-radius:999px;background:#f7fafb;color:#456176;font-size:.68rem;font-weight:700}.badge.high{border-color:#9fd5c4;background:#eef9f5;color:#176650}.badge.caution{border-color:#ead29b;background:#fff9e9;color:#75591a}
     .topic-block{margin-top:16px}.topic-block>h3{margin:0;padding:9px 12px;border-left:4px solid var(--accent);background:#edf5f7;font-size:1rem}.paper{padding:18px 0;border-bottom:1px solid var(--line)}.paper:last-child{border-bottom:0}.paper-title{margin:0 0 8px;font-weight:800;line-height:1.6}.paper-title a{text-decoration-thickness:.08em}.paper-content-with-image{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:20px;align-items:start;margin-top:10px}.paper-copy p{margin:0 0 10px;font-size:.88rem}.paper-illustration{margin:0}.paper-illustration img{display:block;width:100%;height:auto;border:1px solid #d8c6a9;border-radius:8px;background:#f7f0df;box-shadow:0 5px 16px #4d3b2014}.trial-table{width:100%;border-collapse:collapse;font-size:.82rem}.trial-table th,.trial-table td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}.trial-table th{width:155px;color:#36566e}.disclaimer{margin-top:20px;padding:14px 16px;border-left:4px solid #7c91a1;background:#eef2f4;color:#506170;font-size:.8rem}
     @media(max-width:760px){.page{padding:76px 12px 40px}.highlight-hero{padding:20px}.week-switcher{grid-template-columns:1fr 1fr}.week-current{display:none}.top-grid{grid-template-columns:1fr}.paper-content-with-image{grid-template-columns:1fr}.paper-illustration{max-width:260px;margin:0 auto}.trial-table th,.trial-table td{display:block;width:100%}.trial-table th{padding-bottom:2px;border-bottom:0}.trial-table td{padding-top:2px}}
+    .page { padding-top: 72px; }
+    @media (max-width: 760px) { .page { padding-top: 64px; } }
   </style>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="../index.html#home"><span class="brand-mark">T</span><span>東海大学医学部 消化器内科 胆膵班</span></a><nav class="site-nav"><a href="../index.html#home">Home</a><a href="weekly-highlight-2026-08-09.html">Highlight</a></nav></header>
+  <header class="site-header">
+    <a class="brand" href="../index.html#home" aria-label="Home">
+      <img class="brand-logo" src="../assets/tokai-gastro-logo.png?v=20260716" alt="Tokai University Gastroenterology">
+      <span>
+        <span class="brand-ja">東海大学医学部消化器内科胆膵班</span>
+        <span class="brand-en">Tokai University School of Medicine, Biliary-Pancreatic Clinical Group</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html#home">Home</a>
+      <a href="weekly-highlight-2026-08-09.html" class="active" aria-current="page">Highlight</a>
+      <a href="../events/">Event</a>
+      <a href="../index.html#members">PI</a>
+      <a href="../index.html#activity">Activity</a>
+      <a href="../index.html#tools">Tools</a>
+      <a href="../index.html#publications">Publications</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
   <main class="page">
     <section class="highlight-hero">
       <p class="eyebrow">Tokai University Pancreatobiliary Group</p>
@@ -90,5 +111,6 @@
     <p class="disclaimer"><strong>医療従事者向け情報：</strong> 本ページは医師・医学生・研究者向けの文献整理であり、患者向け広告、診療ガイドライン、個別の診断・治療助言ではありません。掲載内容は公開時点の情報に基づき、原著論文・最新ガイドライン・各施設の方針をご確認ください。</p>
   </main>
   <footer class="site-footer"><p>© Tokai University School of Medicine, Division of Gastroenterology — Pancreatobiliary Group</p></footer>
+  <script src="../script.js"></script>
 </body>
 </html>

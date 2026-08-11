@@ -1,0 +1,1274 @@
+=== PAGE 1 ===
+                                                                                  
+                                                                                  
+                                                                                  
+      Digestive Endoscopy                                                         
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        ORIGINAL ARTICLE                                                          
+      Liver, Biliary tract and Pancreas                                           
+                                                                                  
+      Suprapapillary    Stent- By- Stent Deployment     With  Slim- Fully         
+                                                                                  
+      Covered   Versus   Uncovered    Metal  Stents  for Malignant                
+      Hilar  Biliary  Obstruction:   A Multicenter    Comparative    Study        
+                                                                                  
+      (With   Video)                                                              
+                                                                                  
+      Tadahisa Inoue1 | Michihiro Yoshida2 | Naoaki Yamada3 | Rena Kitano1 | Tomoya Kitada1 | Shun Futagami1 |
+      Kenta Kachi3 | Fumihiro Okumura3 | Itaru Naitoh4                            
+      1Department of Gastroenterology, Aichi Medical University, Nagakute, Aichi, Japan | 2Department of Gastroenterology and Metabolism, Nagoya City
+      University Graduate School of Medical Sciences, Nagoya, Aichi, Japan | 3Department of Gastroenterology, Gifu Prefectural Tajimi Hospital, Tajimi, Gifu,
+      Japan | 4Department of Gastroenterology, Nagoya City University Midori Municipal Hospital, Nagoya, Aichi, Japan
+                                                                                  
+      Correspondence: Tadahisa Inoue (tinoue-tag@umin.ac.jp)                      
+      Received: 26 May 2025 | Revised: 28 August 2025 | Accepted: 1 September 2025
+      Funding: The authors received no specific funding for this work.            
+      Keywords: fully covered metal stent | malignant hilar biliary obstruction | recurrent biliary obstruction | reintervention | uncovered metal stent
+                                                                                  
+       ABSTRACT                                                                   
+       Background: Bilateral uncovered metal stent (UMS) placement is recommended for unresectable malignant hilar biliary ob-
+       structions (MHBO). However, recent improvements in antitumor therapies and patient survival have led to an increasing number
+       of patients outliving UMS patency, necessitating more frequent reinterventions. This study evaluated the efficacy of novel supra-
+       papillary stent- by- stent (SBS) placement using slim fully covered metal stents (FCMS) and compared them with UMS.
+       Methods: A total of 254 patients were included. Technical and clinical success, adverse events (AEs) including recurrent biliary
+       obstruction (RBO), and reintervention were compared between the FCMS and UMS groups. Propensity score matching was per-
+       formed to adjust for between- group differences.                           
+       Results: Technical and clinical success rates and early and late AE rates were not significantly different between the groups.
+       The FCMS group demonstrated a significantly lower RBO incidence rate (32.0% vs. 60.8%; p = 0.005) and a significantly longer
+       time to RBO (median, NA vs. 204 days; p = 0.048). However, in the FCMS group, 4.0% of patients required stent removal because
+       of suspected branch occlusion. The technical success rates of reintervention were 100% and 83.3% in the FCMS and UMS groups
+       (p = 0.147), respectively. Compared to the UMS group, the FCMS group demonstrated a significantly shorter reintervention pro-
+       cedure time (median, 20 vs. 31 min; p = 0.005) and a significantly lower number of reinterventions (p = 0.029) and requirement
+       for repeat reinterventions (p = 0.003).                                    
+       Conclusions: Suprapapillary slim FCMS SBS placement may be a promising treatment option for patients with unresectable
+       MHBO. However, early and unique events requiring stent removal should be carefully considered.
+                                                                                  
+                                                                                  
+      1 | Introduction                    (MHBO) [1, 2]. Considering stent patency, uncovered metal
+                                          stents (UMS) and bilateral placement provide a longer dura-
+      Endoscopic transpapillary stent placement is the first- line tion with superior survival outcomes than those associated
+      drainage method for malignant hilar biliary obstruction with plastic stents (PS) and unilateral placement [3, 4]. Thus,
+                                                                                  
+                                                                                  
+      © 2025 Japan Gastroenterological Endoscopy Society.                         
+                                                                                  
+                                                                                  
+      Digestive Endoscopy, 2025; 37:1295–1305                            1295     
+      https://doi.org/10.1111/den.70031                                           
+
+=== PAGE 2 ===
+                                                                                  
+                                                                                  
+                                                                                  
+      for unresectable cases, bilateral UMS placement using either The SBS with UMS procedure is illustrated in Figure 2.
+      the stent- by- stent (SBS) or stent- in- stent (SIS) techniques has Detailed descriptions of each procedure are provided in the
+      long been recommended [5, 6]. However, this recommenda- Appendix S1.        
+      tion has changed in recent years, leading to considerable de-               
+      bate and uncertainty regarding the optimal drainage strategy For the SBS with slim FCMS, a slim FCMS (Taewoong Medical,
+      for unresectable MHBO.              Seoul, Korea) with a 6- mm diameter, a retrieval string at the
+                                          distal end, and a 7.5- Fr delivery system was utilized (Figure 3).
+      Even with bilateral UMS placement, approximately half of pa- In some cases, a HANAROSTENT (MI Tech, Seoul, Korea) was
+      tients experience stent occlusion, necessitating reintervention used as the slim 6- mm FCMS. Stent length (60 or 80 mm) was
+      [7, 8]. Regardless of whether the initial placement was per- selected on the basis of stricture length.
+      formed using the SBS or SIS method, reintervention remains                  
+      technically challenging, demanding, and time- consuming For the SBS with UMS, an 8- or 10- mm diameter UMS with
+      [9, 10]. This difficulty arises primarily because, once de- a ≤ 6- Fr ultra- thin delivery system was used, including Zeo
+      ployed, a UMS is difficult to remove. Recent advancements Stent V (Zeon Medical, Tokyo, Japan), Bilerush selective (Piolax
+      in antitumor therapies, including those for biliary tract can- Medical Devices, Kanagawa, Japan), Zilver635 (Cook Medical,
+      cer, the primary cause of MHBO, have led to improved sur- Bloomington, IN, USA), YABUSAME (Kaneka Medix, Osaka,
+      vival outcomes [11, 12]. Consequently, establishing drainage Japan), or Niti- S (Taewoong Medical).
+      strategies that account for the likelihood of reintervention is             
+      increasingly needed. Additionally, the increasing number of All procedures were performed or directly supervised by
+      patients achieving conversion surgery following effective sys- experienced endoscopists with expertise in therapeutic en-
+      temic therapy has made the use of non- removable UMS less doscopic retrograde cholangiopancreatography, including bil-
+      favorable.                          iary stenting.                          
+      We hypothesized that suprapapillary SBS using slim fully                    
+      covered metal stents (FCMS) may serve as a promising new 2.3 | Outcomes and Definitions
+      drainage strategy for unresectable MHBO, as FCMS, like PS, is               
+      removable, facilitating easier reintervention while also poten- The primary outcome was recurrent biliary obstruction (RBO).
+      tially offering long- term patency. This study aimed to evaluate The secondary outcomes were technical success, clinical suc-
+      the efficacy of this novel technique by comparing it with the cess, procedure time, and adverse events (AEs) other than RBO
+      conventional SBS method using a UMS. and reintervention associated with the procedure. The study
+                                          population was divided into patients who underwent SBS with
+                                          slim FCMS (FCMS group) and those who underwent SBS with
+      2 | Methods                         UMS (UMS group). The outcomes were compared between the
+                                          two groups. Furthermore, the factors affecting the time to RBO
+      2.1 | Study Design and Patients     were evaluated.                         
+      This retrospective multicenter comparative study investigated Technical success was defined as the successful completion of
+      consecutive patients with unresectable MHBO who underwent the intended procedure, from biliary cannulation to MS place-
+      SBS with two or more metal stents (MS), including combined ment. Clinical success was defined as ≥ 50% reduction or nor-
+      SBS and SIS method between 2013 and 2024 at four Japanese in- malization of total bilirubin and target liver enzymes, along
+      stitutions. The exclusion criteria were as follows: age < 20 years, with the resolution of cholangitis, within 14 days. The AEs were
+      prior MS placement, surgically altered anatomy, placement defined and graded according to the TOKYO criteria 2024 [13].
+      across the duodenal papilla, non- transpapillary approach, endo- Events occurring within 14 days of the procedure were classified
+      biliary radiofrequency ablation performed either before or after as early AEs, whereas those occurring 14 days after the proce-
+      stent placement, missing information regarding the details of dure were considered late AEs. RBO was defined as the recur-
+      the procedure and outcomes, and refusal to participate. No cases rence of jaundice and/or cholangitis along with biliary dilation
+      in which four or more MS were inserted were observed during on imaging studies or any other conditions requiring bile duct
+      the study period.                   drainage or stent removal after achieving technical and clinical
+                                          successes [13]. Time to RBO was defined as the interval from
+      This study was approved by the institutional review board the date of MS placement to RBO occurrence following clinical
+      of each participating hospital and was conducted in accor- success.         
+      dance with the principles of the Declaration of Helsinki. As                
+      this was a retrospective study, an opt- out option was provided             
+      for patients who did not consent to the use of their data for 2.4 | Statistical Analysis
+      publication.                                                                
+                                          Propensity score matching was performed to identify matched
+                                          cohorts within the two study groups and minimize confound-
+      2.2 | Technique                     ing bias. The covariates sex, age, performance status, etiology,
+                                          Bismuth classification, stricture length, presence of metasta-
+      The SBS with the slim FCMS procedure is illustrated in sis, jaundice, and cholangitis before drainage, presence of pre-
+      Figure 1 and Video S1, with reintervention shown in Video S2. drainage, attempt at three- stent placement, and chemotherapy
+      1296                                                       Digestive Endoscopy, 2025
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 3 ===
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+      FIGURE 1 | After biliary cannulation, two guidewires were placed into the right and left intrahepatic bile ducts. Subsequently, a delivery system
+      for slim fully covered metal stent was inserted over the left guidewire (a) and deployed across the stricture and above the papilla (b). The second metal
+      stent was inserted over the right guidewire (c) and deployed alongside the left metal stent in a stent- by- stent configuration (d). Two retrieval strings
+      were positioned into the duodenum through the duodenal papilla (e).         
+                                                                                  
+                                                                                  
+      status were selected. The propensity scores were estimated 3 | Results      
+      using logistic regression models on the basis of these covari-              
+      ates. One- to- one nearest- neighbor matching without replace- 3.1 | Patients
+      ment was performed for group matching, using a caliper width                
+      of 0.2.                             In total, 254 patients met the inclusion criteria, with 60 and 194
+                                          patients in the FCMS and UMS groups, respectively. After one-
+      Categorical variables were compared using Fisher's exact test, to- one propensity score matching, 52 patients were included in
+      whereas continuous variables were analyzed using Student's each group.      
+      t- test and the Mann–Whitney U test. The time to RBO was                    
+      analyzed by treating death without RBO as a competing risk The rate of attempted three- stent placement was significantly
+      and compared using Gray's test. Univariate and multivariate different between the two groups; however, this difference did
+      analyses were conducted using the Fine and Gray subdistri- not remain significant after propensity score matching, result-
+      bution hazards model to identify predictive factors while ac- ing in a well- balanced patient distribution between the groups
+      counting for competing risks. Variables with a p- value < 0.2 (Table 1).    
+      in the univariate analysis were included in the multivariate                
+      model. Survival duration was assessed using the Kaplan–Meier                
+      method, and Kaplan–Meier curves were compared using the 3.2 | Procedural Outcomes
+      log-r ank test.                                                             
+                                          Table 2 summarizes the outcomes in both groups after propen-
+      All statistical analyses were performed using the EZR sity score matching. The technical success rates were 96.2%
+      version 1.68 (Saitama Medical Center, Jichi Medical (50/52) and 98.1% (51/52) in the FCMS and UMS groups, respec-
+      University, Saitama, Japan) [14]. Statistical significance was set tively, which were not significantly different (p = 1.000). Three
+      at p < 0.05.                        stents were placed in eight patients in the FCMS group and in
+      Digestive Endoscopy, 2025                                          1297     
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 4 ===
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+      FIGURE 2 | After two guidewires were placed into the right and left intrahepatic bile ducts, two ≤ 6- Fr ultra- thin delivery systems for uncovered
+      metal stents were inserted simultaneously over the guidewires (a). Subsequently, one of the two stents was released and deployed across the stricture,
+      above the papilla (b), followed by the deployment of the second stent in the stent- by- stent configuration (c, d). The lower ends of both stents were
+      carefully aligned to facilitate future reintervention.                      
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+      FIGURE 3 | A slim fully covered metal stent (Taewoong Medical, Seoul, Korea) with a 6- mm diameter, a retrieval string at the distal end, and a
+      7.5- Fr delivery system was utilized. Stent length (60 or 80 mm) was selected on the basis of stricture length.
+                                                                                  
+                                                                                  
+      nine patients in the UMS group, whereas all other cases under- patients in both groups. The median procedure times were 29
+      went two- stent placement. The FCMS group had one case of and 33 min in the FCMS and UMS groups, respectively, which
+      failed biliary cannulation and one case in which the stricture were not significantly different (p = 0.230).
+      could not be traversed, whereas in the UMS group, one case                  
+      failed to reach the target bile ducts. Among the patients who The early AE rates were 5.8% (3/52) and 1.9% (1/52) in the FCMS
+      achieved technical success, clinical success was achieved in all and UMS groups, respectively, with no significant difference
+                                                                                  
+      1298                                                       Digestive Endoscopy, 2025
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 5 ===
+                                                                                  
+                                                                                  
+                                                                                  
+      TABLE 1 | Baseline characteristics of the patients.                         
+                                Unmatched              Propensity score matched   
+                       UMS group FCMS group       UMS group FCMS group            
+                        (n = 194)  (n = 60) p value (n = 52)  (n = 52) p value    
+                                                                                  
+       Sex, (male/female), n 99/95 36/24    0.239   25/27     29/23    0.556      
+       Age, years       76 (69–83) 79 (73–84) 0.152 79 (72–81) 79 (72–81) 0.814   
+       Performance status                                                         
+                                                                                  
+        ≤ 2             160 (82.5) 52 (86.7) 0.552 45 (86.5) 44 (84.6) 1.000      
+        ≥ 3             34 (17.5)  8 (13.3)         7 (13.5)  8 (15.4)            
+       Etiology                                                                   
+        Bile duct cancer 75 (38.7) 28 (46.7) 0.294 26 (50.0)  22 (42.3) 0.555     
+                                                                                  
+        Othersa         119 (61.3) 32 (53.3)       26 (50.0)  30 (57.7)           
+       Bismuth classification                                                     
+        ≤ III           132 (68.0) 48 (80.0) 0.103 39 (75.0)c 40 (76.9)c 1.000    
+                                                                                  
+        IV              62 (32.0) 12 (20.0)        13 (25.0)  12 (23.1)           
+       Stricture length 20 (17–28) 20 (20–25) 0.616 20 (17–37) 20 (20–25) 0.333   
+       Metastatic       136 (70.1) 42 (70.0) 1.000  35 (67.3) 34 (65.4) 1.000     
+       Jaundiceb        164 (84.5) 54 (90.0) 0.397 46 (88.5)  46 (88.5) 1.000     
+                                                                                  
+       Cholangitisb     42 (21.6) 12 (20.0) 0.858   9 (17.3)  12 (23.1) 0.626     
+       Pre- drainage performed 153 (78.9) 46 (76.7) 0.722 35 (67.3) 38 (73.1) 0.669
+       Attempting three- stent 79 (40.7) 8 (13.3) < 0.001 9 (17.3) 8 (15.4) 1.000 
+       placement                                                                  
+       Received chemotherapy 112 (57.7) 26 (43.3) 0.055 27 (51.9) 26 (50.0) 1.000 
+                                                                                  
+      Note: Values are presented as n (%) or medians (interquartile ranges), unless otherwise indicated. Bold values indicate statistical significance (p < 0.05).
+      Abbreviations: FCMS, fully covered metal stent; SMD, standardized mean difference; UMS, uncovered metal stent.
+      a“Others” includes gallbladder, pancreatic, and liver cancers, as well as metastases or dissemination from other malignancies.
+      bBefore biliary drainage.                                                   
+      cBismuth type II: 17 patients in the UMS group; 21 in the FCMS group.       
+      (p = 0.618). In the FCMS group, moderate pancreatitis and mild The primary causes of RBO in the FCMS group were sludge
+      cholangitis that were treated conservatively occurred in one pa- (nine patients), overgrowth (three patients), stent migration (two
+      tient each. Additionally, moderate cholecystitis requiring percu- patients), and biloma (two patients). Two specific biloma cases
+      taneous drainage occurred in one patient. In the UMS group, occurred in the posterior segment within 2 months after the pro-
+      moderate pancreatitis requiring conservative treatment was ob- cedure. The upper edge of the right- lobe stent was positioned
+      served in one patient.              at the bifurcation of the anterior and posterior segmental ducts
+                                          in both cases (Table 3). Although no stent occlusion occurred
+                                          in these two cases, the stents were removed because branch oc-
+      3.3 | Long- Term Outcomes           clusion due to the stent could not be ruled out, which led to im-
+                                          provement. The primary causes of RBO in the UMS group were
+      The median follow- up periods were 119 and 139 days in the ingrowth (20 patients), sludge (seven patients), and overgrowth
+      FCMS and UMS groups, respectively, with no significant differ- (three patients). One patient in the UMS group was classified as
+      ence (p = 0.300). The rate of late AEs, excluding RBO, was 4.0% undetermined.
+      (2/50) in the FCMS group and 7.8% (6/51) in the UMS group,                  
+      with no significant difference (p = 0.678). In the FCMS group, The time to RBO was significantly longer in the FCMS group
+      mild cholangitis that was treated conservatively occurred in two than in the UMS group (median NA vs. 204 days; p = 0.048;
+      patients. In the UMS group, mild cholangitis requiring conser- Figure 4). The 6- and 12- month RBO rates were 21.7% and
+      vative treatment was observed in two patients, whereas moder- 42.0%, respectively, in the FCMS group, and 46.9% and 60.3%,
+      ate liver abscess requiring drainage occurred in two patients. respectively, in the UMS group. The median overall sur-
+                                          vival was 164 days in both the FCMS and UMS groups, with
+      The FCMS group had a significantly lower RBO occurrence rate no significant difference between the two groups (p = 0.501;
+      than the UMS group (32.0% [16/50] vs. 60.8% [31/51]; p = 0.005). Figure 5). 
+      Digestive Endoscopy, 2025                                          1299     
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 6 ===
+                                                                                  
+                                                                                  
+                                                                                  
+      TABLE 2 | Procedural and long- term outcomes.                               
+                                     UMS group        FCMS group     p value      
+       Technical success              51/52 (98.1)    50/52 (96.2)   1.000        
+                                                                                  
+        Cause of failure                                                          
+         Failure to reach the target bile ducts 1 (1.9) 1 (1.9)                   
+         Failure of biliary cannulation 0               1 (1.9)                   
+                                                                                  
+       Clinical success               51/51 (100)      50/50 (100)   1.000        
+       Procedure time, min            33 (23–55)       29 (23–37)    0.230        
+       Early AE besides RBO (≤ 14 days) 1/52 (1.9)     3/52 (5.8)    0.618        
+        Pancreatitis                   1 (1.9)          1 (1.9)                   
+                                                                                  
+        Cholangitis                     0               1 (1.9)                   
+        Cholecystitis                   0               1 (1.9)                   
+       Late AE besides RBO (≥ 15 days) 4/51 (7.8)      2/50 (4.0)    0.678        
+                                                                                  
+        Cholangitis                    2 (3.9)          2 (4.0)                   
+        Liver abscess                  2 (3.9)           0                        
+       Occurrence of RBO              31/51 (60.8)    16/50 (32.0)   0.005        
+                                                                                  
+        Major causes of RBO (including presumed cases)                            
+         Ingrowth                      20 (39.2)         0                        
+         Sludge                        7 (13.7)         9 (18.0)                  
+         Overgrowth                    3 (5.9)          3 (6.0)                   
+                                                                                  
+         Stent migration                0               2 (4.0)                   
+         Biloma                         0               2 (4.0)                   
+         Undeterminable                1 (2.0)           0                        
+                                                                                  
+       Median time to RBO (95% CI), days 204 (128–559) NA (268–NA)   0.048        
+        6- month RBO rate (95% CI), % 46.9 (31.6–60.8) 21.7 (10.4–35.5)           
+        12- month RBO rate (95% CI), % 60.3 (44.0–73.2) 42.0 (25.7–57.4)          
+       Median overall survival (95% CI), days 164 (126–214) 164 (118–208) 0.501   
+                                                                                  
+        6- month survival rate (95% CI), % 46.3 (31.3–60.1) 47.8 (31.9–62.1)      
+        12- month survival rate (95% CI), % 28.3 (15.6–42.4) 30.4 (16.6–45.4)     
+      Note: Values are presented as n (%) or medians (interquartile ranges), unless otherwise indicated. Bold values indicate statistical significance (p < 0.05).
+      Abbreviations: AE, adverse event; CI, confidence interval; FCMS, fully covered metal stent; NA, not applicable; RBO, recurrent biliary obstruction; UMS, uncovered
+      metal stent.                                                                
+                                                                                  
+      3.4 | Reintervention for RBO        (median, 20 min vs. 31 min, p = 0.005). No AEs related to reinter-
+                                          vention were observed in either group. The number of reinter-
+      Table 4 summarizes the outcomes of reintervention for RBO ventions was significantly lower in the FCMS group than in the
+      in both groups. In the UMS group, one patient with RBO de- UMS group (median, 1 [range, 1–2] vs. 2 [range, 1–6]; p = 0.029).
+      clined further intervention and did not undergo reintervention. Among patients who initially achieved successful stenting, the
+      The technical success rate of reintervention was 100% (16/16) proportion requiring multiple (≥ 2) reinterventions was signifi-
+      in the FCMS group and 83.3% (25/30) in the UMS group, with cantly lower in the FCMS group than in the UMS group (8.0%
+      no significant difference (p = 0.147). In the FCMS group, MS re- [4/50] vs. 33.3% [17/51], p = 0.003).
+      moval was allowed in all cases. The reason for reintervention               
+      failure in the UMS group was the inability to access the target             
+      bile duct in all five failed cases. Among patients in whom tech- 3.5 | Factors Predicting Time to RBO
+      nical success was achieved, clinical success was achieved in all            
+      cases of both groups. The procedure time for reintervention was Table 5 provides an assessment of the predictive factors associated
+      significantly shorter in the FCMS group than in the UMS group with the time to RBO. In the univariate analysis using the Fine and
+      1300                                                       Digestive Endoscopy, 2025
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 7 ===
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+      Digestive Endoscopy, 2025                                          1301     
+      .puorg                                                                      
+      tnets                                                                       
+      derevoc                                                                     
+      ylluf                                                                       
+      eht                                                                         
+      ni                                                                          
+      noisulcco                                                                   
+      tnets                                                                       
+      naht                                                                        
+      rehto                                                                       
+      snosaer                                                                     
+      rof                                                                         
+      lavomer                                                                     
+      tnets                                                                       
+      gniriuqer                                                                   
+      sesac                                                                       
+      fo                                                                          
+      sliateD                                                                     
+      |                                                                           
+      3                                                                           
+      ELBAT                                                                       
+         stnevE                                                                   
+          tnevE                                                                   
+          gniriuqer                                                               
+          fo                                                                      
+          hcnarB                                                                  
+          -erP                                                                    
+            tesno                                                                 
+            tnets                                                                 
+            tnets                                                                 
+            eht                                                                   
+            rebmuN                                                                
+            eganiard                                                              
+            erutcirtS                                                             
+            htumsiB                                                               
+            ,egA                                                                  
+              emit                                                                
+              lavomer                                                             
+              tnemecalp                                                           
+              stnets                                                              
+              fo                                                                  
+              demrofrep                                                           
+              sitignalohC                                                         
+              ecidnuaJ                                                            
+              htgnel                                                              
+              noitacifissalc                                                      
+              ygoloitE                                                            
+              xes                                                                 
+                -thgir                                                            
+                ehT                                                               
+                •                                                                 
+                nihtiW                                                            
+                amoliB                                                            
+                thgir                                                             
+                ,tfeL                                                             
+                2                                                                 
+                seY                                                               
+                oN                                                                
+                seY                                                               
+                mm                                                                
+                02                                                                
+                bIII                                                              
+                reddalbllaG                                                       
+                m                                                                 
+                ,97                                                               
+                  saw                                                             
+                  tnets                                                           
+                  ebol                                                            
+                  htnom                                                           
+                  1                                                               
+                  detacol                                                         
+                  recnac                                                          
+                   gnola                                                          
+                   decalp                                                         
+                   eht                                                            
+                   ni                                                             
+                     eriwediug                                                    
+                     eht                                                          
+                     roiretsop                                                    
+                      eht ni                                                      
+                      denoitisop                                                  
+                      tnemges                                                     
+                        latnemges                                                 
+                        roiretna                                                  
+                         .tcud                                                    
+                           egde                                                   
+                           tnets                                                  
+                           ehT                                                    
+                           •                                                      
+                             ta detacol                                           
+                             saw                                                  
+                              noitacrufib                                         
+                              eht                                                 
+                                roiretna                                          
+                                eht                                               
+                                fo                                                
+                                 roiretsop                                        
+                                 dna                                              
+                                   .stcud                                         
+                                   latnemges tnets                                
+                                     retfA                                        
+                                     •                                            
+                                      na                                          
+                                      ,lavomer                                    
+                                        tnets                                     
+                                        derevocnu                                 
+                                         ,decalp                                  
+                                         saw                                      
+                                           ot gnidael                             
+                                            .tnemevorpmi                          
+                                               -thgir                             
+                                               ehT                                
+                                               •                                  
+                                               nihtiW                             
+                                               amoliB                             
+                                               thgir                              
+                                               ,tfeL                              
+                                               2                                  
+                                               seY                                
+                                               oN                                 
+                                               seY                                
+                                               mm                                 
+                                               02                                 
+                                               bIII                               
+                                               tcud                               
+                                               eliB                               
+                                               f ,76                              
+                                                saw                               
+                                                tnets                             
+                                                ebol                              
+                                                htnom                             
+                                                2                                 
+                                                detacol                           
+                                                recnac                            
+                                                  gnola                           
+                                                  decalp                          
+                                                  eht                             
+                                                  ni                              
+                                                    eriwediug                     
+                                                    eht                           
+                                                    roiretsop                     
+                                                     eht ni                       
+                                                     denoitisop                   
+                                                     tnemges                      
+                                                       latnemges                  
+                                                       roiretna                   
+                                                        .tcud                     
+                                                          egde                    
+                                                          tnets                   
+                                                          ehT                     
+                                                          •                       
+                                                            ta detacol            
+                                                            saw                   
+                                                             noitacrufib          
+                                                             eht                  
+                                                               roiretna           
+                                                               eht                
+                                                               fo                 
+                                                                roiretsop         
+                                                                dna               
+                                                                  .stcud          
+                                                                  latnemges tnets 
+                                                                   retfA          
+                                                                   •              
+                                                                     a ,lavomer   
+                                                                       saw tnets  
+                                                                       citsalp    
+                                                                        ot        
+                                                                        gnidael   
+                                                                        ,decalp   
+                                                                          .tnemevorpmi
+                                                                                14431661,
+                                                                                2025,
+                                                                                12, Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 8 ===
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+      FIGURE 4 | Cumulative incidence of recurrent biliary obstruction using a competing risk analysis; death without recurrent biliary obstruction
+      was considered a competing risk. The time to recurrent biliary obstruction was significantly longer in the FCMS group than in the UMS group (me-
+      dian: NA vs. 204 days, p = 0.048, Gray's test).FCMS, fully covered metal stent; UMS, uncovered metal stent.
+                                                                                  
+                                                                                  
+      Gray subdistribution hazards model, bile duct cancer (subdistribu- Traditionally, FCMS was not recommended for hilar strictures
+      tion hazard ratio [SDHR]: 1.64, 95% CI: 0.93–2.87, p = 0.086), jaun- because of concerns regarding branch occlusion; however, re-
+      dice before drainage (SDHR: 1.68, 95% CI: 0.77–3.70, p = 0.200), ducing the diameter to 6 mm (slim FCMS) may mitigate this
+      and the use of FCMS (SDHR: 0.44, 95% CI: 0.24–0.79, p = 0.006) issue [15, 16]. Promising results have been reported, with
+      were identified as potential predictors of time to RBO. These vari- slim FCMS placed across the papilla demonstrating a longer
+      ables were included in the multivariate analysis. patency than PS across the papilla [17]. However, to date,
+                                          no studies have compared FCMS with UMS, nor have there
+      In the multivariate model, only the use of FCMS remained a sig- been comparisons of FCMS in the above- papillary position.
+      nificant independent predictor of longer time to RBO (SDHR: Because sludge formation is the primary cause of FCMS oc-
+      0.43, 95% CI: 0.23–0.78, p = 0.005), indicating a lower risk of clusion, placing the FCMS above the papilla, similar to the
+      RBO compared with UMS.              PS [18, 19], may further enhance stent patency. Additionally,
+                                          studies on across- the- papilla FCMS have indicated frequent
+                                          stent migration as a concern [17]. When placed above the
+      4 | Discussion                      papilla, the migration may be mitigated by preventing down-
+                                          ward displacement into the duodenum and passage through
+      This study demonstrated that suprapapillary SBS with slim the duodenal papilla.
+      FCMS was associated with a lower rate of RBO and a longer                   
+      time to RBO than UMS, although the short survival of the study In this study, suprapapillary SBS with a slim FCMS achieved
+      cohort should be recognized as a study limitation. Additionally, a longer time to RBO than conventional UMS SBS placement.
+      the procedure time for reintervention was significantly shorter, Moreover, all reinterventions were successfully performed with
+      and the number of reinterventions required was significantly stent removal, with a significantly shorter reintervention proce-
+      lower. However, although the overall rate of AEs did not signifi- dure duration and lower requirement for repeat reintervention.
+      cantly differ between the groups, early unique events possibly Thus, suprapapillary slim FCMS placement could be a promis-
+      related to branch occlusion requiring stent removal were occa- ing alternative for drainage of unresectable MHBO, particularly
+      sionally observed in the FCMS group. in the current clinical setting.       
+      1302                                                       Digestive Endoscopy, 2025
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 9 ===
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+      FIGURE 5 | Kaplan–Meier analysis of overall survival. The median overall survival was 164 days in both the FCMS and UMS groups, with no
+      significant difference between the two groups (p = 0.501). FCMS, fully covered metal stent; UMS, uncovered metal stent.
+                                                                                  
+                                                                                  
+      TABLE 4 | Reintervention outcomes.                                          
+                                                                                  
+                                                UMS group  FCMS group p value     
+       Technical success of reintervention       25/30 (83.3) 16/16 (100) 0.147   
+        Success of stent removal                   —        16/16 (100)           
+        Cause of failure                                                          
+                                                                                  
+         Failure to reach the target bile duct     5          —                   
+        Method of reintervention                                                  
+         Plastic stent placement                   17         2                   
+                                                                                  
+         UMS placement                             7          4                   
+         FCMS placement                            1          10                  
+       Clinical success of reintervention        25/25 (100) 16/16 (100) 1.000    
+                                                                                  
+       Procedure time for reintervention, min    31 (21–45) 20 (15–28) 0.005      
+       Procedure-r elated AE                       0          0        1.000      
+       Median total reintervention procedures, (range) 2 (1–6) 1 (1–2) 0.029      
+       Requiring multiple (≥ 2) reinterventions among patients who initially 17/51 (33.3) 4/50 (8.0) 0.003
+       achieved successful stenting                                               
+                                                                                  
+      Note: Values are presented as n (%) or medians (interquartile ranges), unless otherwise indicated. Bold values indicate statistical significance (p < 0.05).
+      Abbreviations: AE, adverse event; FCMS, fully covered metal stent; UMS, uncovered metal stent.
+                                                                                  
+      Digestive Endoscopy, 2025                                          1303     
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 10 ===
+                                                                                  
+                                                                                  
+                                                                                  
+      TABLE 5 | Factors associated with time to recurrent biliary obstruction.    
+                                     Univariate analysis   Multivariate analysis  
+                                 SDHR    95% CI p value SDHR   95% CI p value     
+                                                                                  
+       Age                        1.02  0.98–1.07 0.290                           
+       Male sex                   1.39  0.78–2.48 0.260                           
+       Bile duct cancer           1.64  0.93–2.87 0.086  1.68  0.94–2.98 0.079    
+                                                                                  
+       Bismuth classification IV  0.86  0.43–1.72 0.680                           
+       Stricture length           1.006 0.99–1.03 0.550                           
+       Jaundice before the drainage 1.68 0.77–3.70 0.200 1.63  0.82–3.25 0.160    
+       Cholangitis before the drainage 0.75 0.35–1.63 0.470                       
+                                                                                  
+       Pre- drainage performed    1.20  0.61–2.37 0.590                           
+       Three- stent placement     1.04  0.57–1.91 0.890                           
+       Received chemotherapy after the drainage 0.89 0.50–1.57 0.680              
+                                                                                  
+       Treated in the latter half of the study period 1.15 0.66–2.02 0.620        
+       Using FCMS                 0.44  0.24–0.79 0.006  0.43  0.23–0.78 0.005    
+      Note: Bold values indicate statistical significance (p < 0.05).             
+      Abbreviations: CI, confidence interval; FCMS, fully covered metal stent; SDHR, subdistribution hazard ratio.
+                                                                                  
+                                                                                  
+      However, although no significant difference in the overall AE of experienced endoscopists, whether the results can be gener-
+      rate was observed, the occurrence of early biloma required stent alized to other institutions is uncertain. Fourth, many patients
+      removal in 4.0% of the cases in the FCMS group. This could be in our cohort had poor performance status and received limited
+      attributed to branch occlusion caused by FCMS or disruption chemotherapy. Thus, the generalizability to patients with bet-
+      of localized bile flow due to stent coverage. Previous studies on ter prognosis and longer survival may be limited, and different
+      slim FCMS for MHBO have not indicated branch occlusion as a drainage strategies may be needed for those expected to sur-
+      major concern. Takahashi et al. [20] have reported a 1.8% rate vive longer. Finally, this study compared UMS and slim FCMS
+      of segmental cholangitis requiring stent removal in a study of within the SBS configuration only, and the results should not
+      54 patients. Meanwhile, Paik et al. [17] have reported no signif- be interpreted as evidence of superiority over other drainage
+      icant difference in the overall AE rates between FCMS and PS. techniques, such as the SIS method and across the papilla ap-
+      However, even if rare, early AEs unique to FCMS, such as bile proaches. Therefore, the study findings should be validated
+      flow obstruction, may still occur. Interestingly, in all cases in using further prospective clinical trials, including randomized
+      which biloma developed in this study, the stent edge was posi- controlled trials.
+      tioned at the bifurcation of the anterior and posterior segmen-             
+      tal ducts, which were not separately obstructed, and biloma Nevertheless, to the best of our knowledge, this is the first
+      occurred in the posterior segment. A stent edge covering the comparative analysis of suprapapillary SBS with slim FCMS
+      bifurcation may pose a greater risk than one fully crossing the and UMS, demonstrating the potential benefits of FCMS.
+      bifurcation. The potential risk of such events associated with Considering the increasing importance of stent removal in the
+      FCMS is critically important and requires further investigation era of extended survival and conversion surgery, suprapapil-
+      in future studies. If avoidable, the FCMS should be placed with- lary FCMS placement may be a promising treatment option for
+      out covering the major bile duct branches. In particular, if the unresectable MHBO. However, the risk of early unique AEs re-
+      anterior and posterior segmental ducts remain patent and are quiring stent removal in FCMS needs to be recognized. Future
+      obstructed later by a stent, placing three stents instead of two research should focus on identifying the risk factors for early
+      may be preferable.                  events to further refine the optimal indications and techniques
+                                          for FCMS use in patients with MHBO.     
+      This study had several limitations. First, this was a nonran-               
+      domized, retrospective study. A potential selection bias should             
+      be noted, as FCMS placement might have been avoided in                      
+                                          Author Contributions                    
+      high- risk cases with advanced intrahepatic duct involvement                
+      or Glisson's capsule invasion due to concerns about segmental Tadahisa Inoue: conception and design, data acquisition, analysis and
+      cholangitis. This clinical judgment may have influenced out- interpretation, and drafting and revision of the manuscript. Michihiro
+                                          Yoshida: conception and design, data acquisition, analysis and inter-
+      comes. Second, the study period was long, and endoscopic de-                
+                                          pretation, and revision of the manuscript. Naoaki Yamada and Rena
+      vices and techniques advanced over time. Hence, these findings              
+                                          Kitano: data acquisition and interpretation and revision of the manu-
+      may not be applicable to current clinical practice. Third, as all script. Tomoya Kitada, Shun Futagami, and Kenta Kachi: data in-
+      procedures were performed or supervised by a limited number terpretation and revision of the manuscript. Fumihiro Okumura and
+      1304                                                       Digestive Endoscopy, 2025
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
+
+=== PAGE 11 ===
+                                                                                  
+                                                                                  
+                                                                                  
+      Itaru Naitoh: conception and design, data analysis and interpretation, 12. R. K. Kelley, M. Ueno, C. Yoo, et al., “Pembrolizumab in Combina-
+      and revision of the manuscript.     tion With Gemcitabine and Cisplatin Compared With Gemcitabine and
+                                          Cisplatin Alone for Patients With Advanced Biliary Tract Cancer (KEY-
+                                          NOTE- 966): A Randomised, Double- Blind, Placebo- Controlled, Phase 3
+      Acknowledgments                                                             
+                                          Trial,” Lancet 401 (2023): 1853–1865.   
+      We thank all the clinicians and staff at each institution for their support published correction appears in Lancet. 2023;402(10406):964. https://
+      and assistance during this study.                                           
+                                          doi. org/ 10. 1016/ S0140 - 6736(23) 01904 - 9. published correction ap-
+                                          pears in Lancet. 2024;403(10432):1140. https:// doi. org/ 10. 1016/ S0140
+      Ethics Statement                    -6 736(24)0 0545- 2 .                   
+      The institutional review boards of each participating hospital ap- 13. H. Isayama, T. Hamada, T. Fujisawa, et al., “TOKYO Criteria 2024
+      proved this study in accordance with the principles of the Declaration for the Assessment of Clinical Outcomes of Endoscopic Biliary Drain-
+      of Helsinki. As this was a retrospective study, an opt- out option was age,” Digestive Endoscopy 36 (2024): 1195–1210.
+      provided for patients who did not consent to the use of their data for      
+                                          14. Y. Kanda, “Investigation of the Freely Available Easy- To- Use Soft-
+      publication.                                                                
+                                          ware ‘EZR’ for Medical Statistics,” Bone Marrow Transplantation 48
+                                          (2013): 452–458.                        
+      Conflicts of Interest                                                       
+                                          15. T. Inoue, F. Okumura, I. Naitoh, et al., “Feasibility of the Placement
+      The authors declare no conflicts of interest. of a Novel 6- Mm Diameter Threaded Fully Covered Self- Expandable
+                                          Metal Stent for Malignant Hilar Biliary Obstructions (With Videos),”
+                                          Gastrointestinal Endoscopy 84 (2016): 352–357.
+      References                                                                  
+                                          16. T. Yoshida, K. Hara, H. Imaoka, et al., “Benefits of Side- By- Side
+      1. J. M. Dumonceau, A. Tringali, I. S. Papanikolaou, et al., “Endoscopic Deployment of 6- Mm Covered Self- Expandable Metal Stents for Hilar
+      Biliary Stenting: Indications, Choice of Stents, and Results: European Malignant Biliary Obstructions,” Journal of Hepato- Biliary- Pancreatic
+      Society of Gastrointestinal Endoscopy (ESGE) Clinical Guideline - Up- Sciences 23 (2016): 548–555.
+      dated October 2017,” Endoscopy 50 (2018): 910–930.                          
+                                          17. W. H. Paik, M. K. Jung, D. U. Kim, et al., “Side- By- Side Placement
+      2. M. Pimpinelli, M. Makar, and M. Kahaleh, “Endoscopic Manage- of Fully Covered Metal Stents Versus Conventional 7F Plastic Stents in
+      ment of Benign and Malignant Hilar Stricture,” Digestive Endoscopy 35 Malignant Hilar Biliary Obstruction: Prospective Randomized Con-
+      (2023): 443–452.                    trolled Trial,” Digestive Endoscopy 36 (2024): 473–480.
+      3. M. X. Xia, Y. L. Pan, X. B. Cai, et al., “Comparison of Endoscopic Bi- 18. A. Kurita, N. Uza, M. Asada, et al., “Stent Placement Above the
+      lateral Metal Stent Drainage With Plastic Stents in the Palliation of Un- Sphincter of Oddi Is a Useful Option for Patients With Inoperable
+      resectable Hilar Biliary Malignant Strictures: Large Multicenter Study,” Malignant Hilar Biliary Obstruction,” Surgical Endoscopy 36 (2022):
+      Digestive Endoscopy 33 (2021): 179–189. 2869–2878.                          
+      4. T. H. Lee, T. H. Kim, J. H. Moon, et al., “Bilateral Versus Unilateral 19. Y. Kanno, K. Ito, K. Nakahara, et al., “Suprapapillary Placement of
+      Placement of Metal Stents for Inoperable High- Grade Malignant Hilar Plastic Versus Metal Stents for Malignant Biliary Hilar Obstructions: A
+      Biliary Strictures: A Multicenter, Prospective, Randomized Study (With Multicenter, Randomized Trial,” Gastrointestinal Endoscopy 98 (2023):
+      Video),” Gastrointestinal Endoscopy 86 (2017): 817–827. 211–221.e3.         
+      5. T. Inoue and I. Naitoh, “Updates on Endoscopic Stenting for Unre- 20. S. Takahashi, T. Fujisawa, M. Ushio, et al., “Retrospective Eval-
+      sectable Malignant Hilar Biliary Obstruction,” Journal of Clinical Med- uation of Slim Fully Covered Self- Expandable Metallic Stent for
+      icine 13 (2024): 5410.              Unresectable Malignant Hilar Biliary Obstruction,” Journal of Hepato-
+                                          Biliary-P ancreatic Sciences 30 (2023): 408–415.
+      6. K. Ishigaki, R. Fukuda, Y. Nakai, et al., “Retrospective Comparative     
+      Study of New Slim- Delivery and Conventional Large- Cell Stents for         
+      Stent- In- Stent Methods for Hilar Malignant Biliary Obstruction,” Diges- Supporting Information
+      tive Endoscopy 36 (2024): 360–369.                                          
+                                          Additional supporting information can be found online in the
+      7. I. Naitoh and T. Inoue, “Optimal Endoscopic Drainage Strategy for Supporting Information section. Appendix S1: den70031-s up-0 001-
+      Unresectable Malignant Hilar Biliary Obstruction,” Clinical Endoscopy AppendixS1.docx. Video S1: Suprapapillary stent- by- stent deployment
+      56 (2023): 135–142.                 with slim fully covered metal stents in a case of malignant hilar biliary
+                                          obstruction. Video S2: Stent removal for reintervention after suprapap-
+      8. M. Okuno, K. Iwata, T. Iwashita, et al., “Evaluating Optimal Bilateral   
+                                          illary stent- by- stent deployment with slim fully covered metal stents in
+      Biliary Stenting in Endoscopic Reintervention After Initial Plastic Stent   
+                                          a case of malignant hilar biliary obstruction.
+      Dysfunction for Unresectable Malignant Hilar Biliary Obstruction:           
+      Retrospective Cross- Sectional Study,” Digestive Endoscopy 36 (2024):       
+      1153–1163.                                                                  
+      9. J. H. Son, H. S. Lee, S. H. Lee, et al., “Revision of Bilateral Self-    
+      Expandable Metallic Stents Placed Using the Stent- In- Stent Technique      
+      for Malignant Hilar Biliary Obstruction,” Hepatobiliary and Pancreatic      
+      Diseases International 17 (2018): 437–442.                                  
+      10. T. Inoue, I. Naitoh, Y. Suzuki, et al., “Multi- Center Study of Endo-   
+      scopic Revision After Side- By- Side Metal Stent Placement for Malignant    
+      Hilar Biliary Obstruction,” Digestive Endoscopy 33 (2021): 807–814.         
+      11. D. Y. Oh, A. R. He, M. Bouattour, et al., “Durvalumab or Placebo        
+      Plus Gemcitabine and Cisplatin in Participants With Advanced Bili-          
+      ary Tract Cancer (TOPAZ- 1): Updated Overall Survival From a Ran-           
+      domised Phase 3 Study,” Lancet Gastroenterology and Hepatology 9            
+      (2024): 694–704.                                                            
+      Digestive Endoscopy, 2025                                          1305     
+                                                                                14431661,
+                                                                                2025,
+                                                                                12,
+                                                                                Downloaded
+                                                                                from
+                                                                                https://onlinelibrary.wiley.com/doi/10.1111/den.70031
+                                                                                by
+                                                                                Iwasaki
+                                                                                Eisuke
+                                                                                - Keio
+                                                                                University
+                                                                                , Wiley
+                                                                                Online
+                                                                                Library
+                                                                                on
+                                                                                [11/08/2026].
+                                                                                See
+                                                                                the
+                                                                                Terms
+                                                                                and
+                                                                                Conditions
+                                                                                (https://onlinelibrary.wiley.com/terms-and-conditions)
+                                                                                on
+                                                                                Wiley
+                                                                                Online
+                                                                                Library
+                                                                                for
+                                                                                rules
+                                                                                of
+                                                                                use;
+                                                                                OA
+                                                                                articles
+                                                                                are
+                                                                                governed
+                                                                                by
+                                                                                the
+                                                                                applicable
+                                                                                Creative
+                                                                                Commons
+                                                                                License
