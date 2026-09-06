@@ -172,6 +172,17 @@
       text-underline-offset: 3px;
     }
     .event-title:hover { color: var(--event-teal); text-decoration-color: currentColor; }
+    .event-new .event-title::after {
+      content: "NEW";
+      display: inline-block;
+      margin-left: 6px;
+      color: #d62828;
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: .04em;
+      vertical-align: .12em;
+    }
     .event-title:not([href]) {
       color: var(--event-ink);
       text-decoration: none;
@@ -350,7 +361,7 @@
             <a class="event-title" href="https://gazou80.com/" target="_blank" rel="noopener">第80回 日本消化器画像診断研究会</a>
             <p class="event-location">鹿児島 — カクイックス交流センター</p>
           </article>
-          <article class="event-row" data-category="international">
+          <article class="event-row event-new" data-category="international">
             <time class="event-date" datetime="2026-10-08">2026年10月8日〜10日</time>
             <a class="event-title" href="https://igg4ward.org/events/6th-international-symposium-on-igg4-related-disease/" target="_blank" rel="noopener">Sixth International Symposium on IgG4-RD</a>
             <p class="event-location">Cambridge, Massachusetts, USA — The Charles Hotel</p>
@@ -405,7 +416,7 @@
             <a class="event-title" href="https://apdw2026manila.com/" target="_blank" rel="noopener">APDW 2026</a>
             <p class="event-location">Manila, Philippines — Philippine International Convention Center</p>
           </article>
-          <article class="event-row" data-category="international">
+          <article class="event-row event-new" data-category="international">
             <time class="event-date" datetime="2026-12-08">2026年12月8日〜10日</time>
             <div class="event-title-cell">
               <a class="event-title" href="https://www.hklivendoscopy.com/" target="_blank" rel="noopener">40th Anniversary HK Live Endoscopy</a>
@@ -413,9 +424,12 @@
             </div>
             <p class="event-location">Hong Kong — Shaw Auditorium, Prince of Wales Hospital</p>
           </article>
-          <article class="event-row" data-category="international">
+          <article class="event-row event-new" data-category="international">
             <time class="event-date" datetime="2026-12-09">2026年12月9日〜12日</time>
-            <a class="event-title" href="https://www.american-pancreatic-association.org/annual-meeting-2/2026-annual-meeting-registration/?v=1d20b5ff1ee9" target="_blank" rel="noopener">57th American Pancreatic Association Annual Meeting（APA 2026）</a>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://www.american-pancreatic-association.org/annual-meeting-2/2026-annual-meeting-registration/" target="_blank" rel="noopener">57th American Pancreatic Association Annual Meeting（APA 2026）</a>
+              <a class="event-sub-link" href="https://www.american-pancreatic-association.org/annual-meeting-2/2026-annual-meeting-registration/" target="_blank" rel="noopener">抄録募集：終了</a>
+            </div>
             <p class="event-location">Huntington Beach, California, USA — Hyatt Regency Huntington Beach</p>
           </article>
           <article class="event-row" data-category="domestic">
@@ -449,7 +463,7 @@
             <a class="event-title" href="https://sies.org.au/" target="_blank" rel="noopener">SIES 2027 — 18th Annual Meeting</a>
             <p class="event-location">Sydney, Australia — International Convention Centre Sydney, Darling Harbour</p>
           </article>
-          <article class="event-row" data-category="domestic">
+          <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2027-03-04">2027年3月4日〜5日</time>
             <div class="event-title-cell">
               <a class="event-title" href="https://www.jsaem63.org/abstract.html" target="_blank" rel="noopener">第63回 日本腹部救急医学会総会</a>
@@ -462,7 +476,7 @@
             <a class="event-title" href="https://igg4.w3.kanazawa-u.ac.jp/" target="_blank" rel="noopener">第18回 日本IgG4関連疾患学会学術集会</a>
             <p class="event-location">高知</p>
           </article>
-          <article class="event-row" data-category="domestic">
+          <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2027-04-17">2027年4月17日</time>
             <a class="event-title" href="http://www.jsge-kanto.jp/regularmeeting.html" target="_blank" rel="noopener">第394回 日本消化器病学会関東支部例会</a>
             <p class="event-location">東京 — 東京コングレスクエア日本橋（会長：朝比奈 靖浩）</p>
@@ -472,20 +486,24 @@
             <a class="event-title" href="https://isoukai2027.jp/index.html" target="_blank" rel="noopener">第32回 日本医学会総会</a>
             <p class="event-location">大阪市北区</p>
           </article>
-          <article class="event-row featured" data-category="international">
+          <article class="event-row featured event-new" data-category="international">
             <time class="event-date" datetime="2027-04-29">2027年4月29日〜5月1日</time>
             <div class="event-title-cell">
               <a class="event-title" href="https://esgedays.org/" target="_blank" rel="noopener">★ ESGE Days 2027 ★</a>
               <a class="event-sub-link" href="https://esgedays.org/general-information/key-dates" target="_blank" rel="noopener">Key Dates for ESGE Days 2027 in Lisbon</a>
+              <a class="event-sub-link" href="https://esgedays.org/general-information/key-dates" target="_blank" rel="noopener">抄録締切：2026年11月17日</a>
             </div>
             <p class="event-location">Lisbon, Portugal — Lisbon Congress Centre (CCL)</p>
           </article>
-          <article class="event-row" data-category="domestic">
+          <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2027-05-06">2027年5月6日〜8日</time>
-            <a class="event-title" href="https://site2.convention.co.jp/113jsge/" target="_blank" rel="noopener">第113回 日本消化器病学会総会</a>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://site2.convention.co.jp/113jsge/" target="_blank" rel="noopener">第113回 日本消化器病学会総会</a>
+              <a class="event-sub-link" href="https://site2.convention.co.jp/113jsge/abstracts/" target="_blank" rel="noopener">演題締切：2026年9月16日 正午</a>
+            </div>
             <p class="event-location">札幌 — 京王プラザホテル札幌、グランドメルキュール札幌大通公園</p>
           </article>
-          <article class="event-row" data-category="international">
+          <article class="event-row event-new" data-category="international">
             <time class="event-date" datetime="2027-05-08">2027年5月8日〜9日</time>
             <a class="event-title" href="https://mailchi.mp/b7137b2c8ab2/savethedate-apc2027-13766594?e=5659209b7b" target="_blank" rel="noopener">Australasian Pancreatic Club Meeting 2027（APC 2027）</a>
             <p class="event-location">Sydney, Australia — Crowne Plaza Sydney, Darling Harbour</p>
@@ -495,17 +513,25 @@
             <a class="event-title" href="https://ddw.org/" target="_blank" rel="noopener">米国消化器病学会週間（DDW）2027</a>
             <p class="event-location">Washington, D.C., USA</p>
           </article>
-          <article class="event-row" data-category="domestic">
+          <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2027-05-27">2027年5月27日〜29日</time>
-            <a class="event-title" href="https://site2.convention.co.jp/113jges/" target="_blank" rel="noopener">第113回 日本消化器内視鏡学会総会</a>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://site2.convention.co.jp/113jges/" target="_blank" rel="noopener">第113回 日本消化器内視鏡学会総会</a>
+              <a class="event-sub-link" href="https://site2.convention.co.jp/113jges/endai/" target="_blank" rel="noopener">演題締切：2026年11月13日</a>
+            </div>
             <p class="event-location">富山 — 富山国際会議場ほか</p>
+          </article>
+          <article class="event-row event-new" data-category="international">
+            <time class="event-date" datetime="2027-06-04">2027年6月4日〜8日</time>
+            <a class="event-title" href="https://www.asco.org/annual-meeting" target="_blank" rel="noopener">ASCO Annual Meeting 2027</a>
+            <p class="event-location">Chicago, Illinois, USA — McCormick Place</p>
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2027-06-10">2027年6月10日〜12日</time>
             <a class="event-title" href="https://www.idenworld.org/event/291/" target="_blank" rel="noopener">IDEN 2027</a>
             <p class="event-location">Seoul, South Korea — Venue TBD</p>
           </article>
-          <article class="event-row" data-category="domestic">
+          <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2027-06-12">2027年6月12日</time>
             <a class="event-title" href="http://www.jsge-kanto.jp/regularmeeting.html" target="_blank" rel="noopener">第395回 日本消化器病学会関東支部例会</a>
             <p class="event-location">東京 — 東京都市センターホテル（会長：二神 生爾）</p>
@@ -696,7 +722,7 @@
             <a class="event-title" href="https://fnacj.com/meeting/" target="_blank" rel="noopener">第24回 FNA-club Meeting</a>
             <p class="event-location">東京 — 東京医科大学病院 臨床講堂</p>
           </article>
-          <article class="event-row" data-category="international">
+          <article class="event-row event-new" data-category="international">
             <time class="event-date" datetime="2026-08-28">2026年8月28日〜31日</time>
             <a class="event-title" href="https://www.agw2026.org.au/" target="_blank" rel="noopener">Australian Gastroenterology Week 2026（AGW 2026）</a>
             <p class="event-location">Perth, Australia — Perth Convention &amp; Exhibition Centre</p>
@@ -769,6 +795,7 @@
     const getEventTimeZone = (location, category) => {
       const timeZoneRules = [
         [/Orlando|Washington, D\.C\.|Cambridge|Massachusetts/i, "America/New_York"],
+        [/Chicago|Illinois/i, "America/Chicago"],
         [/Huntington Beach|San Diego/i, "America/Los_Angeles"],
         [/Seoul|South Korea/i, "Asia/Seoul"],
         [/Tokyo|Japan|東京|鹿児島|宇都宮|神戸|和歌山|高知|大阪|札幌|富山|千葉|仙台|奈良|松山|福岡/i, "Asia/Tokyo"],
