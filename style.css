@@ -1141,7 +1141,7 @@ h3 {
   display: flex;
   gap: 14px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 16px 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1165,6 +1165,7 @@ h3 {
 
 .partner-link span {
   flex: 0 0 auto;
+  margin-left: auto;
   min-height: 44px;
   padding: 8px 18px;
   border-radius: 8px;
@@ -1410,6 +1411,7 @@ h3 {
 
   .partner-link span {
     width: 100%;
+    margin-left: 0;
     text-align: center;
   }
 
