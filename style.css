@@ -480,6 +480,27 @@ h3 {
   background: #336f5b;
 }
 
+.quiet-tool-link-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 18px;
+}
+
+.quiet-tool-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cfd8dd;
+  border-radius: 0;
+  background: #fff;
+}
+
+.quiet-tool-link:hover,
+.quiet-tool-link:focus-visible {
+  border-color: #93a5ae;
+  outline: none;
+}
+
 .card,
 .construction-box,
 .contact-card {
