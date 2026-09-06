@@ -1142,7 +1142,7 @@ h3 {
   gap: 14px;
   align-items: center;
   justify-content: flex-start;
-  padding: 16px 20px;
+  padding: 16px 20px 16px 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -1406,7 +1406,7 @@ h3 {
     display: grid;
     gap: 12px;
     justify-items: start;
-    padding: 14px;
+    padding: 14px 0;
   }
 
   .partner-link span {
