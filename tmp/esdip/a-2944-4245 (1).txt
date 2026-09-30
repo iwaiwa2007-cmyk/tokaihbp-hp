@@ -1,0 +1,1158 @@
+
+PAGE 1
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+This is a PDF file of an unedited manuscript that has been accepted for publication. As a service 
+to our customers we are providing this early version of the manuscript. The manuscript will 
+undergo copyediting, typesetting, and review of the resulting proof before it is published in its 
+final form. Please note that during the production process errors may be discovered which could 
+affect the content, and all legal disclaimers that apply to the journal pertain.
+Accepted Manuscript
+Endoscopy
+Clinical outcomes and risk factors for local residual/recurrent tumors after en-
+doscopic submucosal dissection including major papilla for laterally spreading 
+ampullary tumors
+Naohisa Yahagi, Teppei Akimoto, Yusaku Takatori, Motoki Sasaki, Kurato Miyazaki, Atsuto Kayashima, Teppei Masunaga, Kumiko 
+Kirita, Mari Mizutani, Hiroki Tamagawa, Shintaro Kawasaki, Takashi Seino, Masayasu Horibe, Seiichiro Fukuhara, Noriko Matsuura, 
+Atsushi Nakayama, Yasuhiro Ito, Tomohisa Sujino, Kaoru Takabayashi, Eisuke Iwasaki, Motohiko Kato. 
+Affiliations below.
+DOI: 10.1055/a-2944-4245 
+Please cite this article as:  Yahagi N, Akimoto T, Takatori Y et al. Clinical outcomes and risk factors for local residual/recurrent tu-
+mors after endoscopic submucosal dissection including major papilla for laterally spreading ampullary tumors. Endoscopy 2026. doi: 
+10.1055/a-2944-4245 
+Conflict of Interest:  Teppei Akimoto, Motohiko Kato, and Naohisa Yahagi serve as consultants and have received speaker honoraria 
+from Olympus Corporation. Naohisa Yahagi receives royalties from Olympus Corporation, and Teppei Akimoto and Motohiko Kato have 
+received research funding from Olympus Corporation. Motohiko Kato and Naohisa Yahagi also serve as consultants and have received 
+speaker honoraria from FUJIFILM Corporation. Motohiko Kato has additionally received research funding from FUJIFILM Corporation. 
+Motohiko Kato and Naohisa Yahagi have received speaker honoraria from AMCO Inc. Eisuke Iwasaki has received research funding from 
+Gadelius Medical K.K. The remaining authors declare that there is no conflict of interest.    
+Abstract:
+Background and study aims: Endoscopic papillectomy (EP) enables resection of ampullary lesions but is limited by piecemeal 
+resection and high recurrence rates. To overcome these limitations, we developed endoscopic submucosal dissection including 
+papilla (ESDIP). This study aimed to evaluate clinical outcomes and identify risk factors for local residual/recurrent tumor after 
+ESDIP for laterally spreading ampullary tumors.
+Patients and methods: This single-center retrospective study analyzed consecutive patients who underwent ESDIP between 
+2011 and 2024. The primary outcome was local residual/recurrent tumor after ESDIP. Risk factors for local residual/recurrent 
+tumor were evaluated using Cox proportional hazards regression analysis.
+Results: Of the 81 consecutive patients in whom ESDIP was attempted, three were converted to EP or surgery. En bloc resection 
+was achieved in all 78 patients. After excluding 23 patients based on the predefined exclusion criteria, 55 patients were analy-
+zed. The median tumor size was 38 mm (range, 15-128 mm). Negative horizontal and vertical margins, excluding the papillary 
+ductal margin (PM), were achieved in 48 patients (87%), whereas negative PM and R0 resection were achieved in 34 patients 
+(62%) and 29 patients (53%), respectively. Median follow-up was 31 months. The 3-year cumulative incidence of residual/recur-
+rent tumor was 33%, and all residual/recurrent tumors were confined to the papilla. Positive/indeterminate PM was a signifi-
+cant risk factor for local residual/recurrent tumor (hazard ratio, 8.35; 95% confidence interval, 2.35-29.64).
+Conclusions: Although ESDIP enabled en bloc resection of laterally spreading ampullary tumors, the high rate of positive/inde-
+terminate PM, resulting in frequent papilla-confined residual/recurrent tumors, remained its main limitation.
+ 
+Corresponding Author: 
+Dr. Teppei Akimoto, Keio University School of Medicine, Cancer Center, Division of Research and Development for Minimally Invasive 
+Treatment, Shinjuku, Japan, t-akimoto@nms.ac.jp 
+ Submission Date: 2026-03-03
+ Accepted Date: 2026-08-23
+ Accepted Manuscript online: 
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+2026-08-26
+
+PAGE 2
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+This is a PDF file of an unedited manuscript that has been accepted for publication. As a service 
+to our customers we are providing this early version of the manuscript. The manuscript will 
+undergo copyediting, typesetting, and review of the resulting proof before it is published in its 
+final form. Please note that during the production process errors may be discovered which could 
+affect the content, and all legal disclaimers that apply to the journal pertain.
+Contributors‘ Statement: Naohisa Yahagi: Conceptualization, Investigation, Project administration, Resources, Supervision, Writing 
+- review & editing. Teppei Akimoto: Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Project administrati-
+on, Validation, Visualization, Writing - original draft, Writing - review & editing. Yusaku Takatori: Data curation, Investigation, Resources, 
+Writing - review & editing. Motoki Sasaki: Resources, Writing - review & editing. Kurato Miyazaki: Investigation, Resources, Writing - 
+review & editing. Atsuto Kayashima: Resources, Writing - review & editing. Teppei Masunaga: Investigation, Resources, Writing - review 
+& editing. Kumiko Kirita: Investigation, Resources, Writing - review & editing. Mari Mizutani: Investigation, Resources, Writing - review 
+& editing. Hiroki Tamagawa: Resources, Writing - review & editing. Shintaro Kawasaki: Resources, Writing - review & editing. Takashi 
+Seino: Resources, Writing - review & editing. Masayasu Horibe: Resources, Writing - review & editing. Seiichiro  Fukuhara: Investigation, 
+Resources, Writing - review & editing. Noriko Matsuura: Investigation, Resources, Writing - review & editing. Atsushi Nakayama: Investi-
+gation, Resources, Writing - review & editing. Yasuhiro  Ito: Resources, Writing - review & editing. Tomohisa Sujino: Resources, Writing - 
+review & editing. Kaoru  Takabayashi: Investigation, Resources, Writing - review & editing. Eisuke Iwasaki: Investigation, Resources, Wri-
+ting - review & editing. Motohiko Kato: Formal analysis, Investigation, Methodology, Resources, Supervision, Writing - review & editing.
+Affiliations: 
+Naohisa Yahagi, Keio University School of Medicine, Cancer Center, Division of Research and Development for Minimally Invasive Treat-
+ment, Shinjuku, Japan
+Teppei Akimoto, Keio University School of Medicine, Cancer Center, Division of Research and Development for Minimally Invasive Treat-
+ment, Shinjuku, Japan
+Yusaku Takatori, Keio University School of Medicine, Center for Diagnostic and Therapeutic Endoscopy, Shinjuku, Japan
+[…]
+Motohiko Kato, Keio University School of Medicine, Center for Diagnostic and Therapeutic Endoscopy, Shinjuku, Japan  
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 3
+Clinical outcomes and risk factors for local residual/recurrent tumors after 
+endoscopic submucosal dissection including major papilla for laterally spreading 
+ampullary tumors
+Naohisa Yahagi (Co-first author), MD, PhD1, Teppei Akimoto (Co-first author), MD, 
+PhD1, Yusaku Takatori, MD, PhD2, Motoki Sasaki2, Kurato Miyazaki, MD, PhD2, 
+Atsuto Kayashima, MD, PhD3, Teppei Masunaga, MD, PhD1, Kumiko Kirita, MD, 
+PhD1, Mari Mizutani, MD, PhD2, Hiroki Tamagawa, MD, PhD3, Shintaro Kawasaki, 
+MD2, Takashi Seino, MD, PhD3, Masayasu Horibe, MD, PhD3, Seiichiro Fukuhara, 
+MD, PhD4, Noriko Matsuura, MD1, Atsushi Nakayama, MD, PhD1, Yasuhiro Ito, MD, 
+PhD1, Tomohisa Sujino, MD, PhD5, 6, Kaoru Takabayashi, MD, PhD2, Eisuke Iwasaki, 
+MD, PhD3, 7 and Motohiko Kato, MD, PhD2
+1. Division of Research and Development for Minimally Invasive Treatment, Cancer 
+Center, Keio University School of Medicine, Tokyo, Japan
+2. Center for Diagnostic and Therapeutic Endoscopy, Keio University School of 
+Medicine, Tokyo, Japan
+3. Division of Gastroenterology and Hepatology, Department of Internal Medicine, 
+Keio University School of Medicine, Tokyo, Japan
+1
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 4
+4. Department of Gastroenterology and Hepatology, National Hospital Organization, 
+Tokyo Medical Center, Tokyo, Japan
+5.  Department of Multidimensional Analysis of Gastrointestinal Biology, Sakaguchi
+Laboratory, Keio University School of Medicine, Tokyo, Japan
+6. Keio Global Research Institute, Keio University, Tokyo, Japan 
+7. Department of Gastroenterology, Tokai University School of Medicine, Isehara, 
+Kanagawa, Japan
+Running head: Local failure after ESD including papilla (ESDIP)
+Key words: duodenal tumor, laterally spreading tumor involving the papilla, 
+endoscopic submucosal dissection, endoscopic submucosal dissection including papilla,
+papillary tumor
+Correspondence and request for reprints to: Teppei Akimoto, MD, PhD
+Division of Research and Development for Minimally Invasive Treatment, Cancer 
+Center, Keio University School of Medicine, Shinanomachi 35, Shinjuku, Tokyo, Japan
+Phone: +81-3-5363-3437
+Fax: +81-3-5363-3895
+E-mail: t-akimoto@nms.ac.jp
+2
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 5
+IN BRIEF:
+Duodenal laterally spreading lesions involving the major papilla are challenging to 
+resect with high adverse event and recurrence rates. This single-centre retrospective 
+study analyzed residual/recurrent lesion rates in patients undergoing endoscopic 
+submucosal dissection involving the major papilla (ESDIP) between 2011 and 2024. In 
+55 consecutive patients (median size 38mm), en-bloc resection was 100%. Pancreatitis, 
+delayed bleeding and delayed perforation occurred in 13%, 16% and 2% respectively. 
+Residual/recurrence was 33% at 3 years and papillary margin involvement was a 
+significant risk factor.
+3
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 6
+Abstract
+Background and study aims: Endoscopic papillectomy (EP) enables resection of 
+ampullary lesions but is limited by piecemeal resection and high recurrence rates. To 
+overcome these limitations, we developed endoscopic submucosal dissection including 
+papilla (ESDIP). This study aimed to evaluate clinical outcomes and identify risk 
+factors for local residual/recurrent tumor after ESDIP for laterally spreading ampullary 
+tumors.
+Patients and methods: This single-center retrospective study analyzed consecutive 
+patients who underwent ESDIP between 2011 and 2024. The primary outcome was 
+local residual/recurrent tumor after ESDIP. Risk factors for local residual/recurrent 
+tumor were evaluated using Cox proportional hazards regression analysis.
+Results: Of the 81 consecutive patients in whom ESDIP was attempted, three were 
+converted to EP or surgery. En bloc resection was achieved in all 78 patients. After 
+excluding 23 patients based on the predefined exclusion criteria, 55 patients were 
+analyzed. The median tumor size was 38 mm (range, 15-128 mm). Negative horizontal 
+and vertical margins, excluding the papillary ductal margin (PM), were achieved in 48 
+patients (87%), whereas negative PM and R0 resection were achieved in 34 patients 
+(62%) and 29 patients (53%), respectively. Median follow-up was 31 months. The 3-
+year cumulative incidence of residual/recurrent tumor was 33%, and all 
+4
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 7
+residual/recurrent tumors were confined to the papilla. Positive/indeterminate PM was a
+significant risk factor for local residual/recurrent tumor (hazard ratio, 8.35; 95% 
+confidence interval, 2.35-29.64).
+Conclusions: Although ESDIP enabled en bloc resection of laterally spreading 
+ampullary tumors, the high rate of positive/indeterminate PM, resulting in frequent 
+papilla-confined residual/recurrent tumors, remained its main limitation.
+5
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 8
+Abbreviations
+PD: pancreaticoduodenectomy
+EP: endoscopic papillectomy
+ESDIP: endoscopic submucosal dissection including papilla
+ESD: endoscopic submucosal dissection
+FAP: familial adenomatous polyposis
+EUS: endoscopic ultrasonography
+HM: horizontal margin
+VM: vertical margin
+PM: papillary ductal margin
+VCL: Vienna classification
+APC: argon plasma coagulation
+IDRFA: intraductal radiofrequency ablation
+IDUS: intraductal ultrasonography
+AEs: adverse events
+PEP: post-ERCP pancreatitis
+HR: hazard ratio
+OR: odds ratio
+CI: confidence interval
+IQR: interquartile range
+6
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 9
+Introduction
+Pancreaticoduodenectomy (PD) is the standard curative treatment for ampullary 
+carcinoma [1-3]. However, because of its invasiveness, less invasive alternative 
+treatments such as transduodenal surgical ampullectomy and endoscopic papillectomy 
+(EP) have been attempted for ampullary adenomas and intramucosal carcinomas [4-6]. 
+In selected patients with carcinoma in situ or tumor limited to the ampullary mucosa of 
+Vater without lymphovascular invasion [7], where the risk of lymph node metastasis is 
+considered negligible, several studies have suggested that EP alone may achieve 
+curative resection [8-12].
+Nevertheless, EP has several limitations. Precise control of resection depth is 
+technically challenging, and thermal artifact from electrocautery may compromise 
+pathological assessment of both the horizontal and vertical margins including bile and 
+pancreatic ducts [6,13,14]. In addition, for large lesions that cannot be captured entirely 
+within the snare, piecemeal resection is often unavoidable, making R0 resection difficult
+[5,15]. A further concern is the relatively high recurrence rate observed following EP
+[5,6,16].
+To overcome these limitations, we developed endoscopic submucosal dissection 
+including papilla (ESDIP), a novel technique for large laterally spreading ampullary 
+tumors [17]. This procedure applies established endoscopic submucosal dissection 
+7
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 10
+(ESD) techniques to the ampullary region, enabling en bloc resection with transection of
+both the bile duct and pancreatic duct (Figure 1). However, the clinical outcomes and 
+curative potential of ESDIP, including ductal margin status, remain unclear. Therefore, 
+this study aimed to evaluate the outcomes of ESDIP and identify risk factors for 
+residual and recurrent tumors, with an additional aim of identifying factors associated 
+with ductal margin status.
+Patients and Methods
+Ethical considerations
+This study protocol was approved by the Institutional Review Board of Keio 
+University School of Medicine (No. 20190139) and conducted in accordance with the 
+Declaration of Helsinki (revised in Fortaleza, Brazil, October 2013). Written informed 
+consent for treatment was obtained from all participants, who were provided the 
+opportunity to opt out of study participation via the hospital website.
+Study design and eligible patients
+This retrospective observational study was conducted at a tertiary care hospital. 
+Consecutive patients who underwent ESDIP at Keio University School of Medicine 
+between August 2011 and December 2024 were screened. Patients in whom ESDIP was
+8
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 11
+successfully completed without conversion to EP or emergency surgery were included. 
+Eligible cases were identified from a prospectively maintained database. Exclusion 
+criteria were: (1) patients with familial adenomatous polyposis (FAP); (2) lesions 
+confined to the minor papilla without extension to the major papilla; (3) recurrent 
+lesions after EP; (4) additional surgery for submucosal invasive carcinoma diagnosed by
+ESDIP; and (5) follow-up ≤6 months. Patients with FAP were excluded because of their
+higher recurrence risk.
+Indications, procedures and perioperative management of ESDIP
+Detailed indications, procedures and perioperative management of ESDIP were 
+described in our previous article [17]. The indications were as follows: (1) lesions 
+without endoscopic evidence of submucosal invasion; (2) large lesions for which en 
+bloc resection by EP was difficult; (3) lesions without apparent invasion into the 
+pancreatic or intrapancreatic bile duct, as confirmed by radial endoscopic 
+ultrasonography (EUS) (GF-UE260-AL5; Olympus Medical Systems Corporation, 
+Tokyo, Japan) performed by an expert in pancreaticobiliary endoscopy.
+Depending on the tumor size, circumferential location and maneuverability of 
+the endoscope, either general anesthesia or deep sedation was selected. The endoscopes 
+used were therapeutic gastrointestinal scopes equipped with a water-jet function (GIF-
+9
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 12
+H290T or GIF-Q260J; Olympus Medical Systems Corporation, or EG-840T or 
+EG-840TP; FUJIFILM Corporation, Tokyo, Japan), fitted with a small-caliber 
+transparent cap (DH-33GR, or DH-083ST; FUJIFILM Corporation). The procedures 
+were performed under carbon dioxide insufflation. As the electrosurgical knife, a 1.5-
+mm DualKnife J (Olympus Medical Systems Corporation) was used, and the 
+electrosurgical units were VIO 300D or VIO 3 (ERBE Elektromedizine, Tubingen, 
+Germany).
+The basic procedure was similar to that of other gastrointestinal ESDs, but was 
+performed entirely using the water pressure method [18-21]. A representative ESDIP 
+procedure is shown in Video S1. After making the distal incision, a mucosal flap was 
+created from the oral side, followed by submucosal dissection. The sphincter of the 
+papilla was identified, dissected, and the lesion was resected and retrieved. 
+Subsequently, for large mucosal defects, partial closure excluding the papilla was 
+conducted using clips. In all cases, a pancreaticobiliary specialist performed endoscopic 
+nasobiliary and nasopancreatic drainage. The drainage tubes were left in place for at 
+least 3 days after ESDIP and removed depending on the patient’s condition. Detailed 
+periprocedural management has been described in our previous report [17].
+Management and follow-up after ESDIP
+10
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 13
+For adenoma or differentiated intramucosal carcinoma limited to the ampulla 
+without lymphovascular invasion, follow-up with annual or semiannual endoscopy was 
+recommended. Follow-up with computed tomography and tumor marker measurements 
+was performed at the discretion of the attending physician. For lymphovascular 
+invasion or submucosal invasive carcinoma, PD with lymph node dissection was 
+recommended.
+Initial follow-up endoscopy was generally performed within six months 
+after ESDIP, or within three months for positive or indeterminate 
+(positive/indeterminate) resection margins. During follow-up endoscopy, when a 
+residual or recurrent (residual/recurrent) tumor was suspected, biopsy specimens were 
+obtained from the papilla, the ESD scar, or the area adjacent to the scar at the discretion 
+of the endoscopist. Follow-up duration was defined as the duration from treatment to 
+the date of the last endoscopy.
+Follow-up care was primarily conducted at our institution. However, some 
+patients from distant areas with negative resection margins underwent initial follow-up 
+at our institution and subsequent surveillance at local institutions according to each 
+institution’s practice. For cases in which follow-up at our institution had been 
+completed, we contacted the outside institutions providing subsequent follow-up care in
+writing, and only the responses received were included in the dataset.
+11
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 14
+Clinicopathological variables
+From medical records, we collected clinicopathological data on age, sex, 
+circumferential location (medial wall or other), tumor size, macroscopic type 
+(protruded, flat, or mixed type), papillary location within the lesion (peripheral type and
+central type), histology, R0 resection, horizontal margin (HM), vertical margin (VM), 
+and papillary ductal margin (PM). Tumor size was defined as the maximum diameter of 
+the lesion measured on the resected specimen. Macroscopic type was classified 
+according to the Paris classification as follows: type 0-I was defined as protruded type; 
+types 0-IIa and 0-IIc as flat type; and types 0-IIa+I and 0-I+IIa as mixed type.
+Papillary location was assessed on the resected specimen and categorized as 
+central type when the papilla was located within the inner half of the lesion radius and 
+as peripheral type when located within the outer half. Protruded lesions with an 
+unidentifiable papillary orifice were classified as central type. Pathological diagnoses 
+were classified according to the original Vienna classification (VCL) [22]. PM was 
+defined as the resection margins at the transected bile and pancreatic ducts. R0 resection
+was defined as the absence of pathological involvement at all margins, including the 
+HM, VM, and PM. HM and VM were assessed in areas other than PM (Supplementary
+Figure 1).
+12
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 15
+Procedural variables
+We collected procedural data on treatment era (early or late), operator experience 
+(super-expert or expert), anesthesia type (general anesthesia or deep sedation), resection
+time, resection method (en-bloc or piecemeal), and length of hospital stay. The cases 
+included in this study were divided into two groups, with the early treatment era 
+(August 2011 to December 2022) and the late treatment era (January 2023 to December 
+2024). Operators with >3000 ESDs across all organs and >200 duodenal ESDs were 
+defined as super-experts, whereas those with >1000 ESDs and >100 duodenal ESDs 
+were defined as experts.  The resection time was defined as the interval from the initial 
+incision to completion of lesion resection.
+Adverse events
+Adverse events (AEs) included intraprocedural perforation, delayed bleeding, 
+delayed perforation and post-ERCP pancreatitis (PEP). Intraprocedural perforation was 
+defined as a full-thickness defect induced during ESD. Delayed bleeding was defined as
+hematemesis, melena, or hemoglobin decrease >2 g/dL within 28 days requiring 
+emergency endoscopy or blood transfusion. Delayed perforation was defined as 
+imaging-confirmed perforation without intraprocedural perforation or 
+13
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 16
+intra-/retroperitoneal abscess after ESD. PEP was defined according to the Cotton 
+criteria [23], and severity was assessed using the revised Atlanta classification [24].
+Outcome measures
+The primary outcome was local residual/recurrent tumor after ESDIP. A residual 
+tumor was defined as a tumor histologically confirmed at the first follow-up endoscopy.
+A recurrent tumor was defined as a tumor histologically confirmed after complete 
+remission had been confirmed on at least one follow-up endoscopy. The secondary 
+outcomes included the sites and management of residual/recurrent tumors, distant 
+metastasis, disease-specific mortality, and all-cause mortality.
+Statistical analysis
+The cumulative incidence of local residual/recurrent tumors was estimated using 
+the Kaplan–Meier method. Kaplan–Meier analysis with the log-rank test was performed
+according to PM status (negative vs. positive/indeterminate) and histological category 
+(VCL categories 3, 4, and 5.1). These variables were prespecified based on their 
+established clinical relevance and reported associations with residual/recurrent tumors
+[16,25,26]. Furthermore, Kaplan–Meier curves for local recurrence were generated after
+excluding cases with residual tumors. Hazard ratios were calculated using univariate 
+14
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 17
+Cox proportional hazards regression analyses with the following covariates: age, sex, 
+circumferential location, tumor size, macroscopic type, histology, HM, VM, and PM.
+To identify factors associated with positive/indeterminate PM, univariate logistic 
+regression analyses were conducted with the following covariates: age, sex, 
+circumferential location, macroscopic type, tumor size, papillary location within the 
+lesion, histology, treatment era, operator experience, anesthesia type, resection time, and
+intraprocedural perforation. Given the limited number of events, multivariable Cox and 
+logistic regression analyses were not performed to avoid overfitting.
+Distant metastasis, disease-specific mortality, and all-cause mortality were 
+summarized descriptively as numbers and percentages. All statistical analyses were 
+performed using JMP Pro 17 software (SAS Institute, Cary, NC, USA), and a p-value < 
+0.05 was considered statistically significant.
+Results
+Clinicopathological characteristics and procedural outcomes
+Of the 81 patients in whom ESDIP was attempted, three were converted to EP or
+emergency surgery. Among the 78 patients in whom ESDIP was successfully completed
+with en bloc resection, 23 patients met the exclusion criteria, and 55 patients were 
+analyzed (Figure 2). Detailed clinicopathological and procedural characteristics are 
+15
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 18
+summarized in Table 1. Among the 55 lesions, 49 (89%) were located on the medial 
+wall, with a median tumor size of 38 mm (range, 15–128 mm).
+Intraprocedural perforation occurred in 6 patients (11%); all were successfully 
+closed using through-the-scope clips. Postprocedural AEs included PEP in 7 patients 
+(13%) (mild in 6 and moderately severe in 1), delayed bleeding in 9 patients (16%), and
+delayed perforation in 1 patient (2%). Of the delayed bleeding events, 5 were treated 
+endoscopically, 1 by interventional radiology, and 3 conservatively. The delayed 
+perforation was managed with endoscopic transnasal drainage of the abscess followed 
+by internal drainage. Patients with postprocedural AEs had a median hospital stay of 12 
+days (IQR, 8–14).
+Histologically, 15 lesions (27%) were classified as VCL category 3 (VCL C3), 
+23 (42%) as VCL C4, and 17 (31%) as VCL C5.1. R0 resection was achieved in 29 
+lesions (53%). Both negative HM and VM were achieved in 48 lesions (87%), whereas 
+the proportion of lesions with a negative PM was 34/55 (62%).
+Residual/recurrent tumors and other clinical outcomes after ESDIP
+The median follow-up duration was 31.0 months (interquartile range, 18.0–
+48.7). Follow-up data for eight patients were obtained from outside institutions. Most 
+16
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 19
+patients who did not complete surveillance at our institution were referred from distant 
+regions and subsequently continued follow-up at local institutions.
+Local residual tumor was identified in 10 patients (18%), all at the papilla. Local
+recurrence occurred in 5 patients (9%), also exclusively at the papilla. During follow-
+up, no distant metastases or disease-specific deaths were observed. All-cause mortality 
+occurred in one patient (1.8%), who died of a cause unrelated to the ampullary tumor. 
+The cumulative incidence of local residual/recurrent tumors in the entire cohort was 
+20% at 1 year and 33% at 3 years (Figure 3a). After excluding cases with residual 
+tumors, the cumulative incidence of local recurrent tumors was 19% at 3 years 
+(Supplementary Figure 2a).
+Among the 15 patients with local residual/recurrent tumors, one underwent 
+subtotal stomach-preserving pancreaticoduodenectomy for residual tumor associated 
+with postprocedural stenosis. The other 14 patients underwent endoscopic retreatment 
+using cold forceps polypectomy, argon plasma coagulation, EP, repeat ESDIP, or 
+intraductal radiofrequency ablation, alone or in combination. A median of 2 retreatment 
+sessions (range, 1–5) was required. Endoscopic remission was achieved in 12 patients. 
+One required PD because of progression to adenocarcinoma despite repeated 
+endoscopic treatment. Another developed a second adenoma recurrence after achieving 
+17
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 20
+endoscopic remission and, because of advanced age, remains under surveillance without
+additional treatment. Details are shown in Supplementary Figure 3.
+Risk factors for local residual/recurrent tumors
+Kaplan–Meier analysis demonstrated that patients with positive/indeterminate 
+PM had a significantly higher cumulative incidence of local residual/recurrent tumors 
+compared with those with negative PM (log-rank test, p < 0.01) (Figure 3b). In 
+contrast, no significant difference was observed among VCL categories, although 
+patients with VCL C3 lesions showed a lower cumulative incidence of local 
+residual/recurrent tumors (log-rank test, p = 0.10) (Figure 3c). Furthermore, Kaplan–
+Meier analysis demonstrated that PM status remained significantly associated with local
+recurrence after excluding cases with residual tumors (log-rank test, p < 0.01) 
+(Supplementary Figure 2b).
+In univariate Cox regression analysis, positive/indeterminate PM was associated 
+with local residual/recurrent tumor (hazard ratio (HR), 8.35; 95% confidence interval 
+(CI), 2.35–29.64; p < 0.01) (Table 2). Histology classified as VCL C4/5.1 showed a 
+nonsignificant trend compared with VCL C3 (HR, 6.59; 95% CI, 0.87–50.22; p = 0.07).
+ Factors associated with positive/indeterminate PM
+18
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 21
+Positive/indeterminate PM was observed in 21 patients (38%). In univariate 
+logistic regression analysis, central papillary location within the lesion (OR, 7.68; 95% 
+CI, 2.34–29.13; p < 0.01) and histology classified as VCL C4/5.1 (OR, 5.88; 95% CI, 
+1.39–40.80; p = 0.03) were significantly associated with positive/indeterminate PM 
+(Table 3). No procedure-related factors were significantly associated with PM 
+involvement.
+Discussion
+This study is the first to clarify the outcomes of ESDIP for laterally spreading 
+ampullary tumors and to identify risk factors for residual/recurrent tumors. In 55 cases, 
+en bloc resection was feasible in all patients; however, positive/indeterminate PM 
+remained common. Local residual/recurrent tumors occurred predominantly in patients 
+with positive/indeterminate PM.
+The main findings of this study were as follows: (1) ESDIP enabled en bloc 
+resection of large ampullary tumors that are usually difficult to resect en bloc with EP; 
+(2) the cumulative incidence of local residual/recurrent tumor was as high as 33% at 3 
+years, and positive/indeterminate PM was significantly associated with local 
+residual/recurrent tumor; and (3) in univariate analysis, histology classified as VCL 
+19
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 22
+C4/5.1 and central papillary location within the lesion were associated with 
+positive/indeterminate PM.
+In this study, some patients showed positive PMs despite the absence of 
+intraductal extension on preoperative EUS, suggesting limitations of EUS for detecting 
+subtle intraductal extension. Although intraductal ultrasonography (IDUS) has been 
+reported to provide greater accuracy for evaluating biliary and pancreatic ductal 
+extension, its use carries a risk of PEP [6]. Because IDUS was not performed in our 
+cohort, its potential value for predicting ductal margin status in ESDIP remains 
+speculative and should be investigated in future studies.
+Local recurrence was observed even after achieving negative PM, suggesting a 
+limitation in pathological assessment. Because the PM is sectioned at 2-mm intervals, as
+in specimens resected by conventional ESD, microscopic involvement between slices 
+may be missed, resulting in false-negative diagnosis. Likewise, local recurrence has 
+been reported after EP despite achieving R0 resection [16]. Therefore, careful 
+endoscopic surveillance is warranted even in patients with pathologically negative PM.
+The present study could not distinguish whether the lesions originated from the 
+papilla itself or represented non-ampullary tumors with lateral extension involving the 
+papilla; further pathological investigations are needed to elucidate the true risk of 
+positive PM and intraductal extension. In univariate analysis, central papillary location 
+20
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 23
+within the lesion and histology classified as VCL C4/5.1 were associated with 
+positive/indeterminate PM. This analysis of papillary location was based on the 
+hypothesis that when the papilla is located closer to the center of the lesion, the risk of 
+intraductal extension may be higher, whereas when it is located near the lesion margin, 
+the risk may be lower and PM negativity may be more likely to be achieved. Previous 
+EP studies have also reported associations between histological category and margin 
+positivity or recurrence [25,26]. However, because both histology and papillary location
+were assessed on resected specimens, these findings should be considered hypothesis-
+generating. Moreover, as the analyses were unadjusted, they should not be interpreted as
+independent predictors or directly applied to preprocedural assessment. Their clinical 
+applicability remains to be established in future studies.
+According to the ESGE guidelines, en bloc resection of ampullary adenomas up 
+to 20–30 mm is recommended to achieve R0 resection, optimize pathological 
+assessment, and reduce recurrence after EP, whereas surgery is suggested for lesions 
+larger than 4 cm because of technical difficulties [5]. Our findings demonstrated that 
+ESDIP enables optimal histopathological evaluation by providing en bloc specimens 
+even for such lesions; however, margin management, particularly PM involvement, 
+remains the greatest challenge.
+21
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 24
+In some centers, laterally spreading ampullary tumors have been managed by 
+piecemeal EP [27-30], with residual/recurrent rates of 18% (7/39) to 42% (15/35) at first
+surveillance [27,30], and a recurrence rate of 20% (4/20) during a median follow-up of 
+14.7 months [29]. In the present study, the cumulative incidence of residual/recurrent 
+tumors was 20% at 1 year and 33% at 3 years, suggesting that clinical outcomes of 
+ESDIP may not be superior to piecemeal resection unless margin negativity is achieved.
+Reports on ESDIP are limited [17,31-34]. The pathological R0 resection rate in our 
+cohort was 53%, lower than the 81.8% (9/11) reported in one previous series of ESD for
+laterally spreading ampullary tumors [34]. On the other hand, another study reported an 
+R0 resection rate as low as 12.5% (1/8) [33], suggesting substantial variability related to
+technical expertise or lesion characteristics.
+Compared with a recent multicenter study of EP for laterally spreading 
+ampullary tumors [35], including piecemeal resection, ESDIP was associated with a 
+higher rate of intraprocedural perforation (10.9% [95% CI, 5.1%–21.8%] vs. 6.9% [95%
+CI, 3.2%–12.9%]), whereas the rates of bleeding (16.4% [95% CI, 8.9%–28.3%] vs. 
+22.4% [95% CI, 15.6%–31.0%]) and pancreatitis (12.7% [95% CI, 6.3%–24.0%] vs. 
+9.5% [95% CI, 5.0%–16.3%]) were within a similar range. In the EP cohort, the 
+recurrence rate was 41.3% after a median follow-up of 22 months, and recurrent lesions 
+22
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 25
+were observed not only at the papilla but also in the laterally spreading component. In 
+contrast, all residual/recurrent tumors in the present study were confined to the papilla. 
+This may reflect the high rates of negative HM and VM achieved by ESDIP and suggest
+effective control of the laterally spreading component. Nevertheless, the relatively high 
+rate of positive/indeterminate PM and the occurrence of papillary residual/recurrent 
+tumors remain the major limitations of ESDIP, potentially offsetting the benefit of 
+improved pathological assessment and complete resection of the laterally spreading 
+component.
+In the present study, management of residual/recurrent tumors often required 
+multiple retreatment sessions and advanced salvage procedures. Moreover, two patients 
+ultimately required surgery. These findings suggest that residual/recurrent tumors after 
+ESDIP remain an important clinical issue and may impose a substantial treatment 
+burden despite the availability of endoscopic salvage therapies.
+This study has several limitations. First, this was a single-center retrospective 
+study with a limited number of cases, and no direct comparison with alternative 
+treatment was performed. Most lesions treated with EP were smaller than those in the 
+present cohort, making comparison between ESDIP and EP difficult because of 
+selection bias. Second, exclusion of unsuccessful or complex cases may have introduced
+selection bias, potentially overestimating the safety and efficacy of ESDIP. Third, 
+23
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 26
+follow-up protocols were not fully standardized, and surveillance at outside institutions 
+was conducted at the discretion of the attending physician or institution, which may 
+have led to under-reporting of metastasis, recurrences, and AEs. Fourth, the primary 
+endoscopist, the assistant, and clinicians responsible for postprocedural management 
+were highly experienced in duodenal ESD. Despite this expertise, AEs were not 
+uncommon and may be more frequent in lower-volume centers or among less 
+experienced operators. Fifth, the limited number of outcome events did not allow 
+multivariable regression analyses; therefore, the associations of papillary location and 
+histological category with positive/indeterminate PM should not be interpreted as 
+independent predictors. Sixth, the median follow-up period was relatively short at 31.0 
+months, and longer observation is required to evaluate long-term outcomes, particularly 
+considering the high incidence of local residual/recurrent tumors observed in this 
+cohort. Finally, the influence of thermal artifact on margin assessment could not be 
+completely excluded and may have contributed to pathological uncertainty.
+In conclusion, although ESDIP enabled en bloc resection of laterally spreading 
+ampullary tumors, local residual/recurrent tumors remained relatively common and 
+were observed exclusively at the papilla. Positive/indeterminate PM was the key 
+determinant of local residual/recurrent tumors. The clinical applicability of the factors 
+24
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 27
+associated with positive/indeterminate PM requires further investigation because of the 
+methodological and statistical limitations. Considering its technical complexity, the 
+occurrence of AEs, the modest R0 resection rate, and the relatively high rate of local 
+failure, ESDIP remains a developing technique and should currently be limited to expert
+centers.
+Conflict of Interest
+Teppei Akimoto, Motohiko Kato, and Naohisa Yahagi serve as consultants and have 
+received speaker honoraria from Olympus Corporation. Naohisa Yahagi receives 
+royalties from Olympus Corporation, and Teppei Akimoto and Motohiko Kato have 
+received research funding from Olympus Corporation. Motohiko Kato and Naohisa 
+Yahagi also serve as consultants and have received speaker honoraria from FUJIFILM 
+Corporation. Motohiko Kato has additionally received research funding from 
+FUJIFILM Corporation. Motohiko Kato and Naohisa Yahagi have received speaker 
+honoraria from AMCO Inc. Eisuke Iwasaki has received research funding from 
+Gadelius Medical K.K. The remaining authors declare that there is no conflict of 
+interest.
+Declaration of Generative AI Use
+25
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 28
+Artificial intelligence–assisted tools were used solely for language editing to improve 
+clarity and readability. All data analyses, interpretations, and conclusions were 
+performed by the authors, who take full responsibility for the content of this manuscript.
+26
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 29
+References
+1. Chiorean EG, Chiaro MD, Tempero MA et al. Ampullary Adenocarcinoma, 
+Version 1.2023, NCCN Clinical Practice Guidelines in Oncology. J Natl Compr 
+Canc Netw 2023; 21: 753-782
+2. Hautefeuille V, Williet N, Turpin A et al. Ampullary tumors: French Intergroup 
+Clinical Practice Guidelines for diagnosis, treatments and follow-up (TNCD, 
+SNFGE, FFCD, UNICANCER, GERCOR, SFCD, SFED, ACHBT, AFC, 
+SFRO, RENAPE, SNFCP, AFEF, SFP, SFR). Dig Liver Dis 2024; 56: 1452-
+1460
+3. Nagino M, Hirano S, Yoshitomi H et al. Clinical practice guidelines for the 
+management of biliary tract cancers 2019: The 3rd English edition. J 
+Hepatobiliary Pancreat Sci 2021; 28: 26-54
+4. ASGE Standards of Practice Committee, Chathadi KV, Khashab MA et al. The 
+role of endoscopy in ampullary and duodenal adenomas. Gastrointest Endosc 
+2015; 82: 773-781
+5. Vanbiervliet G, Strijker M, Arvanitakis M et al. Endoscopic management of 
+ampullary tumors: European Society of Gastrointestinal Endoscopy (ESGE) 
+Guideline. Endoscopy 2021; 53: 429-448
+27
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 30
+6. Itoi T, Ryozawa S, Katanuma A et al. Clinical practice guidelines for endoscopic
+papillectomy. Dig Endosc 2022; 34: 394-411
+7. Amin MB, Greene FL, Edge SB et al. The Eighth Edition AJCC Cancer Staging 
+Manual: Continuing to build a bridge from a population-based to a more 
+"personalized" approach to cancer staging. CA Cancer J Clin 2017; 67: 93-99
+8. Yoon SM, Kim MH, Kim MJ et al. Focal early stage cancer in ampullary 
+adenoma: surgery or endoscopic papillectomy? Gastrointest Endosc 2007; 66: 
+701-707
+9. Yamao T, Isomoto H, Kohno S et al. Endoscopic snare papillectomy with biliary
+and pancreatic stent placement for tumors of the major duodenal papilla. Surg 
+Endosc 2010; 24: 119-124
+10. Ceppa EP, Burbridge RA, Rialon KL et al. Endoscopic versus surgical 
+ampullectomy: an algorithm to treat disease of the ampulla of Vater. Ann Surg 
+2013; 257: 315-322
+11. Napoleon B, Gincul R, Ponchon T et al. Endoscopic papillectomy for early 
+ampullary tumors: long-term results from a large multicenter prospective study. 
+Endoscopy 2014; 46: 127-134
+12. Yamamoto K, Itoi T, Sofuni A et al. Expanding the indication of endoscopic 
+papillectomy for T1a ampullary carcinoma. Dig Endosc 2019; 31: 188-196
+28
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 31
+13. Iwasaki E, Minami K, Itoi T et al. Impact of electrical pulse cut mode during 
+endoscopic papillectomy: Pilot randomized clinical trial. Dig Endosc 2020; 32: 
+127-135
+14. Miyamoto S, Serikawa M, Ishii Y et al. The Significance of Histopathological 
+Findings on Clinical Outcomes in Endoscopic Papillectomy with Endocut. J Clin
+Med 2023; 12: 6853
+15. Spadaccini M, Fugazza A, Frazzoni L et al. Endoscopic papillectomy for 
+neoplastic ampullary lesions: A systematic review with pooled analysis. United 
+European Gastroenterol J 2020; 8: 44-51
+16. Iwasaki E, Kawashima H, Takada Y et al. Clinical outcomes of endoscopic 
+papillectomy for ampullary adenoma and adenocarcinoma: a multicenter 
+retrospective study in Japan. Gastrointest Endosc 2026; 103: 1016-1027.e5
+17. Yahagi N, Takatori Y, Sasaki M et al. Feasibility of endoscopic submucosal 
+dissection including papilla (with video). Dig Endosc 2025; 37: 402-410
+18. Yahagi N, Nishizawa T, Sasaki M et al. Water pressure method for duodenal 
+endoscopic submucosal dissection. Endoscopy 2017; 49: E227-E228
+19. Kato M, Takatori Y, Sasaki M et al. Water pressure method for duodenal 
+endoscopic submucosal dissection (with video). Gastrointest Endosc 2021; 93: 
+942-949
+29
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 32
+20. Kirita K, Akimoto T, Niikawa M et al. Efficacy of water pressure method for 
+colorectal endoscopic submucosal dissection: Propensity-score matching 
+analysis. Endosc Int Open 2025; 13: a25442654
+21. Akimoto T, Yahagi N, Kato M. Facilitating Colorectal Endoscopic Submucosal 
+Dissection: Devices and Techniques. Tech Innov Gastrointest Endosc 2025; 27: 
+250932
+22. Schlemper RJ, Riddell RH, Kato Y et al. The Vienna classification of 
+gastrointestinal epithelial neoplasia. Gut 2000; 47: 251-255
+23. Cotton PB, Lehman G, Vennes J et al. Endoscopic sphincterotomy 
+complications and their management: an attempt at consensus. Gastrointest 
+Endosc 1991; 37: 383-393
+24. Banks PA, Bollen TL, Dervenis C et al. Classification of acute 
+pancreatitis-2012: revision of the Atlanta classification and definitions by 
+international consensus. Gut 2013; 62: 102-111
+25. Liu K, Zhuang Y, Gao N et al. Risk factors for recurrence after endoscopic 
+papillectomy in ampullary adenomas: a retrospective case-control study. Therap 
+Adv Gastroenterol 2025; 18: 17562848251343419
+30
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 33
+26. Ridtitid W, Tan D, Schmidt SE et al. Endoscopic papillectomy: risk factors for 
+incomplete resection and recurrence during long-term follow-up. Gastrointest 
+Endosc 2014; 79: 289-296
+27. Klein A, Qi Z, Bahin FF et al. Outcomes after endoscopic resection of large 
+laterally spreading lesions of the papilla and conventional ampullary adenomas 
+are equivalent. Endoscopy 2018; 50: 972-983
+28. Yamamoto K, Sofuni A, Tsuchiya T et al. Clinical Impact of Piecemeal 
+Resection Concerning the Lateral Spread of Ampullary Adenomas. Intern Med 
+2019; 58: 901-906
+29. van der Wiel SE, Poley JW, Koch AD et al. Endoscopic resection of advanced 
+ampullary adenomas: a single-center 14-year retrospective cohort study. Surg 
+Endosc 2019; 33: 1180-1188
+30. Sahar N, Krishnamoorthi R, Kozarek RA et al. Long-Term Outcomes of 
+Endoscopic Papillectomy for Ampullary Adenomas. Dig Dis Sci 2020; 65: 260-
+268
+31. Dohi O, Ishida T, Doi T et al. Endoscopic submucosal dissection for a laterally 
+spreading ampullary carcinoma. VideoGIE 2022; 7: 79-81
+31
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 34
+32. Miwa H, Hirasawa K, Endo K et al. A novel reshapable catheter facilitates 
+selective biliary and pancreatic duct cannulation following endoscopic 
+submucosal dissection including papilla. Endoscopy 2025; 57: E481-E483
+33. Kano Y, Ohata K, Iida T et al. Efficacy and safety of endoscopic submucosal 
+dissection versus endoscopic papillectomy for managing laterally spreading 
+duodenal papillary tumors. Clin Endosc 2025; 58: 712-721
+34. Hirose T, Takada Y, Furukawa K et al. New Endoscopic Strategy for Ampullary
+Tumor and Superficial Nonampullary Duodenal Epithelial Tumor Extending 
+Into Papillary Area. J Hepatobiliary Pancreat Sci 2025; 32: 706-712
+35. Vu Trung K, Abou-Ali E, Gulla A et al. Endoscopic papillectomy for laterally 
+spreading lesions of the papilla: a propensity score-matched analysis. Endoscopy
+2026; 58: 27-36
+32
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 35
+Table/Figure legends
+Table 1. Clinicopathological and procedural characteristics of the patients and lesions 
+treated with ESDIP (N = 55)
+Table 2. Univariate Cox regression analysis of risk factors for local residual or recurrent
+tumor after ESDIP
+Table 3. Univariate logistic regression analysis of factors associated with positive or 
+indeterminate papillary ductal margin after ESDIP
+Figure 1. A representative case of endoscopic submucosal dissection including papilla 
+(ESDIP). (a) A 30-mm flat laterally spreading ampullary tumor. (b) Creation of a 
+submucosal pocket and subsequent dissection using the water pressure method. (c) 
+Transection of the sphincter of the papilla and the bile and pancreatic ducts. Yellow 
+arrowhead: bile duct; blue arrowhead: pancreatic duct. (d) Nasobiliary and 
+nasopancreatic drainage tubes were promptly placed after resection. (e) Resected 
+specimen. The pathological diagnosis was high-grade adenoma, with negative 
+horizontal and vertical margins but a positive papillary ductal margin. (f) A local 
+residual tumor was observed at the papilla. (g, h) Combined salvage treatment with 
+33
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 36
+endoscopic papillectomy and intraductal radiofrequency ablation was performed. (i) 
+Complete remission was ultimately achieved after four salvage treatment sessions.
+Figure 2. Study flowchart of the patients included in this study. ESDIP, endoscopic 
+submucosal dissection including papilla; EP, endoscopic papillectomy; PD, 
+pancreaticoduodenectomy.
+Figure 3. Kaplan–Meier curves for local residual or recurrent tumors after endoscopic 
+submucosal dissection including papilla according to: (a) all cases; (b) papillary ductal 
+margin (PM) status (positive/indeterminate vs. negative); and (c) histology based on the 
+Vienna classification (VCL).
+34
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 37
+Tables
+Table 1. Clinicopathological and procedural characteristics of the 
+patients and lesions treated with ESDIP (N = 55)
+Age, median [range], years 66 [33-83]
+Sex, male, n (%) 33 (60)
+Circumferential location, n (%)
+Medial wall 49 (89)
+Other 6 (11)
+Tumor size, median [range], mm 38 [15-128]
+Macroscopic type (Paris classification), n (%)
+Protruded type (0-I) 6 (11)
+Flat type (0-IIa, 0-IIc) 37 (67)
+Mixed type (0-IIa+I, 0-I+IIa) 12 (22)
+Treatment era, n (%)
+Early (2011-2022) 27 (49)
+Late (2023-2024) 28 (51)
+Operator experience, n (%)
+Super-expert (>3000 ESDs and >200 DESDs) 41 (75)
+Expert (>1000 ESDs and >100 DESDs) 14 (25)
+Anesthesia type, n (%)
+General anesthesia 25 (45)
+Deep sedation 30 (55)
+Resection time, median [IQR], minutes 65 [36-85]
+Intraprocedural perforation, n (%) 6 (11)
+Post-ERCP pancreatitis, n (%) 7 (13)
+Mild 6 (11)
+Moderately severe 1 (2)
+Delayed bleeding, n (%) 9 (16)
+Delayed perforation, n (%) 1 (2)
+Hospital stay, median [IQR], days 10 [7-13]
+Resection method, n (%)
+En bloc 55 (100)
+35
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 38
+Piecemeal 0 (0)
+Histology*, n (%)
+VCL category 3 15 (27)
+VCL category 4 23 (42)
+VCL category 5.1 17 (31)
+R0 resection, n (%) 29 (53)
+Negative HM, n (%) 50 (91)
+Negative VM, n (%) 52 (95)
+Both negative HM and VM, n (%) 48 (87)
+Negative PM, n (%) 34 (62)
+*According to the original Vienna classification (VCL), category 3 
+indicates non-invasive low-grade neoplasia; category 4, non-invasive high-
+grade neoplasia; and category 5.1, intramucosal carcinoma [22].
+ESDIP, endoscopic submucosal dissection including papilla; ESD, 
+endoscopic submucosal dissection; DESD, duodenal endoscopic 
+submucosal dissection; IQR, interquartile range; ERCP, endoscopic 
+retrograde cholangiopancreatography; HM, horizontal margin; VM, vertical
+margin; PM, papillary ductal margin
+36
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 39
+Table 2. Univariate Cox regression analysis of risk factors for local residual or recurrent tumor after ESDIP
+Variables No. of
+events
+No. of
+patients HR (95% CI) P value
+Age Per 1-year increase 15 55 1.01 (0.96－1.06) 0.72
+Sex Male 9 33 1.00 (reference) －
+　 Female 6 22 0.92 (0.33－2.61) 0.88
+Circumferential 
+location Medial wall 13 49 1.00 (reference) －
+Other (AW or PW) 2 6 1.63 (0.37－7.25) 0.52
+Tumor size Per 5-mm increase 15 55 1.06 (0.96－1.15) 0.22
+Macroscopic type
+(Paris classification)
+Protruded type (0-I) 3 6 1.00 (reference) －
+Flat type (0-IIa or 0-IIc) 9 37 0.49 (0.14－1.79) 0.28
+Mixed type (0-IIa+I or 0-I+IIa) 3 12 0.28 (0.05－1.70) 0.17
+Histology VCL category 3 1 15 1.00 (reference) －
+　 VCL category 4 or 5.1* 14 40 6.59 (0.87－50.22) 0.07
+HM Negative 13 50 1.00 (reference) －
+37
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 40
+Positive or indeterminate 2 5 1.43 (0.32－6.36) 0.64
+VM Negative 15 52
+Not estimable†
+－
+　 Positive or indeterminate 0 3 －
+PM Negative 3 34 1.00 (reference) －
+　 Positive or indeterminate 12 21 8.35 (2.35－29.64) < 0.01
+*Exploratory univariate Cox model including indicator terms for VCL C4 and C5.1 (reference = C3): C4 vs C3, HR = 5.71 (95% CI, 0.70－46.55); 
+C5.1 vs C3, HR = 8.25 (95% CI, 1.01－67.61). These estimates were not multiplicity-adjusted.
+†Not estimable because no event occurred in the positive/indeterminate VM group.
+ESDIP, endoscopic submucosal dissection including papilla; HR, hazard ratio; CI, confidence interval; AW, anterior wall; PW, posterior wall; VCL, 
+Vienna classification; HM, horizontal margin; VM, vertical margin; PM, papillary ductal margin.
+38
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 41
+Table 3. Univariate logistic regression analysis of factors associated with positive or indeterminate papillary ductal margin ESDIP
+Variables No. of
+events
+No. of
+patients Odds ratio (95% CI) P value
+Age Per 1-year increase 21 55 0.99 (0.95－1.04) 0.82
+Sex Male 12 33 1.00 (reference) －
+　　 Female 9 22 1.21 (0.40－3.68) 0.73
+Circumferential 
+location Medial wall 17 49 1.00 (reference) －
+Other (AW or PW) 4 6 3.76 (0.67－29.21) 0.13
+Macroscopic type
+(Paris classification)
+Protruded type (0-I) 4 6 1.00 (reference) －
+Flat type (0-IIa or 0-IIc) 13 37 0.27 (0.03－1.58) 0.15
+　　 Mixed type (0-IIa+I or 0-I+IIa) 4 12 0.25 (0.03－1.86) 0.18
+Tumor size Per 5-mm increase 21 55 1.01 (0.90－1.14) 0.82
+Papillary location 
+within the lesion Peripheral type 5 29 1.00 (reference) －
+Central type 16 26 7.68 (2.34－29.13) < 0.01
+Histology VCL category 3 2 15 1.00 (reference) －
+39
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 42
+VCL category 4 or 5.1 19 40 5.88 (1.39－40.80) 0.03
+Treatment era Early (2011-2022) 11 27 1.00 (reference) －
+　　 Late (2023-2024) 10 28 0.81 (0.27－2.41) 0.70
+Operator experience Super-expert 15 41 1.00 (reference) －
+Expert 6 14 1.30 (0.37－4.47) 0.68
+Anesthesia type General anesthesia 8 25 1.00 (reference) －
+　　 Deep sedation 13 30 1.63 (0.54－5.07) 0.39
+Resection time Per 10-minute increase 21 55 1.05 (0.92－1.19) 0.48
+Intraprocedural 
+perforation No 17 49 1.00 (reference) －
+Yes 4 6 3.76 (0.67－29.21) 0.13
+ESDIP, endoscopic submucosal dissection including papilla; CI, confidence interval; AW, anterior wall; PW, posterior wall; VCL, Vienna 
+classification
+40
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 43
+Supplementary material.
+Naohisa Yahagi, Teppei Akimoto, Yusaku Takatori, Motoki Sasaki, Kurato Miyazaki, 
+Atsuto Kayashima, Teppei Masunaga, Kumiko Kirita, Mari Mizutani, Hiroki 
+Tamagawa, Shintaro Kawasaki, Takashi Seino, Masayasu Horibe, Seiichiro Fukuhara, 
+Noriko Matsuura, MD, Atsushi Nakayama, Yasuhiro Ito, Tomohisa Sujino, Kaoru 
+Takabayashi, Eisuke Iwasaki, and Motohiko Kato
+Clinical outcomes and risk factors for local residual/recurrent tumors after 
+endoscopic submucosal dissection including papilla for laterally spreading 
+ampullary tumors.
+Video S1. The endoscopic submucosal dissection including papilla procedure was 
+performed using the water pressure method. After a distal incision, a mucosal flap was 
+created from the oral side and submucosal dissection was carried out. The sphincter of 
+the papilla was identified and dissected, allowing complete resection and retrieval of the
+lesion. At the end of the procedure, a pancreaticobiliary specialist placed nasobiliary 
+and nasopancreatic drainage tubes, which were left in place for at least 3 days and 
+removed depending on the patient’s condition.
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 44
+Supplementary Figure 1. Definitions of tumor size, papillary location, and resection 
+margins in resected specimens. (a) Tumor size was defined as the maximum diameter of
+the lesion (yellow arrow). (b) Papillary location within the lesion was classified as 
+follows. The blue, yellow and orange areas represent the resected specimen, tumor, and 
+papilla, respectively. When the papillary orifice was located within the dotted oval, the 
+papillary location was defined as the central type; otherwise, it was defined as 
+peripheral type. The figure shows the central type. (c) Horizontal margin (HM) and 
+vertical margin (VM) were evaluated in lesion areas excluding the papillary ductal 
+margin (PM).
+Supplementary Figure 2. Kaplan–Meier curves for local recurrent tumors after 
+endoscopic submucosal dissection including papilla after excluding cases with residual 
+tumors according to: (a) all cases; and (b) papillary ductal margin (PM) status 
+(positive/indeterminate vs. negative).
+Supplementary Figure 3. Individual follow-up courses, additional treatments, and 
+outcomes of patients with residual or recurrent tumors after endoscopic submucosal 
+dissection including papilla (ESDIP). Cases 1–10 represent residual tumors, whereas 
+cases 11–15 represent recurrent tumors. *Subtotal stomach-preserving 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 45
+pancreaticoduodenectomy (SSPPD) was performed because of postprocedural stenosis 
+and residual tumor. CFP, cold forceps polypectomy; APC, argon plasma coagulation; 
+IDRFA, intraductal radiofrequency ablation; EP, endoscopic papillectomy; PD, 
+pancreaticoduodenectomy.
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 46
+ 
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 47
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 48
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 49
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 50
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 51
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 52
+ 
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 53
+ 
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
+
+
+PAGE 54
+ 
+This article is protected by copyright. All rights reserved.
+Accepted Manuscript
+Downloaded by: Shibboleth-Proxy Keio University Tokyo, Faculty of Medicine, Keio University Shinanomachi Media Center. Copyrighted material.
