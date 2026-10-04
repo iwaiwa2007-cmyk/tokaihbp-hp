@@ -336,23 +336,15 @@
       <section class="year-group" data-year-group aria-labelledby="year-2026">
         <h2 class="year-heading" id="year-2026">2026</h2>
         <div class="event-list">
-          <article class="event-row" data-category="international">
-            <time class="event-date" datetime="2026-09-24">2026年9月24日〜26日</time>
-            <a class="event-title" href="https://easternsun.eventsair.com/2026-endo-congress/" target="_blank" rel="noopener">ENDO 2026</a>
-            <p class="event-location">Cape Town, South Africa — Cape Town International Convention Centre</p>
-          </article>
-          <article class="event-row event-new" data-category="seminar">
-            <time class="event-date" datetime="2026-09-25">2026年9月25日〜26日</time>
-            <div class="event-title-cell">
-              <a class="event-title" href="https://gazou80.com/" target="_blank" rel="noopener">第80回 日本消化器画像診断研究会</a>
-              <a class="event-sub-link" href="https://gazou80.com/abstracts/" target="_blank" rel="noopener">演題締切：2026年6月8日（終了）</a>
-            </div>
-            <p class="event-location">鹿児島 — カクイックス交流センター</p>
-          </article>
           <article class="event-row event-new" data-category="international">
             <time class="event-date" datetime="2026-10-08">2026年10月8日〜10日</time>
             <a class="event-title" href="https://igg4ward.org/events/6th-international-symposium-on-igg4-related-disease/" target="_blank" rel="noopener">Sixth International Symposium on IgG4-RD</a>
             <p class="event-location">Cambridge, Massachusetts, USA — The Charles Hotel</p>
+          </article>
+          <article class="event-row event-new" data-category="international">
+            <time class="event-date" datetime="2026-10-15">2026年10月15日〜17日</time>
+            <a class="event-title" href="https://www.toronto-live-endo.ca/" target="_blank" rel="noopener">Toronto Live Endoscopy 2026 — Therapeutic Endoscopy Course</a>
+            <p class="event-location">Toronto, Canada — Li Ka Shing Knowledge Institute</p>
           </article>
           <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2026-10-16">2026年10月16日〜17日</time>
@@ -444,7 +436,7 @@
             <time class="event-date" datetime="2026-12-12">2026年12月12日</time>
             <div class="event-title-cell">
               <a class="event-title" href="https://www.jsge.or.jp/conference/shibu/kanto/" target="_blank" rel="noopener">第392回 日本消化器病学会関東支部例会</a>
-              <a class="event-sub-link" href="https://www.jsge.or.jp/conference/shibu/kanto/" target="_blank" rel="noopener">演題締切：2026年9月30日 正午（予定）</a>
+              <a class="event-sub-link" href="https://www.jsge.or.jp/conference/shibu/kanto/" target="_blank" rel="noopener">演題締切：2026年10月7日 正午（延長）</a>
             </div>
             <p class="event-location">東京 — 海運クラブ</p>
           </article>
@@ -786,6 +778,19 @@
             <a class="event-title" href="https://www.jsge.or.jp/conference/shibu/kanto/" target="_blank" rel="noopener">第391回 日本消化器病学会関東支部例会</a>
             <p class="event-location">東京 — 海運クラブ</p>
           </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-09-24">2026年9月24日〜26日</time>
+            <a class="event-title" href="https://easternsun.eventsair.com/2026-endo-congress/" target="_blank" rel="noopener">ENDO 2026</a>
+            <p class="event-location">Cape Town, South Africa — Cape Town International Convention Centre</p>
+          </article>
+          <article class="event-row event-new" data-category="seminar">
+            <time class="event-date" datetime="2026-09-25">2026年9月25日〜26日</time>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://gazou80.com/" target="_blank" rel="noopener">第80回 日本消化器画像診断研究会</a>
+              <a class="event-sub-link" href="https://gazou80.com/abstracts/" target="_blank" rel="noopener">演題締切：2026年6月8日（終了）</a>
+            </div>
+            <p class="event-location">鹿児島 — カクイックス交流センター</p>
+          </article>
         </div>
       </section>
 
@@ -848,6 +853,7 @@
 
     const getEventTimeZone = (location, category) => {
       const timeZoneRules = [
+        [/Toronto|Canada/i, "America/Toronto"],
         [/Orlando|Washington, D\.C\.|Cambridge|Massachusetts/i, "America/New_York"],
         [/Chicago|Illinois/i, "America/Chicago"],
         [/Huntington Beach|San Diego/i, "America/Los_Angeles"],
