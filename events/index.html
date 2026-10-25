@@ -194,6 +194,35 @@
       text-underline-offset: 2px;
     }
     .event-sub-link:hover { color: var(--event-blue); }
+    .event-detail {
+      color: var(--event-muted);
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .event-participation {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 999px;
+      color: #0c6f69;
+      background: #e8f7f4;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .event-banner-link,
+    .event-banner-wrap {
+      display: block;
+      width: min(100%, 520px);
+      margin-top: 4px;
+    }
+    .event-banner {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--event-line);
+      border-radius: 6px;
+    }
     .featured .event-title { color: var(--event-teal); }
     .event-location {
       color: var(--event-muted);
@@ -327,7 +356,10 @@
         <div class="event-list">
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2026-10-24">2026年10月24日〜25日</time>
-            <a class="event-title" href="https://www.eussummit.org/" target="_blank" rel="noopener">EUS Summit 2026</a>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://www.eussummit.org/" target="_blank" rel="noopener">EUS Summit 2026</a>
+              <span class="event-participation">岩崎：Invited Speakerとして参加</span>
+            </div>
             <p class="event-location">Seoul, South Korea — Grand Walkerhill Seoul</p>
           </article>
           <article class="event-row" data-category="international">
@@ -432,7 +464,13 @@
           </article>
           <article class="event-row" data-category="seminar">
             <time class="event-date" datetime="2027-02-21">2027年2月21日</time>
-            <a class="event-title" href="https://wakayama-med-2nai.jp/" target="_blank" rel="noopener">第8回 和歌山消化器内視鏡ライブデモンストレーションセミナー「きのくにライブ」</a>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://wakayama-med-2nai.jp/" target="_blank" rel="noopener">第8回 和歌山消化器内視鏡ライブデモンストレーションセミナー「きのくにライブ」</a>
+              <span class="event-participation">岩崎：コメンテーターとして参加します</span>
+              <a class="event-banner-link" href="https://wakayama-med-2nai.jp/" target="_blank" rel="noopener">
+                <img class="event-banner" src="../assets/events/kinokuni-live-2027-banner.png" alt="第8回 和歌山消化器内視鏡ライブデモンストレーションセミナー きのくにライブ" loading="lazy">
+              </a>
+            </div>
             <p class="event-location">和歌山 — 和歌山県立医科大学</p>
           </article>
           <article class="event-row" data-category="international">
@@ -452,6 +490,18 @@
             <time class="event-date" datetime="2027-03-19">2027年3月19日〜21日</time>
             <a class="event-title" href="https://igg4.w3.kanazawa-u.ac.jp/" target="_blank" rel="noopener">第18回 日本IgG4関連疾患学会学術集会</a>
             <p class="event-location">高知</p>
+          </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-04-02">2027年4月2日〜3日</time>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://www.ipbm.kr/" target="_blank" rel="noopener">International PancreatoBiliary Meeting 2027（IPBM 2027）</a>
+              <a class="event-sub-link" href="https://www.ipbm.kr/abstract/" target="_blank" rel="noopener">抄録締切：2027年2月5日</a>
+              <span class="event-detail">事前登録締切：2027年3月12日</span>
+              <a class="event-banner-link" href="https://www.ipbm.kr/" target="_blank" rel="noopener">
+                <img class="event-banner" src="../assets/events/ipbm-2027-banner.png" alt="IPBM 2027 — 2027年4月2日〜3日、Grand Walkerhill Seoul" loading="lazy">
+              </a>
+            </div>
+            <p class="event-location">Seoul, South Korea — Grand Walkerhill Seoul</p>
           </article>
           <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2027-04-17">2027年4月17日</time>
@@ -553,7 +603,12 @@
           </article>
           <article class="event-row" data-category="international">
             <time class="event-date" datetime="2027-09-18">2027年9月18日〜19日</time>
-            <span class="event-title">The 2nd International Congress of APBA（APBA 2027）</span>
+            <div class="event-title-cell">
+              <span class="event-title">The 2nd International Congress of APBA（APBA 2027）</span>
+              <span class="event-banner-wrap">
+                <img class="event-banner" src="../assets/events/apba-2027-banner.png" alt="The 2nd International Congress of APBA — 2027年9月18日〜19日、Taipei, Taiwan" loading="lazy">
+              </span>
+            </div>
             <p class="event-location">Taipei, Taiwan — 会場未発表</p>
           </article>
           <article class="event-row" data-category="international">
