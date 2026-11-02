@@ -84,7 +84,8 @@ p {
 
 .brand-en {
   color: var(--muted);
-  font-size: 17px;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .site-nav {
@@ -1492,6 +1493,7 @@ h3 {
   .brand-en {
     max-width: 230px;
     font-size: 13px;
+    white-space: normal;
   }
 
   .site-nav {
