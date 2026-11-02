@@ -471,6 +471,18 @@ h3 {
   max-width: 260px;
 }
 
+.news-photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.news-photo-grid .news-photo {
+  flex: 1 1 240px;
+  max-width: 360px;
+}
+
 .news-photo img {
   display: block;
   width: 100%;

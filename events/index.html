@@ -372,16 +372,6 @@
       <section class="year-group" data-year-group aria-labelledby="year-2026">
         <h2 class="year-heading" id="year-2026">2026</h2>
         <div class="event-list">
-          <article class="event-row" data-category="international">
-            <time class="event-date" datetime="2026-10-30">2026年10月30日〜11月1日</time>
-            <div class="event-title-cell">
-              <a class="event-title" href="https://mm.sciconf.cn/cn/web/index/37001" target="_blank" rel="noopener">中華医学会2026年消化内鏡学年会（CCDE 2026）</a>
-              <a class="event-banner-link" href="https://mm.sciconf.cn/cn/web/index/37001" target="_blank" rel="noopener">
-                <img class="event-banner" src="../assets/events/ccde-2026-banner.png" alt="CCDE 2026 中華医学会2026年消化内鏡学年会" loading="lazy">
-              </a>
-            </div>
-            <p class="event-location">重慶市、中国</p>
-          </article>
           <article class="event-row event-new" data-category="domestic">
             <time class="event-date" datetime="2026-11-05">2026年11月5日〜7日</time>
             <div class="event-title-cell">
@@ -693,6 +683,11 @@
             <a class="event-title" href="https://www.jddw.jp/jddw2027/index.html" target="_blank" rel="noopener">第35回 日本消化器関連学会週間（JDDW 2027）</a>
             <p class="event-location">神戸</p>
           </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2027-11-05">2027年11月5日〜6日</time>
+            <span class="event-title">CCDE 2027</span>
+            <p class="event-location">Wuhan, China（中国・武漢）— 会場未発表</p>
+          </article>
           <article class="event-row" data-category="domestic">
             <time class="event-date" datetime="2027-12-11">2027年12月11日〜12日</time>
             <a class="event-title" href="https://www.jges.net/eventlist/category/branch-meeting/bm-03-kanto" target="_blank" rel="noopener">第125回 日本消化器内視鏡学会関東支部例会</a>
@@ -704,6 +699,16 @@
       <section class="year-group" data-year-group aria-labelledby="year-2028">
         <h2 class="year-heading" id="year-2028">2028</h2>
         <div class="event-list">
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2028-04-05">2028年4月5日〜8日</time>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://www.ihpba.org/19_World-Congress.html" target="_blank" rel="noopener">18th IHPBA World Congress</a>
+              <a class="event-banner-link" href="https://www.ihpba.org/19_World-Congress.html" target="_blank" rel="noopener">
+                <img class="event-banner" src="../assets/events/ihpba-world-congress-2028-banner.png" alt="18th IHPBA World Congress — Vancouver, Canada — 5–8 April 2028" loading="lazy">
+              </a>
+            </div>
+            <p class="event-location">Vancouver, Canada — Venue TBD</p>
+          </article>
           <article class="event-row" data-category="domestic">
             <time class="event-date" datetime="2028-04-27">2028年4月27日〜29日</time>
             <a class="event-title" href="https://www.jsge.or.jp/conference/honbu/soukai/" target="_blank" rel="noopener">第114回 日本消化器病学会総会</a>
@@ -776,6 +781,16 @@
       <section class="year-group" data-year-group aria-labelledby="year-2030">
         <h2 class="year-heading" id="year-2030">2030</h2>
         <div class="event-list">
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2030-07-03">2030年7月3日〜6日</time>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://www.ihpba.org/19_World-Congress.html" target="_blank" rel="noopener">19th IHPBA World Congress</a>
+              <a class="event-banner-link" href="https://www.ihpba.org/19_World-Congress.html" target="_blank" rel="noopener">
+                <img class="event-banner" src="../assets/events/ihpba-world-congress-2030-banner.png" alt="19th IHPBA World Congress — Amsterdam, the Netherlands — 3–6 July 2030" loading="lazy">
+              </a>
+            </div>
+            <p class="event-location">Amsterdam, the Netherlands — RAI Amsterdam</p>
+          </article>
           <article class="event-row" data-category="domestic">
             <time class="event-date" datetime="2030-10-31">2030年10月31日〜11月2日</time>
             <a class="event-title" href="https://www.jddw.jp/meeting/index.html" target="_blank" rel="noopener">第38回 日本消化器関連学会週間（JDDW 2030）</a>
@@ -921,6 +936,16 @@
             </div>
             <p class="event-location">Seoul, South Korea — OSSTEM IMPLANT Central Research Institute</p>
           </article>
+          <article class="event-row" data-category="international">
+            <time class="event-date" datetime="2026-10-30">2026年10月30日〜11月1日</time>
+            <div class="event-title-cell">
+              <a class="event-title" href="https://mm.sciconf.cn/cn/web/index/37001" target="_blank" rel="noopener">中華医学会2026年消化内鏡学年会（CCDE 2026）</a>
+              <a class="event-banner-link" href="https://mm.sciconf.cn/cn/web/index/37001" target="_blank" rel="noopener">
+                <img class="event-banner" src="../assets/events/ccde-2026-banner.png" alt="CCDE 2026 中華医学会2026年消化内鏡学年会" loading="lazy">
+              </a>
+            </div>
+            <p class="event-location">重慶市、中国</p>
+          </article>
         </div>
       </section>
 
@@ -983,6 +1008,7 @@
 
     const getEventTimeZone = (location, category) => {
       const timeZoneRules = [
+        [/Vancouver/i, "America/Vancouver"],
         [/Toronto|Canada/i, "America/Toronto"],
         [/Orlando|Washington, D\.C\.|Cambridge|Massachusetts/i, "America/New_York"],
         [/Chicago|Illinois/i, "America/Chicago"],
@@ -1000,6 +1026,7 @@
         [/Sydney|Australia/i, "Australia/Sydney"],
         [/Lisbon|Portugal/i, "Europe/Lisbon"],
         [/Stockholm|Sweden/i, "Europe/Stockholm"],
+        [/Amsterdam|Netherlands/i, "Europe/Amsterdam"],
         [/Hanoi|Vietnam/i, "Asia/Ho_Chi_Minh"],
         [/Istanbul|Türkiye|Turkey/i, "Europe/Istanbul"],
         [/Kaohsiung|Taiwan/i, "Asia/Taipei"]
