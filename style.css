@@ -48,8 +48,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 76px;
-  padding: 12px clamp(18px, 4vw, 56px);
+  min-height: 96px;
+  padding: 16px clamp(18px, 4vw, 56px);
   border-bottom: 1px solid rgba(220, 229, 234, 0.9);
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
@@ -58,13 +58,13 @@ p {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   min-width: 0;
 }
 
 .brand-logo {
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 68px;
   flex: 0 0 auto;
   border-radius: 50%;
   object-fit: cover;
@@ -79,21 +79,22 @@ p {
 
 .brand-ja {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 23px;
 }
 
 .brand-en {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .site-nav {
   display: flex;
-  gap: 22px;
+  gap: 28px;
   align-items: center;
   color: #314254;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .site-nav a {
@@ -119,6 +120,35 @@ p {
   transform: scaleX(1);
 }
 
+.header-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-left: 12px;
+  padding: 12px 16px;
+  border: 1px solid #778da1;
+  border-radius: 8px;
+  color: #213e56;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.header-instagram:hover {
+  border-color: var(--blue);
+  background: #f4f8fa;
+}
+
+.header-instagram-icon {
+  display: block;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
@@ -140,9 +170,81 @@ p {
   padding: clamp(44px, 6vw, 78px) 0;
 }
 
+@media (min-width: 921px) {
+  main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  main > .section {
+    grid-column: 1 / -1;
+  }
+
+  main > #home {
+    grid-row: 1;
+  }
+
+  main > .intro {
+    grid-row: 2;
+  }
+
+  main > #members {
+    grid-row: 3;
+  }
+
+  main > .whats-new {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  main > #publications {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  main > #activity {
+    grid-row: 5;
+  }
+
+  main > #tools {
+    grid-row: 6;
+  }
+
+  main > #contact {
+    grid-row: 7;
+  }
+
+  main > .partner-section {
+    grid-column: 1 / -1;
+    grid-row: 8;
+  }
+}
+
+@media (max-width: 920px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > #home { order: 1; }
+  main > .intro { order: 2; }
+  main > #members { order: 3; }
+  main > .whats-new { order: 4; }
+  main > #publications { order: 5; }
+  main > #activity { order: 6; }
+  main > #tools { order: 7; }
+  main > #contact { order: 8; }
+  main > .partner-section { order: 9; }
+}
+
 .container {
   width: min(1120px, calc(100% - 36px));
   margin: 0 auto;
+}
+
+/* Highlight pages stay as a single vertical document at desktop widths. */
+main.page {
+  display: block;
 }
 
 .hero {
@@ -292,6 +394,21 @@ h3 {
   background: #fff;
 }
 
+.board-section {
+  min-width: 0;
+  background: #fff;
+}
+
+.board-section .section-head {
+  margin-bottom: 18px;
+}
+
+.board-section .news-list,
+.board-section .publication-list {
+  height: 680px;
+  max-height: 680px;
+}
+
 .news-list {
   display: grid;
   gap: 8px;
@@ -308,6 +425,11 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fbfdfe;
+}
+
+/* Keep archived highlight pages available while showing only the latest notice. */
+.news-item:has(a[href*="weekly-highlights/"]):not(:has(a[href*="weekly-highlight-2026-11-01.html"])) {
+  display: none;
 }
 
 .news-item summary {
@@ -1073,19 +1195,16 @@ h3 {
 }
 
 .contact-card {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 18px;
-  align-items: start;
-  padding: 22px;
+  display: block;
+  padding: 30px;
 }
 
 .instagram-links {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   align-content: start;
-  margin-top: 0;
-  padding: 14px;
+  margin-top: 28px;
+  padding: 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--soft);
@@ -1100,20 +1219,64 @@ h3 {
 .instagram-links a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: 30px;
-  padding: 8px 10px;
+  gap: 18px;
+  min-height: 88px;
+  padding: 14px 20px;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  color: #fff;
-  background: var(--blue);
-  font-size: 13px;
+  color: var(--navy);
+  background: #fff;
+  font-size: 19px;
   font-weight: 700;
   line-height: 1.2;
-  text-align: center;
   text-decoration: none;
 }
 
 .instagram-links a:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.instagram-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.instagram-arrow {
+  margin-left: auto;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.contact-info h4 {
+  margin: 26px 0 8px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.contact-form-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-form-button:hover {
   background: var(--navy);
 }
 
@@ -1134,49 +1297,58 @@ h3 {
 
 .partner-links {
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .partner-link {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 16px 20px 16px 0;
+  display: grid;
+  grid-template-rows: auto 150px;
+  gap: 10px;
+  align-content: start;
+  min-width: 0;
+  min-height: 220px;
+  padding: 14px;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 12px 32px rgba(23, 57, 92, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .partner-link img {
   display: block;
-  width: min(520px, 100%);
-  max-height: 92px;
-  height: auto;
+  width: 100%;
+  height: 150px;
   margin: 0;
   object-fit: contain;
+  background: #f7fafc;
 }
 
 .partner-link-wide img {
-  width: min(760px, 100%);
-  max-height: 118px;
+  width: 100%;
+  max-height: none;
 }
 
 .partner-link span {
-  flex: 0 0 auto;
-  margin-left: auto;
-  min-height: 44px;
-  padding: 8px 18px;
-  border-radius: 8px;
-  color: #fff;
-  background: var(--navy);
+  order: -1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  background: transparent;
   font-weight: 700;
-  white-space: nowrap;
+  line-height: 1.35;
 }
 
 .partner-link:hover span {
-  background: var(--blue);
+  color: var(--blue);
+}
+
+.partner-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(23, 57, 92, 0.14);
 }
 
 .site-footer {
@@ -1217,7 +1389,7 @@ h3 {
 
   .site-nav {
     position: absolute;
-    top: 76px;
+    top: 96px;
     right: 18px;
     left: 18px;
     display: none;
@@ -1304,26 +1476,37 @@ h3 {
 
 @media (max-width: 620px) {
   .site-header {
-    min-height: 70px;
+    min-height: 82px;
     padding: 10px 14px;
   }
 
   .brand-ja {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .brand-logo {
-    width: 42px;
-    height: 42px;
+    width: 52px;
+    height: 52px;
   }
 
   .brand-en {
     max-width: 230px;
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .site-nav {
-    top: 70px;
+    top: 82px;
+  }
+
+  .header-instagram {
+    gap: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .header-instagram-icon {
+    width: 34px;
+    height: 34px;
   }
 
   .section {
@@ -1389,7 +1572,8 @@ h3 {
   }
 
   .publication-list {
-    max-height: 480px;
+    height: 680px;
+    max-height: 680px;
     padding: 12px;
   }
 
@@ -1402,21 +1586,32 @@ h3 {
     text-align: left;
   }
 
+  .header-instagram {
+    margin-left: 0;
+  }
+
   .partner-link {
     display: grid;
+    grid-template-rows: auto 150px;
     gap: 12px;
     justify-items: start;
-    padding: 14px 0;
+    min-height: 220px;
+    padding: 14px;
+  }
+
+  .partner-links {
+    grid-template-columns: 1fr;
   }
 
   .partner-link img {
-    margin: 0;
+    width: 100%;
+    height: 150px;
   }
 
   .partner-link span {
     width: 100%;
-    margin-left: 0;
-    text-align: center;
+    margin: 0;
+    text-align: left;
   }
 
   .footer-inner {

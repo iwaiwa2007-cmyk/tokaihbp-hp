@@ -1,5 +1,43 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
+
+const sitePath = window.location.pathname;
+const siteRoot = sitePath.includes("/tools/") ? "../../" : sitePath.includes("/events/") || sitePath.includes("/weekly-highlights/") || sitePath.includes("/contact/") || sitePath.includes("/AIP_Diagnosis/") ? "../" : "";
+const pageType = sitePath.includes("/events/") ? "event" : sitePath.includes("/weekly-highlights/") ? "highlight" : sitePath.includes("/contact/") ? "contact" : "home";
+
+if (siteNav) {
+  const navItems = [
+    ["Home", `${siteRoot}index.html#home`, pageType === "home"],
+    ["Highlight", `${siteRoot}weekly-highlights/weekly-highlight-2026-11-01.html`, pageType === "highlight"],
+    ["Event", pageType === "event" ? "index.html" : `${siteRoot}events/index.html`, pageType === "event"],
+    ["Contact", `${siteRoot}index.html#contact`, pageType === "contact"],
+  ];
+
+  siteNav.replaceChildren(...navItems.map(([label, href, active]) => {
+    const link = document.createElement("a");
+    link.href = href;
+    link.textContent = label;
+    if (active) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
+    return link;
+  }));
+}
+
+const header = document.querySelector(".site-header");
+if (header && !header.querySelector(".header-instagram")) {
+  const instagram = document.createElement("a");
+  instagram.className = "header-instagram";
+  instagram.href = "https://www.instagram.com/tokai_pancreatobiliary_team/";
+  instagram.target = "_blank";
+  instagram.rel = "noopener";
+  instagram.setAttribute("aria-label", "胆膵班Instagramを開く");
+  instagram.title = "胆膵班Instagram";
+  instagram.innerHTML = `<img class="header-instagram-icon" src="${siteRoot}assets/instagram-icon.png" alt=""><span>Instagram</span>`;
+  header.append(instagram);
+}
+
 const navLinks = document.querySelectorAll(".site-nav a");
 const year = document.querySelector("#year");
 const backToTop = document.querySelector(".back-to-top");

@@ -16,6 +16,9 @@
   <meta property="og:description" content="胆膵・消化器内視鏡領域を中心とした研究会、学会、セミナーの開催予定をまとめています。">
   <link rel="stylesheet" href="../style.css?v=20260713-2">
   <style>
+    /* The shared stylesheet uses a two-column grid for the homepage only. */
+    main { display: block; }
+
     :root {
       --event-navy: #12304a;
       --event-blue: #176b87;
@@ -34,13 +37,18 @@
       padding-bottom: 7px;
     }
     .brand-logo { width: 40px; height: 40px; }
+    .page {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 72px 20px 56px;
+    }
     .event-hero {
-      padding: 20px 18px 22px;
+      padding: 24px 28px;
       color: #fff;
       background: linear-gradient(120deg, var(--event-navy), #17657b);
     }
     .event-hero-inner,
-    .event-main { width: min(1120px, 100%); margin: 0 auto; }
+    .event-main { width: 100%; margin: 0 auto; }
     .event-kicker {
       margin: 0 0 5px;
       color: #bfe7ee;
@@ -61,7 +69,12 @@
       color: #e0f0f3;
       font-size: 12px;
     }
-    .event-main { padding: 16px 18px 42px; }
+    .event-subtitle {
+      margin: 0;
+      color: #d8edf1;
+      font-size: 14px;
+    }
+    .event-main { padding: 16px 0 42px; }
     .calendar-note {
       display: flex;
       align-items: center;
@@ -319,8 +332,8 @@
     <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="../index.html#home">Home</a>
-      <a href="../weekly-highlights/weekly-highlight-2026-09-20.html">Highlight</a>
-      <a href="./" class="active" aria-current="page">Event</a>
+      <a href="../weekly-highlights/weekly-highlight-2026-11-01.html">Highlight</a>
+      <a href="index.html" class="active" aria-current="page">Event</a>
       <a href="../index.html#members">PI</a>
       <a href="../index.html#activity">Activity</a>
       <a href="../index.html#tools">Tools</a>
@@ -329,11 +342,12 @@
     </nav>
   </header>
 
-  <main>
+  <main class="page">
     <header class="event-hero">
       <div class="event-hero-inner">
         <p class="event-kicker">Event Calendar</p>
         <h1>研究会・学会予定</h1>
+        <p class="event-subtitle">Research Meetings &amp; Conference Calendar</p>
         <p class="intro">胆膵・消化器内視鏡領域を中心に、国内外の学会、研究会、セミナーの予定をまとめています。学会名から公式サイトを開けます。</p>
       </div>
     </header>
