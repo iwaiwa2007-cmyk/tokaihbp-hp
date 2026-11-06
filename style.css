@@ -45,9 +45,10 @@ p {
   position: sticky;
   top: 0;
   z-index: 20;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
   min-height: 96px;
   padding: 16px clamp(18px, 4vw, 56px);
   border-bottom: 1px solid rgba(220, 229, 234, 0.9);
@@ -59,6 +60,10 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
+}
+
+.brand > span {
   min-width: 0;
 }
 
@@ -135,6 +140,74 @@ p {
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
+}
+
+@media (max-width: 1500px) and (min-width: 1101px) {
+  .site-header {
+    gap: 16px;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .brand-ja {
+    font-size: 20px;
+  }
+
+  .brand-en {
+    font-size: 13px;
+  }
+
+  .site-nav {
+    gap: 18px;
+    font-size: 17px;
+  }
+
+  .header-instagram {
+    gap: 7px;
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .header-instagram-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .site-header {
+    display: flex;
+    gap: 12px;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 96px;
+    right: 18px;
+    left: 18px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 10px 12px;
+  }
 }
 
 .header-instagram:hover {
@@ -1630,5 +1703,40 @@ h3 {
 
   .footer-inner {
     display: grid;
+  }
+}
+/* Keep the primary navigation available when the header has limited width. */
+@media (max-width: 1100px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+  }
+
+  .nav-toggle {
+    display: none !important;
+  }
+
+  .site-nav,
+  .site-nav.open {
+    position: static;
+    order: 3;
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 18px;
+    padding: 4px 0 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .site-nav a {
+    padding: 6px 0;
   }
 }
