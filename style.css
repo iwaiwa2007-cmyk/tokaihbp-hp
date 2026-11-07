@@ -1740,3 +1740,36 @@ h3 {
     padding: 6px 0;
   }
 }
+
+/* Use the compact menu at every viewport width. */
+.nav-toggle {
+  display: block !important;
+  cursor: pointer;
+}
+
+.site-nav,
+.site-nav.open {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: clamp(18px, 4vw, 56px);
+  left: auto;
+  z-index: 30;
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  min-width: 240px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.site-nav.open {
+  display: flex;
+}
+
+.site-nav a {
+  padding: 10px 12px;
+}
