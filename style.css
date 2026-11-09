@@ -502,7 +502,7 @@ h3 {
 }
 
 /* Keep archived highlight pages available while showing only the latest notice. */
-.news-item:has(a[href*="weekly-highlights/"]):not(:has(a[href*="weekly-highlight-2026-11-01.html"])) {
+.news-item:has(a[href*="weekly-highlights/"]):not(:has(a[href*="weekly-highlight-2026-11-08.html"])) {
   display: none;
 }
 

@@ -8,7 +8,7 @@ const pageType = sitePath.includes("/events/") ? "event" : sitePath.includes("/w
 if (siteNav) {
   const navItems = [
     ["Home", `${siteRoot}index.html#home`, pageType === "home"],
-    ["Highlight", `${siteRoot}weekly-highlights/weekly-highlight-2026-11-01.html`, pageType === "highlight"],
+    ["Highlight", `${siteRoot}weekly-highlights/weekly-highlight-2026-11-08.html`, pageType === "highlight"],
     ["Event", pageType === "event" ? "index.html" : `${siteRoot}events/index.html`, pageType === "event"],
     ["Contact", `${siteRoot}index.html#contact`, pageType === "contact"],
   ];
