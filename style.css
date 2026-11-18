@@ -241,7 +241,7 @@ p {
 }
 
 .section {
-  padding: clamp(44px, 6vw, 78px) 0;
+  padding: clamp(28px, 4vw, 48px) 0;
 }
 
 @media (min-width: 921px) {
@@ -295,6 +295,15 @@ p {
 }
 
 @media (max-width: 920px) {
+  main > #publications { order: 5; }
+  main > .instagram-feed-section { order: 6; }
+  main > #activity { order: 7; }
+  main > #tools { order: 8; }
+  main > #contact { order: 9; }
+  main > .partner-section { order: 10; }
+}
+
+@media (max-width: 920px) {
   main {
     display: flex;
     flex-direction: column;
@@ -309,6 +318,30 @@ p {
   main > #tools { order: 7; }
   main > #contact { order: 8; }
   main > .partner-section { order: 9; }
+}
+
+.legacy-news {
+  display: block;
+}
+
+@media (min-width: 921px) {
+  main > #activity { grid-row: 4; }
+  main > .legacy-news { grid-column: 1 / -1; grid-row: 5; }
+  main > #publications { grid-column: 1 / -1; grid-row: 6; }
+  main > .instagram-feed-section { grid-column: 1 / -1; grid-row: 7; }
+  main > #tools { grid-row: 8; }
+  main > #contact { grid-row: 9; }
+  main > .partner-section { grid-row: 10; }
+}
+
+@media (max-width: 920px) {
+  main > #activity { order: 4; }
+  main > .legacy-news { order: 5; }
+  main > #publications { order: 6; }
+  main > .instagram-feed-section { order: 7; }
+  main > #tools { order: 8; }
+  main > #contact { order: 9; }
+  main > .partner-section { order: 10; }
 }
 
 .container {
@@ -1296,6 +1329,60 @@ h3 {
   background: var(--soft);
 }
 
+.legacy-news {
+  display: none;
+}
+
+.instagram-feed-section {
+  background: #fff;
+}
+
+.instagram-feed-lead {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: clamp(17px, 2vw, 22px);
+}
+
+.instagram-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 480px));
+  gap: 28px;
+  align-items: start;
+}
+
+.instagram-post-card {
+  min-width: 0;
+  width: 100%;
+  max-width: 480px;
+  height: 435px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.instagram-post-card .instagram-media {
+  min-width: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 435px !important;
+  margin: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.instagram-feed-link {
+  margin-top: 18px;
+  text-align: right;
+}
+
+.instagram-feed-link a {
+  color: var(--blue);
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .instagram-links strong {
   display: block;
   color: var(--navy);
@@ -1600,6 +1687,15 @@ h3 {
     padding: 42px 0;
   }
 
+  .instagram-feed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instagram-post-card {
+    max-width: 480px;
+    height: 435px;
+  }
+
   .hero {
     min-height: 640px;
   }
@@ -1772,4 +1868,73 @@ h3 {
 
 .site-nav a {
   padding: 10px 12px;
+}
+
+.publication-list {
+  height: 180px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+/* Restore the notices panel below Activity. */
+.legacy-news {
+  display: block !important;
+}
+
+/* Keep the main content compact while retaining readable section separation. */
+main > #publications,
+main > .legacy-news,
+main > .instagram-feed-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.whats-new .news-list {
+  height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+@media (min-width: 921px) {
+  main > #activity {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+
+  main > .whats-new {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+
+  main > #publications {
+    grid-column: 1 / -1;
+    grid-row: 6;
+  }
+
+  main > .instagram-feed-section {
+    grid-column: 1 / -1;
+    grid-row: 7;
+  }
+
+  main > #tools {
+    grid-row: 8;
+  }
+
+  main > #contact {
+    grid-row: 9;
+  }
+
+  main > .partner-section {
+    grid-row: 10;
+  }
+}
+
+@media (max-width: 920px) {
+  main > #activity { order: 4; }
+  main > .whats-new { order: 5; }
+  main > #publications { order: 6; }
+  main > .instagram-feed-section { order: 7; }
+  main > #tools { order: 8; }
+  main > #contact { order: 9; }
+  main > .partner-section { order: 10; }
 }
