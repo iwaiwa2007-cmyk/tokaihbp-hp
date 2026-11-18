@@ -344,6 +344,28 @@ p {
   main > .partner-section { order: 10; }
 }
 
+/* Keep the home hero compact and let the background illustration breathe. */
+.hero {
+  min-height: 0;
+  height: 540px;
+  background-size: auto 88%;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+@media (max-width: 920px) {
+  .hero {
+    height: auto;
+    min-height: 520px;
+    background-size: auto 100%;
+  }
+}
+
+/* Present the Mission heading and copy as one readable vertical column. */
+.intro .split {
+  grid-template-columns: 1fr;
+}
+
 .container {
   width: min(1120px, calc(100% - 36px));
   margin: 0 auto;
@@ -356,7 +378,7 @@ main.page {
 
 .hero {
   position: relative;
-  min-height: 760px;
+  min-height: 430px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1585,7 +1607,7 @@ h3 {
   }
 
   .hero {
-    min-height: 620px;
+    min-height: 430px;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.86) 70%, rgba(255, 255, 255, 0.62) 100%),
       url("assets/hero-pancreas.jpeg") center / cover;
@@ -1697,7 +1719,7 @@ h3 {
   }
 
   .hero {
-    min-height: 640px;
+    min-height: 430px;
   }
 
   .hero h1 {
