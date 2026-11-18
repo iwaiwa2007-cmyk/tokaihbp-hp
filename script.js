@@ -90,6 +90,24 @@ if (backToTop) {
   });
 }
 
+document.querySelectorAll(".publication-list details").forEach((publication) => {
+  const summary = publication.querySelector("summary");
+  const detail = publication.querySelector(".publication-detail");
+  if (!summary || !detail || summary.querySelector(".publication-meta")) return;
+
+  const journal = detail.querySelector("p")?.textContent
+    ?.replace(/^Journal:\s*/i, "")
+    .trim();
+  const citation = detail.querySelector("p:nth-child(2)")?.textContent || "";
+  const year = citation.match(/20\d{2}/)?.[0];
+  if (!journal && !year) return;
+
+  const meta = document.createElement("span");
+  meta.className = "publication-meta";
+  meta.textContent = [journal, year].filter(Boolean).join(", ");
+  summary.append(meta);
+});
+
 document.querySelectorAll("[data-lightbox-target]").forEach((button) => {
   button.addEventListener("click", () => {
     const target = document.getElementById(button.dataset.lightboxTarget);
