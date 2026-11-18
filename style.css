@@ -1933,6 +1933,11 @@ main > .instagram-feed-section {
   overflow-y: auto;
 }
 
+.whats-new .news-body {
+  padding-left: 14px;
+}
+
+
 @media (min-width: 921px) {
   main > #activity {
     grid-column: 1 / -1;
